@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Shopping Center Operator Series — Cypress Command</title>
+<meta name="description" content="A complete article library on owning, acquiring, financing, leasing, operating, managing, marketing, and selling retail shopping centers — plus AI operating systems, interactive checklists, and field notes from On The Blvd in Lafayette, Louisiana. Published by Cypress Command.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cypresscommand.com/#organization",
+      "name": "Cypress Command",
+      "url": "https://cypresscommand.com",
+      "description": "Cypress Command builds practical AI-enabled operating systems for owner-led businesses. Commercial real estate ownership and management is its proof domain.",
+      "slogan": "Practical intelligence for real operations."
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://ontheblvd.com/#localbusiness",
+      "name": "On The Boulevard Shopping Center",
+      "url": "https://ontheblvd.com",
+      "description": "Approximately 70,000 sq ft legacy multi-tenant retail center in Lafayette, LA. Operated under the Operator Landlord approach.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "101-149 Arnold Blvd.",
+        "addressLocality": "Lafayette",
+        "addressRegion": "LA",
+        "postalCode": "70506",
+        "addressCountry": "US"
+      },
+      "parentOrganization": { "@type": "Organization", "name": "Belle Realty of Lafayette, LLC" }
+    },
+    {
+      "@type": "Blog",
+      "name": "The Shopping Center Operator Series",
+      "publisher": { "@id": "https://cypresscommand.com/#organization" },
+      "about": "Owning, acquiring, financing, leasing, operating, managing, marketing, and selling retail shopping centers."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="home">
+<a class="skip-link" href="#index">Skip to the article index</a>
+
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="brand" href="index.html" aria-label="Cypress Command — The Shopping Center Operator Series">
+      <img class="logo-day" src="assets/brand/cc-logo-primary-horizontal.svg" alt="Cypress Command">
+      <img class="logo-night" src="assets/brand/cc-logo-reversed.svg" alt="Cypress Command">
+      <span class="brand-word">The Shopping Center Operator Series</span>
+    </a>
+    <nav aria-label="Primary">
+      <a class="nav-link" href="#index">Index</a>
+      <a class="nav-link" href="map.html">Map</a>
+      <a class="nav-link" href="#interactive">Interactive</a>
+      <a class="nav-link" href="#about">About</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Switch to night mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 13.5A8.5 8.5 0 0 1 10.5 4 7.5 7.5 0 1 0 20 13.5Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">The Shopping Center Operator Series</span>
+          <h1 class="display">Make the work easier to run.</h1>
+          <p class="deck">
+            Thirty-eight articles on owning, acquiring, financing, leasing, operating, and selling
+            retail shopping centers — from the operator's desk at On The Blvd in Lafayette,
+            Louisiana, plus the AI operating systems and checklists that keep a center visible,
+            dated, and owned.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#index">Browse the series</a>
+            <a class="btn btn-secondary" href="#interactive">Try the interactive articles</a>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <img src="assets/img/hero.jpg" alt="A legacy neighborhood shopping center at golden hour — brick storefronts and a sunlit parking field">
+          <figcaption class="caption">Fig. 01 — A neighborhood center at golden hour. The work this series describes happens here, every week.</figcaption>
+        </figure>
+      </div>
+      <div class="steps-strip" aria-label="The operating method">
+        <div class="step">
+          <span class="num">01</span>
+          <span class="step-title">See the work</span>
+          <p>Map the recurring workflows, decisions, handoffs, and owners — before changing anything.</p>
+        </div>
+        <div class="step">
+          <span class="num">02</span>
+          <span class="step-title">Build what helps</span>
+          <p>Design the rhythm, records, and carefully bounded AI assistance that fit the property.</p>
+        </div>
+        <div class="step">
+          <span class="num">03</span>
+          <span class="step-title">Make it stick</span>
+          <p>Put the system into use, clarify accountability, and improve it with the team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive features -->
+  <section class="index-section" id="interactive">
+    <div class="wrap">
+      <div class="section-head accent-olive">
+        <span class="roman">New</span>
+        <h2 class="h2">Interactive articles</h2>
+        <span class="count">Workable, saveable tools</span>
+      </div>
+      <p class="meta" style="max-width:46em; padding: 12px 0 4px;">
+        These articles carry live tools: checklists that save your progress in the browser, an
+        explorer for the property-management program that runs On The Blvd, a map of where AI
+        genuinely helps, and the full operating year.
+      </p>
+      <div class="tiles" id="tiles"></div>
+    </div>
+  </section>
+
+  <!-- Search -->
+  <div class="wrap">
+    <div class="search-bar" role="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+      <input id="search" type="search" placeholder="Search the series — try “CAM reconciliation”, “AI”, “checklist”…" aria-label="Search articles">
+      <span class="search-hint" id="search-count"></span>
+    </div>
+  </div>
+
+  <!-- Jump chips -->
+  <div class="jump-bar">
+    <div class="wrap jump-chips" id="jump-chips"></div>
+  </div>
+
+  <!-- Index -->
+  <div id="index"></div>
+  <div class="wrap"><p class="no-results" id="no-results">No articles match that search. Try a broader term — or browse the index below.</p></div>
+
+  <!-- About -->
+  <section class="about-panel" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <img class="mark" src="assets/brand/cc-mark-terra.svg" alt="">
+        <span class="eyebrow" style="color:#D9A066">Published by</span>
+        <h2 class="h2">Cypress Command</h2>
+        <p>
+          Cypress Command is an AI-enabled operating systems partner for owner-led businesses.
+          Commercial real estate ownership and management is its proof domain: leases, vendors,
+          tenants, finance, and the recurring work that keeps an asset running. This series is its
+          field library — everything the practice has learned from operating a legacy center,
+          written for owners and operators who do the work themselves.
+        </p>
+        <p class="about-tagline">Practical intelligence for real operations.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num" id="stat-articles">38</span><span class="stat-label">Articles across the full lifecycle of a shopping center</span></div>
+        <div class="stat"><span class="stat-num" id="stat-parts">11</span><span class="stat-label">Parts — from owning and acquiring to AI and checklists</span></div>
+        <div class="stat"><span class="stat-num" id="stat-words">60k</span><span class="stat-label">Words of operator-grade writing, free to read</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img class="logo-day" src="assets/brand/cc-logo-primary-horizontal.svg" alt="Cypress Command">
+        <img class="logo-night" src="assets/brand/cc-logo-reversed.svg" alt="Cypress Command" style="display:none">
+        <p>
+          The Shopping Center Operator Series is educational content written in the Cypress Command
+          voice. It is anchored in the real operations of On The Blvd Shopping Center, a legacy
+          multi-tenant retail center in Lafayette, Louisiana, operated under the Operator Landlord
+          approach — active partnership with tenants, not passive rent collection.
+        </p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#index">The full index</a>
+        <a href="#interactive">Interactive articles</a>
+        <a href="article.html?id=36-complete-property-management-checklist">The complete property management checklist</a>
+        <a href="article.html?id=37-owner-document-safe-checklist">The owner document safe checklist</a>
+        <a href="article.html?id=34-otb-command">OTB Command — the program that runs On The Blvd</a>
+        <a href="https://github.com/OrangeOnyx/otb-command" rel="noopener">The open-source repository</a>
+      </nav>
+    </div>
+    <div class="footer-legal">
+      <span>© 2026 Cypress Command. All rights reserved.</span>
+      <span>This series is educational. It is not legal, tax, or investment advice.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/articles-data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
