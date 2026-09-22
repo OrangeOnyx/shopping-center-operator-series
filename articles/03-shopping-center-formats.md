@@ -1,5 +1,5 @@
 ---
-title: "Shopping Center Formats: Where a 70,000 SF Neighborhood Center Fits"
+title: "Shopping Center Formats: Where a 63,000 SF Neighborhood Center Fits"
 series: "The Shopping Center Operator Series"
 part: "Part I — Owning"
 eyebrow: "OWNING"
@@ -9,9 +9,9 @@ date: "2026-09-22"
 read_time: "7 min"
 ---
 
-# Shopping Center Formats: Where a 70,000 SF Neighborhood Center Fits
+# Shopping Center Formats: Where a 63,000 SF Neighborhood Center Fits
 
-"Shopping center" covers everything from a four-tenant corner strip to an enclosed regional mall. Those are not the same business. The format you own determines who your tenants are, how lenders underwrite you, how much operating attention the asset needs, and what buyers will pay for it. This article walks the standard format ladder and locates a roughly 70,000 square foot legacy center on it.
+"Shopping center" covers everything from a four-tenant corner strip to an enclosed regional mall. Those are not the same business. The format you own determines who your tenants are, how lenders underwrite you, how much operating attention the asset needs, and what buyers will pay for it. This article walks the standard format ladder and locates a roughly 63,000 square foot legacy center on it.
 
 ## The format ladder
 
@@ -37,15 +37,15 @@ A center's character comes from the interaction: the anchor brings the customer 
 
 ## Why format drives leasing, financing, and operations
 
-**Leasing.** A neighborhood center leases to daily-needs tenants and measures success in trips per week; a power center leases to destination retailers and measures in draw from miles away. The prospect list, the rent structure, the lease length, and the tenant-improvement expectations all differ by format. Pitching a regional destination retailer on your 70,000 square foot neighborhood center wastes everyone's time; so does underwriting your inline rents against power-center comps.
+**Leasing.** A neighborhood center leases to daily-needs tenants and measures success in trips per week; a power center leases to destination retailers and measures in draw from miles away. The prospect list, the rent structure, the lease length, and the tenant-improvement expectations all differ by format. Pitching a regional destination retailer on your 63,000 square foot neighborhood center wastes everyone's time; so does underwriting your inline rents against power-center comps.
 
 **Financing.** Lenders underwrite format. A grocery-anchored neighborhood center with essential daily-needs tenancy is often viewed as more durable through economic cycles than a center dependent on discretionary destination retail — though terms vary by market, lender, and the specific rent roll. Unanchored strips may face tighter leverage. Lenders typically look closely at anchor lease terms, remaining term, and sales health when the anchor dominates the income.
 
 **Operations.** Operating intensity rises as tenancy gets smaller and more numerous. A single-tenant net-leased building needs almost no daily attention. A multi-tenant neighborhood center needs everything this series covers: common-area maintenance, CAM reconciliation, frequent renewals, vendor coordination, parking lot management, and constant leasing readiness. Format tells you how much of an operator you must be.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center sits at 101–149 Arnold Blvd in Lafayette, Louisiana — approximately 70,000 square feet of multi-tenant legacy retail owned by Belle Realty of Lafayette, LLC. On the format ladder, that square footage places it squarely in the neighborhood-center band: large enough to support a meaningful anchor presence and a real inline mix, small enough to remain a daily-needs, local-serving asset rather than a regional destination. The multi-tenant structure means the operating workload is real — many leases, many relationships, common areas that must earn their keep every day. The legacy character means the center has already proven its function to its trade area over time; the operator's job is to keep the format's promise — convenient, useful, well-kept daily retail — rather than to reposition it into something it is not. Knowing the format answers the strategy question before it is asked: this is a neighborhood center, and it wins by being the best-run neighborhood center on its corridor.
+On The Blvd Shopping Center sits at 101–149 Arnould Blvd in Lafayette, Louisiana — approximately 63,000 square feet of multi-tenant legacy retail owned by Belle Realty of Lafayette, LLC. On the format ladder, that square footage places it squarely in the neighborhood-center band: large enough to support a meaningful anchor presence and a real inline mix, small enough to remain a daily-needs, local-serving asset rather than a regional destination. The multi-tenant structure means the operating workload is real — many leases, many relationships, common areas that must earn their keep every day. The legacy character means the center has already proven its function to its trade area over time; the operator's job is to keep the format's promise — convenient, useful, well-kept daily retail — rather than to reposition it into something it is not. Knowing the format answers the strategy question before it is asked: this is a neighborhood center, and it wins by being the best-run neighborhood center on its corridor.
 
 ## Matching strategy to format
 

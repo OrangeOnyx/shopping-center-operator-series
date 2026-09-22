@@ -53,9 +53,9 @@ The operator's answer is unglamorous: written systems. A lease abstract for ever
 
 Systems also make the asset transferable. A center whose operations live in documented processes is worth more to a buyer — and to a lender — than one whose operations live in the owner's head.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center — approximately 70,000 square feet of multi-tenant legacy retail at 101–149 Arnold Blvd in Lafayette, Louisiana — is operated by Belle Realty of Lafayette, LLC under exactly this approach. The scale is instructive. At 70,000 square feet, the property is large enough that informal management fails — too many leases, vendors, and deadlines for memory — and small enough that genuine partnership is possible. The owner can know each tenant's business, walk every bay weekly, and still have the renewal calendar drive the conversation instead of the deadline. That combination — personal knowledge plus documented systems — is the Operator Landlord approach at its natural scale. The operator's prior career practicing commercial real estate and business transaction law reinforces the habit behind all of it: if it matters, it is in writing, and if it has a deadline, it is on a calendar.
+On The Blvd Shopping Center — approximately 63,000 square feet of multi-tenant legacy retail at 101–149 Arnould Blvd in Lafayette, Louisiana — is operated by Belle Realty of Lafayette, LLC under exactly this approach. The scale is instructive. At 63,000 square feet, the property is large enough that informal management fails — too many leases, vendors, and deadlines for memory — and small enough that genuine partnership is possible. The owner can know each tenant's business, walk every bay weekly, and still have the renewal calendar drive the conversation instead of the deadline. That combination — personal knowledge plus documented systems — is the Operator Landlord approach at its natural scale. The operator's prior career practicing commercial real estate and business transaction law reinforces the habit behind all of it: if it matters, it is in writing, and if it has a deadline, it is on a calendar.
 
 ## The honest tradeoffs
 

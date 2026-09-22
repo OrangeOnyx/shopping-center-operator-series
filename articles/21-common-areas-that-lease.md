@@ -52,9 +52,9 @@ These three items share a trait: shoppers rarely compliment them, but they punis
 
 **Pavement.** The parking lot is the largest physical surface the customer touches. Cracked asphalt, potholes, faded striping, and ponding water all read as decline. Sealcoating and restriping on a planned cycle (frequency depends on traffic, climate, and the last overlay's condition) costs a fraction of a full repave and resets the center's appearance for a modest check. Faded striping is also a quiet liability issue — clearly marked stalls, crosswalks, fire lanes, and ADA spaces reduce disputes and accidents.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center is a roughly 70,000 SF legacy multi-tenant center on Arnold Blvd in Lafayette — which means the corridor itself does part of the marketing job. Drivers on a busy urban arterial make visit decisions in a few seconds. For a center like this, the pylon sign's condition, the brightness of the lot after dark, and whether storefronts are visible through the landscaping are not cosmetic questions; they are the top of the leasing funnel. The Operator Landlord approach treats each of these as a managed line item with an owner, a vendor, and a cadence — because a prospect who drives past three times before touring has already judged the common areas.
+On The Blvd Shopping Center is a roughly 63,000 SF legacy multi-tenant center on Arnould Blvd in Lafayette — which means the corridor itself does part of the marketing job. Drivers on a busy urban arterial make visit decisions in a few seconds. For a center like this, the pylon sign's condition, the brightness of the lot after dark, and whether storefronts are visible through the landscaping are not cosmetic questions; they are the top of the leasing funnel. The Operator Landlord approach treats each of these as a managed line item with an owner, a vendor, and a cadence — because a prospect who drives past three times before touring has already judged the common areas.
 
 ## Cleanliness cadence and safety perception
 

@@ -54,9 +54,9 @@ With books clean and the physical story repaired, the third quarter is about the
 - **Collect the arrears.** Old receivables either get collected, settled and documented, or written off cleanly. A rent roll showing chronic delinquency invites buyers to underwrite your other tenants more harshly.
 - **Document the wins.** Renewals signed, occupancy improved, a problem tenant resolved. The buyer will hear the story either way; make sure the record supports the good version.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-At a roughly 70,000 SF legacy multi-tenant center like On The Blvd at 101–149 Arnold Blvd in Lafayette, Louisiana — owned by Belle Realty of Lafayette, LLC and run under the Operator Landlord approach — this phase is where the operating philosophy pays out directly. A center this size lives or dies on a handful of tenancies, so each renewal is material, and a landlord who has spent years in active partnership with tenants is negotiating renewals with people who already trust the relationship. The twelve-month plan is not a departure from normal operations; it is normal operations with the documentation turned up.
+At a roughly 63,000 SF legacy multi-tenant center like On The Blvd at 101–149 Arnould Blvd in Lafayette, Louisiana — owned by Belle Realty of Lafayette, LLC and run under the Operator Landlord approach — this phase is where the operating philosophy pays out directly. A center this size lives or dies on a handful of tenancies, so each renewal is material, and a landlord who has spent years in active partnership with tenants is negotiating renewals with people who already trust the relationship. The twelve-month plan is not a departure from normal operations; it is normal operations with the documentation turned up.
 
 ## Months 10–12: package the story
 

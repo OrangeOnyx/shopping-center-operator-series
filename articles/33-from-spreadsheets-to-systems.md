@@ -46,9 +46,9 @@ Stage 4 is what happens when Stage 3's records become an operating rhythm. Four 
 
 This is also the stage where carefully bounded AI assistance becomes practical — because AI needs a trustworthy source of truth to summarize, draft, and detect against. A system with clean records gives it one; a pile of folders does not.
 
-## The view from Arnold Blvd
+## The view from Arnould Blvd
 
-On The Blvd Shopping Center is a roughly 70,000 SF legacy multi-tenant center in Lafayette — exactly the kind of asset where Stage 3 and Stage 4 pay for themselves, because older properties generate more maintenance events and longer paper trails. The path described in this article is the one this operation followed: get the records into one structured home, connect every obligation to its document, then let the system carry the recurring work so the operator's attention stays on tenants, vendors, and decisions.
+On The Blvd Shopping Center is a roughly 63,000 SF legacy multi-tenant center in Lafayette — exactly the kind of asset where Stage 3 and Stage 4 pay for themselves, because older properties generate more maintenance events and longer paper trails. The path described in this article is the one this operation followed: get the records into one structured home, connect every obligation to its document, then let the system carry the recurring work so the operator's attention stays on tenants, vendors, and decisions.
 
 ## The practical next step
 

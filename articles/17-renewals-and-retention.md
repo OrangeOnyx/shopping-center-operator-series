@@ -69,9 +69,9 @@ Retention is a default, not a rule. Do not renew when the record says otherwise:
 
 When you decide not to renew, say so early, in writing where required, and manage the exit professionally. How you end tenancies is part of your reputation with every other tenant watching.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On a 70,000 SF legacy center like On The Blvd on Arnold Boulevard in Lafayette, retention is the core of the Operator Landlord approach. The operator knows the tenants by name and walks the property weekly, so the 12–18 month conversation is not a cold letter — it is a standing dialogue that simply gets specific about dates and dollars. Legacy centers carry leases written under prior owners, sometimes with option terms nobody has looked at in years. The work is unglamorous: abstract every option and deadline onto one calendar, review it monthly, and treat each renewal as a decision made with evidence rather than a date that arrives by surprise.
+On a 63,000 SF legacy center like On The Blvd on Arnould Boulevard in Lafayette, retention is the core of the Operator Landlord approach. The operator knows the tenants by name and walks the property weekly, so the 12–18 month conversation is not a cold letter — it is a standing dialogue that simply gets specific about dates and dollars. Legacy centers carry leases written under prior owners, sometimes with option terms nobody has looked at in years. The work is unglamorous: abstract every option and deadline onto one calendar, review it monthly, and treat each renewal as a decision made with evidence rather than a date that arrives by surprise.
 
 ## The practical next step
 

@@ -61,9 +61,9 @@ Findings in these three categories call for one of three responses, and choosing
 
 The discipline is deciding the response framework before emotions attach to the deal — and letting your attorney, consultant, and lender see findings as they arrive, not after you have rationalized them.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center is a legacy multi-tenant asset of roughly 70,000 square feet in Lafayette. Centers of that vintage carry exactly this profile: zoning written for an earlier era of retail, decades of tenant history under the slab, and recorded documents layered over decades of ownership. The Operator Landlord approach treats zoning status, environmental history, and title exceptions as permanent entries in the property's operating file — reviewed when the leasing plan changes, not only at acquisition. The goal is not to eliminate these risks; it is to know precisely which ones the center carries.
+On The Blvd Shopping Center is a legacy multi-tenant asset of roughly 63,000 square feet in Lafayette. Centers of that vintage carry exactly this profile: zoning written for an earlier era of retail, decades of tenant history under the slab, and recorded documents layered over decades of ownership. The Operator Landlord approach treats zoning status, environmental history, and title exceptions as permanent entries in the property's operating file — reviewed when the leasing plan changes, not only at acquisition. The goal is not to eliminate these risks; it is to know precisely which ones the center carries.
 
 ## The practical next step
 

@@ -79,9 +79,9 @@ Assemble this before marketing, update it through diligence:
 
 A complete document room does two jobs: it shortens diligence, and it signals an owner whose numbers can be trusted — which is worth real money at the negotiation table.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-For a roughly 70,000 SF legacy multi-tenant center like On The Blvd at 101–149 Arnold Blvd in Lafayette, Louisiana — owned by Belle Realty of Lafayette, LLC and run under the Operator Landlord approach — the process above is proportionate, not aspirational. A center this size sells to buyers who read documents carefully and walk the property in person, and an owner who already runs clean books, current signage, and cooperative tenant relationships arrives at LOI with most of the diligence answers already in the file. The Operator Landlord's daily habits are, in effect, a standing document room.
+For a roughly 63,000 SF legacy multi-tenant center like On The Blvd at 101–149 Arnould Blvd in Lafayette, Louisiana — owned by Belle Realty of Lafayette, LLC and run under the Operator Landlord approach — the process above is proportionate, not aspirational. A center this size sells to buyers who read documents carefully and walk the property in person, and an owner who already runs clean books, current signage, and cooperative tenant relationships arrives at LOI with most of the diligence answers already in the file. The Operator Landlord's daily habits are, in effect, a standing document room.
 
 ## The practical next step
 

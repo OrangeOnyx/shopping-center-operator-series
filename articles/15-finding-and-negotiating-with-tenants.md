@@ -70,9 +70,9 @@ Every economic term trades against another. Rent, TI, free rent, and term length
 
 The discipline is knowing your walk-away economics before the first counter: the minimum rent the suite must carry, the maximum TI the returns allow, and the term your financing plans require. Inside those bounds, be flexible; at the bounds, be plain. Tenants respect a landlord who explains the trade — "I can fund the buildout if the term supports it" — more than one who simply says no. And document every concession against something received; a concession given without a trade teaches the other side to keep asking.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-At a 70,000 SF center like On The Blvd in Lafayette, the operator often knows the best prospects personally — they are running successful businesses ten minutes away. That is the Operator Landlord advantage: canvassing is not a campaign, it is Tuesday. The pipeline discipline still applies. A relationship is not a signed lease, and a friendly negotiation still needs the tradeoffs on paper.
+At a 63,000 SF center like On The Blvd in Lafayette, the operator often knows the best prospects personally — they are running successful businesses ten minutes away. That is the Operator Landlord advantage: canvassing is not a campaign, it is Tuesday. The pipeline discipline still applies. A relationship is not a signed lease, and a friendly negotiation still needs the tradeoffs on paper.
 
 ## The practical next step
 

@@ -59,9 +59,9 @@ Reserve funding fails when it is residual — "whatever's left at year-end." Not
 
 If your loan includes lender-controlled reserve escrows, reconcile them against your own study. Lender escrows are often sized to the lender's minimum comfort, not to your property's actual component schedule. The gap is yours to fund.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center is a roughly 70,000 SF legacy multi-tenant center in Lafayette, operated by its owner under the Operator Landlord approach. Legacy assets make the reserve question concrete: building systems and parking surfaces have histories, and a center of this age rewards operators who know the remaining life of each major component rather than discovering it during a failure. For a Gulf South property, weather belongs in the stress test as well — storm-related deductibles and business-interruption exposure are planning inputs, not afterthoughts. The system's job is to make all of this visible on one page each month, so funding decisions happen in calm months instead of urgent ones.
+On The Blvd Shopping Center is a roughly 63,000 SF legacy multi-tenant center in Lafayette, operated by its owner under the Operator Landlord approach. Legacy assets make the reserve question concrete: building systems and parking surfaces have histories, and a center of this age rewards operators who know the remaining life of each major component rather than discovering it during a failure. For a Gulf South property, weather belongs in the stress test as well — storm-related deductibles and business-interruption exposure are planning inputs, not afterthoughts. The system's job is to make all of this visible on one page each month, so funding decisions happen in calm months instead of urgent ones.
 
 ## Stress-testing the budget
 

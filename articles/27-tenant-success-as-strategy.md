@@ -72,9 +72,9 @@ Active partnership has edges, and naming them protects both parties.
 
 Clear boundaries are what make the active parts sustainable. An owner-operator who knows where the role ends can invest fully inside it.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd, a roughly 70,000 SF legacy multi-tenant center at 101–149 Arnold Blvd in Lafayette, Louisiana, owned by Belle Realty of Lafayette, LLC, is the kind of property where this strategy is structural rather than optional. At this size, the owner-operator knows every tenant by name, walks the same lot they park in, and feels one vacancy in the monthly numbers. That proximity is the advantage: onboarding can be personal, corridor knowledge is firsthand, and tenant-to-tenant introductions happen over a real conversation. The Operator Landlord approach simply makes deliberate what a small, well-run center already does informally — and writes it down so it happens every time, not just when someone remembers.
+On The Blvd, a roughly 63,000 SF legacy multi-tenant center at 101–149 Arnould Blvd in Lafayette, Louisiana, owned by Belle Realty of Lafayette, LLC, is the kind of property where this strategy is structural rather than optional. At this size, the owner-operator knows every tenant by name, walks the same lot they park in, and feels one vacancy in the monthly numbers. That proximity is the advantage: onboarding can be personal, corridor knowledge is firsthand, and tenant-to-tenant introductions happen over a real conversation. The Operator Landlord approach simply makes deliberate what a small, well-run center already does informally — and writes it down so it happens every time, not just when someone remembers.
 
 ## The practical next step
 

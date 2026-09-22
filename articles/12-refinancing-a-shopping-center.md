@@ -34,9 +34,9 @@ The runway is where loan sizing is actually won. Three workstreams matter most.
 
 **Deferred maintenance triage.** Appraisers assign condition, and condition drives cap rate selection and lender reserve requirements. Walk the roof, parking lot, HVAC, facades, and signage with a vendor's eye. Fix the visible and the documented: active leaks, potholes, dark lights, stained ceiling tiles. Get written assessments with remaining-life estimates for big-ticket systems — they beat guessing, and lenders ask for them.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center is a legacy asset — roughly 70,000 square feet, multi-tenant, in Lafayette. That profile makes the runway work decisive. A legacy center refinanced on stale financials and a short rent roll gets priced as a project; the same center refinanced on clean reconciliations, fresh renewals, and documented building systems gets priced as an operating business. The Operator Landlord's weekly discipline — tenant contact, preventive maintenance, current books — is the preparation, done continuously instead of in a panic.
+On The Blvd Shopping Center is a legacy asset — roughly 63,000 square feet, multi-tenant, in Lafayette. That profile makes the runway work decisive. A legacy center refinanced on stale financials and a short rent roll gets priced as a project; the same center refinanced on clean reconciliations, fresh renewals, and documented building systems gets priced as an operating business. The Operator Landlord's weekly discipline — tenant contact, preventive maintenance, current books — is the preparation, done continuously instead of in a panic.
 
 ## What the appraiser needs
 

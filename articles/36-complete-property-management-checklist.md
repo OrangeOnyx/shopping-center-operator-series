@@ -33,9 +33,9 @@ Work through the sections in order, or jump to the rhythm that matches where you
 
 <div class="ix" data-ix="checklist" data-id="pm-master"></div>
 
-## The view from Arnold Blvd
+## The view from Arnould Blvd
 
-On The Blvd Shopping Center is a roughly 70,000 SF legacy multi-tenant center in Lafayette — and it is exactly the kind of property this checklist was built around. Legacy assets generate more maintenance events than new construction, and multi-tenant means every lease adds its own obligations to the rhythm. Under the Operator Landlord approach, the checklist is also a tenant-relations tool: the center whose common areas are inspected weekly, whose certificates are current, and whose work orders close on schedule is a center tenants renew in.
+On The Blvd Shopping Center is a roughly 63,000 SF legacy multi-tenant center in Lafayette — and it is exactly the kind of property this checklist was built around. Legacy assets generate more maintenance events than new construction, and multi-tenant means every lease adds its own obligations to the rhythm. Under the Operator Landlord approach, the checklist is also a tenant-relations tool: the center whose common areas are inspected weekly, whose certificates are current, and whose work orders close on schedule is a center tenants renew in.
 
 ## The practical next step
 

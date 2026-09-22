@@ -83,9 +83,9 @@ Before the first broker conversation, write down answers to these:
 
 If you can answer all five in a page, you are ready for a broker conversation to be useful rather than steering. If you cannot, the homework is the next step, not the listing.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd — roughly 70,000 SF of legacy multi-tenant retail at 101–149 Arnold Blvd in Lafayette, Louisiana, owned by Belle Realty of Lafayette, LLC and run under the Operator Landlord approach — illustrates why the framework starts with the thesis rather than the market. A center this size rewards active operation, and active operation implies a plan with an endpoint or a deliberate decision to keep going. Whether Belle Realty holds for decades or sells next year, the decision quality comes from the same place: a stated thesis, a calendar of known capital events, and an annual habit of asking the question on purpose.
+On The Blvd — roughly 63,000 SF of legacy multi-tenant retail at 101–149 Arnould Blvd in Lafayette, Louisiana, owned by Belle Realty of Lafayette, LLC and run under the Operator Landlord approach — illustrates why the framework starts with the thesis rather than the market. A center this size rewards active operation, and active operation implies a plan with an endpoint or a deliberate decision to keep going. Whether Belle Realty holds for decades or sells next year, the decision quality comes from the same place: a stated thesis, a calendar of known capital events, and an annual habit of asking the question on purpose.
 
 ## The practical next step
 

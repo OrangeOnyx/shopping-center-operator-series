@@ -73,9 +73,9 @@ The right loan structure is the one that matches what you actually intend to do 
 
 The discipline is writing the business plan first and letting it dictate structure, rather than accepting the structure a lender's standard product happens to offer.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center is roughly 70,000 square feet of multi-tenant retail in Lafayette, owned and actively operated. For a center of that scale in a Gulf South market, the lender conversation starts with the leases and the operating record: collections, reconciliations, renewal history. An Operator Landlord keeps the financing file as a standing discipline — rent roll current, statements clean, reserves documented — because the next refinance or acquisition starts from the file you maintain today, not the one you scramble to assemble.
+On The Blvd Shopping Center is roughly 63,000 square feet of multi-tenant retail in Lafayette, owned and actively operated. For a center of that scale in a Gulf South market, the lender conversation starts with the leases and the operating record: collections, reconciliations, renewal history. An Operator Landlord keeps the financing file as a standing discipline — rent roll current, statements clean, reserves documented — because the next refinance or acquisition starts from the file you maintain today, not the one you scramble to assemble.
 
 ## The practical next step
 

@@ -190,6 +190,7 @@
   };
 
   const SHEETS = [
+    { id: "D-0", short: "Portfolio", name: "Portfolio", q: "How is every property doing at a glance?", d: "One card per property the viewer can see — receivables outstanding and open work orders with an as-of stamp. Derived from the sheets below; nothing to maintain." },
     { id: "D-1", short: "Dashboard", name: "Dashboard", q: "What needs attention right now?", d: "The opening view: a calm greeting, the consequential metrics, and the short list of what is due, late, or decided this week. Everything on D-1 links down to its sheet." },
     { id: "A-1", short: "Site Plan", name: "Site Plan", q: "What does the property look like, exactly?", d: "A plat-proportioned, native-SVG site plan: buildings, suites, parking fields, driveways, easements, and the liquor line. Tapping a suite opens its record — lease, status, notes, photos." },
     { id: "A-2", short: "Spatial", name: "Spatial Workspace", q: "What does the evidence say about this parcel?", d: "The property workspace: plat-based spatial model, suite inspector, evidence and owner-brief flows, and a dated ledger strip — with capture and legacy views (aerial, 3D, drone) layered underneath." },
@@ -199,7 +200,11 @@
     { id: "T-1", short: "Critical Dates", name: "Critical Dates", q: "What deadlines are coming?", d: "Every dated obligation in one place: expirations, options, notice windows, reconciliations, certificate lapses. When a lease record changes, its dates move themselves." },
     { id: "W-1", short: "Actions", name: "Action Board", q: "Who is doing what, by when?", d: "The operating to-do layer: work items with owners, due dates, and links to the leases, vendors, and documents they came from. Nothing depends on memory." },
     { id: "K-1", short: "Directory", name: "Directory", q: "Who do we call?", d: "Tenants, vendors, contractors, insurers, counsel, and utilities — scoped by role so each party sees its own contacts and nothing more." },
+    { id: "B-1", short: "Marketing", name: "Marketing", q: "What do we hand a prospect?", d: "Availability flyers per vacant suite, a center overview, tenant co-marketing cards, and the photo library — every page generated from the source of truth, so the flyer can never disagree with the rent roll. Rates are never printed." },
+    { id: "L-1", short: "Comm Log", name: "Communications Log", q: "What was said, to whom, and when?", d: "Every letter, e-mail, meeting note, and phone call in one dated log — including the recorded and summarized calls from the tenant and leasing lines, with a mark-handled step so nothing is left open by accident." },
+    { id: "N-1", short: "Matters", name: "Matters & Planning", q: "Which long-running affairs are open?", d: "Cards for the property's long-running matters — a lease negotiation, a claim, a permit — each with kind, status, deadlines, correspondence, and attachments. Deadlines feed the critical-dates sheet." },
     { id: "M-1", short: "Maintenance", name: "Maintenance", q: "What is broken, scheduled, or overdue?", d: "Work orders end to end: report, assign, track, close out with photos and notes. Tenants see their own unit's items through a unit-scoped portal view." },
+    { id: "O-1", short: "Operations", name: "Operations", q: "What are the standing procedures, and are they current?", d: "The procedures library: categories, procedures, and steps with due-today and overdue state, completion logs, and streaks. The written routine of Article 36, kept live." },
     { id: "S-1", short: "Owner Safe", name: "Owner Safe", q: "Where is the property's paper?", d: "The document vault from Article 37, implemented: deeds, leases, insurance, finance, and the access map — dated, organized, and retrievable in minutes." },
     { id: "AI-1", short: "Concierge", name: "AI Concierge", q: "What do the records say?", d: "Bounded AI assistance: answers assembled from the property's own documents — summarize a clause, find the governing file, draft a notice for human review. It prepares and points; it never sends." },
     { id: "V-1", short: "Vendors", name: "Vendor Portal", q: "What are our vendors working on?", d: "A scoped vendor view: assigned work orders, schedules, and close-out requirements — without exposing rent rolls, leases, or anything beyond the vendor's own scope." },
@@ -506,7 +511,7 @@
     const frame = document.createElement("div");
     frame.className = "ix-frame";
     frame.innerHTML = `
-      <div class="ix-head"><span class="ix-title"><b>Interactive</b> — walk the thirteen sheets</span>
+      <div class="ix-head"><span class="ix-title"><b>Interactive</b> — walk the sheets</span>
         <span class="caption">A drawing-set index, the way the program is organized</span></div>
       <div class="sheet-strip" role="tablist"></div>
       <div class="sheet-detail"></div>`;

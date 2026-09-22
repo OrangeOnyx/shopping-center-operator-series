@@ -59,9 +59,9 @@ The rhythm only survives if it is visible. Three tools carry it:
 
 This is also where AI tools earn their place in an operator's week — as aids, not actors. A system that summarizes the week's work orders into the Friday log, flags aging items, drafts the routine tenant notice for your review, or organizes vendor photos against open tasks removes typing, not judgment. The walk, the calls, and the decisions belong to accountable people.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-At a 70,000 SF legacy center like On The Blvd on Arnold Boulevard in Lafayette, the weekly rhythm is the Operator Landlord approach made tangible. The owner is close enough to walk the whole property in under an hour and to know which storefronts need an extra look after a Gulf Coast storm. The Monday walk, the midweek vendor check-ins, the collections cadence, and the Friday review are not bureaucracy at this scale — they are how one operator stays ahead of dozens of tenants and an aging building without anything living only in his head. The calendar, board, and log are what make that consistency survive a busy week, a vacation, or a bad month.
+At a 63,000 SF legacy center like On The Blvd on Arnould Boulevard in Lafayette, the weekly rhythm is the Operator Landlord approach made tangible. The owner is close enough to walk the whole property in under an hour and to know which storefronts need an extra look after a Gulf Coast storm. The Monday walk, the midweek vendor check-ins, the collections cadence, and the Friday review are not bureaucracy at this scale — they are how one operator stays ahead of dozens of tenants and an aging building without anything living only in his head. The calendar, board, and log are what make that consistency survive a busy week, a vacation, or a bad month.
 
 ## The practical next step
 

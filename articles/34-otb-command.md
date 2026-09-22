@@ -1,9 +1,9 @@
 ---
-title: "OTB Command: The Property Management Program Built for One Real Shopping Center"
+title: "Cypress Command Platform: The Property Management Program Built for One Real Shopping Center"
 series: "The Shopping Center Operator Series"
 part: "Part X — AI & Operating Systems"
 eyebrow: "AI & OPERATING SYSTEMS"
-deck: "What happened when one operator stopped adapting generic software and built a working operating system around a single 70,000 SF center."
+deck: "What happened when one operator stopped adapting generic software and built a working operating system around a single 63,000 SF center."
 author: "Cypress Command"
 date: "2026-09-22"
 read_time: "9 min"
@@ -11,9 +11,9 @@ feature_image: "assets/img/otb-command.jpg"
 feature_caption: "Fig. 01 — The plat on the drafting table: every operating system for a property starts with the ground itself."
 ---
 
-# OTB Command: The Property Management Program Built for One Real Shopping Center
+# Cypress Command Platform: The Property Management Program Built for One Real Shopping Center
 
-Most property management software is written for a portfolio imagined by a product team — standardized units, interchangeable tenants, abstract workflows. Then a real owner tries to load a real center into it: the parking variance from 1999, the reciprocal servitude with the bank, the anchor tenant's HVAC contract obligation, the exclusive-use clause that overlaps two suites. The software handles the first 80% and quietly drops the rest. This article is the story of the opposite approach: a property management program built from the ground up around one specific, real shopping center — On The Blvd in Lafayette, Louisiana — and what that single-purpose build taught about operating systems generally. The tool is open on GitHub as the `otb-command` project.
+Most property management software is written for a portfolio imagined by a product team — standardized units, interchangeable tenants, abstract workflows. Then a real owner tries to load a real center into it: the parking variance from 1999, the reciprocal servitude with the bank, the anchor tenant's HVAC contract obligation, the exclusive-use clause that overlaps two suites. The software handles the first 80% and quietly drops the rest. This article is the story of the opposite approach: a property management program built from the ground up around one specific, real shopping center — On The Blvd in Lafayette, Louisiana — and what that single-purpose build taught about operating systems generally. The program began life as "OTB Command" and now carries the name **Cypress Command Platform**; On The Blvd is its flagship deployment, and the code remains open on GitHub as the `otb-command` project.
 
 ## Why build around one property
 
@@ -21,9 +21,9 @@ The decision was practical, not ideological. A legacy multi-tenant center carrie
 
 The bet was that building the system around the real property would produce something a generic platform never could: a tool where the *drawing set* is the interface. Property people already think in plans, sheets, and title blocks. So the program adopted the vernacular of a plan room rather than the vernacular of a CRM.
 
-## The thirteen sheets
+## The sheets
 
-The program is organized as a set of numbered sheets — the same discipline a drawing set uses. Each sheet answers one operating question:
+The program is organized as a set of numbered sheets — the same discipline a drawing set uses. The set has grown from the original thirteen to eighteen (a portfolio rollup, a marketing sheet, a communications log, a matters board, and a procedures library joined the original set), but each sheet still answers one operating question. The explorer below walks the set:
 
 <div class="ix" data-ix="sheet-explorer"></div>
 
@@ -42,9 +42,9 @@ Four lessons generalize beyond this one property:
 3. **Scope discipline matters.** Building for one real center meant saying no constantly — no portfolio abstraction, no generic unit types, no feature that did not serve this property's actual work. Almost every avoided feature proved to be a distraction in hindsight.
 4. **The system and the articles are the same idea.** This series argues that operations run on visible, dated, owned work. The program is simply that argument compiled into software.
 
-## The view from Arnold Blvd
+## The view from Arnould Blvd
 
-The flagship deployment runs On The Blvd Shopping Center, the roughly 70,000 SF legacy center at 101–149 Arnold Blvd in Lafayette — owned by Belle Realty of Lafayette, LLC and operated under the Operator Landlord approach. The sheets described above are the operating rhythm of that center expressed as software: the rent roll reconciled to signed documents, the plat on the screen matching the plat of record, the critical dates of every suite on one board. For an operator who is also the owner, the payoff is a property that can be inspected, questioned, and handed to a lender or buyer with its records intact.
+The flagship deployment runs On The Blvd Shopping Center, the roughly 63,000 SF legacy center at 101–149 Arnould Blvd in Lafayette — owned by Belle Realty of Lafayette, LLC and operated under the Operator Landlord approach. The sheets described above are the operating rhythm of that center expressed as software: the rent roll reconciled to signed documents, the plat on the screen matching the plat of record, the critical dates of every suite on one board. For an operator who is also the owner, the payoff is a property that can be inspected, questioned, and handed to a lender or buyer with its records intact.
 
 ## The practical next step
 

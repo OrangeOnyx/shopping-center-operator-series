@@ -40,9 +40,9 @@ Document systems fail in predictable ways: duplicates, mystery filenames, and ve
 
 This is unglamorous work, and it is also the difference between a diligence process that takes two weeks and one that takes two months when you refinance or sell.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center is a roughly 70,000 SF legacy multi-tenant center in Lafayette, owned by Belle Realty of Lafayette, LLC and run under the Operator Landlord approach. A center of that size carries dozens of recurring obligations at any moment — leases at different stages, vendor agreements with different renewal dates, work orders in flight. For a legacy asset, the system matters more, not less: older properties generate more maintenance events, and lease files often span many years of amendments. The operating system's job is to make all of that visible in one place so the operator spends judgment on decisions, not on hunting for information.
+On The Blvd Shopping Center is a roughly 63,000 SF legacy multi-tenant center in Lafayette, owned by Belle Realty of Lafayette, LLC and run under the Operator Landlord approach. A center of that size carries dozens of recurring obligations at any moment — leases at different stages, vendor agreements with different renewal dates, work orders in flight. For a legacy asset, the system matters more, not less: older properties generate more maintenance events, and lease files often span many years of amendments. The operating system's job is to make all of that visible in one place so the operator spends judgment on decisions, not on hunting for information.
 
 ## Automate the recurring work
 

@@ -70,9 +70,9 @@ Then track performance, simply and consistently. For each vendor, keep a file an
 
 **Performance notes, updated after each job:** on-time arrival, quality of finish, cleanup, invoice accuracy against scope, and tenant complaints or compliments. Review the scorecards once a quarter. Patterns emerge fast — the landscaper who is slipping, the HVAC tech whose fixes hold. When you renew, rebid, or replace a vendor, you will be deciding from a record rather than a mood.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-A 70,000 SF legacy center like On The Blvd on Arnold Boulevard in Lafayette leans hard on its bench. An aging roof, a large asphalt lot, Gulf Coast heat and storm seasons, and a fleet of tenant HVAC units mean the same trades return every month of the year. The Operator Landlord approach applies here too: vendors are partners in the property's condition, not just invoice generators. That means written scopes they can succeed against, COIs and W-9s kept current without being chased, seasonal work scheduled before the season arrives, and honest feedback in both directions. The tenants experience the center through the lot they park on and the air conditioning in July — which is to say, through the vendors.
+A 63,000 SF legacy center like On The Blvd on Arnould Boulevard in Lafayette leans hard on its bench. An aging roof, a large asphalt lot, Gulf Coast heat and storm seasons, and a fleet of tenant HVAC units mean the same trades return every month of the year. The Operator Landlord approach applies here too: vendors are partners in the property's condition, not just invoice generators. That means written scopes they can succeed against, COIs and W-9s kept current without being chased, seasonal work scheduled before the season arrives, and honest feedback in both directions. The tenants experience the center through the lot they park on and the air conditioning in July — which is to say, through the vendors.
 
 ## The practical next step
 

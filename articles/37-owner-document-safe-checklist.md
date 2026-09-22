@@ -42,9 +42,9 @@ Three practices move a file from "kept" to "protected." First, **redundancy in i
 
 Store scans encrypted, with access limited to the people who genuinely need it, and use accounts with recovery controls the owner personally holds. This article is educational and does not address any specific platform's security; the principle is simply that the same care given to the deed's paper original should extend to its digital copy.
 
-## The view from Arnold Blvd
+## The view from Arnould Blvd
 
-On The Blvd Shopping Center is a roughly 70,000 SF legacy center in Lafayette, and its paper trail spans generations — recorded plats, decades-old variances, inherited easements, a lease population built up suite by suite. That is the reality of legacy retail: the documents *are* part of the asset. Under the Operator Landlord approach, the owner safe is also a continuity tool. If the operator is unreachable, the file must still be able to answer a lender, a tenant's counsel, or an insurance adjuster — accurately and quickly.
+On The Blvd Shopping Center is a roughly 63,000 SF legacy center in Lafayette, and its paper trail spans generations — recorded plats, decades-old variances, inherited easements, a lease population built up suite by suite. That is the reality of legacy retail: the documents *are* part of the asset. Under the Operator Landlord approach, the owner safe is also a continuity tool. If the operator is unreachable, the file must still be able to answer a lender, a tenant's counsel, or an insurance adjuster — accurately and quickly.
 
 ## The practical next step
 

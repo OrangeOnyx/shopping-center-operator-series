@@ -31,9 +31,9 @@ The calendar only works as a system if three things are true. First, every item 
 
 This calendar reflects a Gulf South rhythm — storm season in June, mild winters, exterior work in shoulder seasons. Other regions transpose it: freeze-market centers front-load winterization and push exterior work into summer; desert markets plan around heat rather than storms. The structure — finance in winter, maintenance by season, retail by the holiday clock — survives the move even when the months do not.
 
-## The view from Arnold Blvd
+## The view from Arnould Blvd
 
-On The Blvd Shopping Center is a roughly 70,000 SF legacy center in Lafayette, and its year is the Gulf South version of the calendar above: reconciliation and budget season through winter, exterior and site work in the mild months, storm preparation complete before June, and the holiday rhythm anchored by the center's tenants. A legacy asset adds one more annual item worth naming: the walk-through audit. Once a year, walk every suite line, every roof section, every parking aisle, and every sign face with the checklist from Article 36 — because on an older property, the year always has one surprise, and the calendar's job is to make sure it is a small one.
+On The Blvd Shopping Center is a roughly 63,000 SF legacy center in Lafayette, and its year is the Gulf South version of the calendar above: reconciliation and budget season through winter, exterior and site work in the mild months, storm preparation complete before June, and the holiday rhythm anchored by the center's tenants. A legacy asset adds one more annual item worth naming: the walk-through audit. Once a year, walk every suite line, every roof section, every parking aisle, and every sign face with the checklist from Article 36 — because on an older property, the year always has one surprise, and the calendar's job is to make sure it is a small one.
 
 ## The practical next step
 

@@ -55,9 +55,9 @@ Control clauses interact. An exclusive granted to a strong tenant today can coll
 - **Guarantees.** Personal or corporate guarantees back the lease. They often burn off — reduce or expire — after a period of clean payment history. A guarantee from an entity with no assets is decoration; underwrite the guarantor, not the signature.
 - **Default and remedies.** Defines events of default, cure periods, and landlord remedies. Short cure periods and clear late-fee and interest terms keep small problems from becoming long ones.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-A 70,000 SF legacy center like On The Blvd carries leases written in different decades, often on different forms. The Operator Landlord's job is standardization at renewal: consistent CAM pool definitions, current escalation mechanics, exclusive clauses that match today's mix rather than 1998's. An abstracted lease summary for every suite — term, options, exclusives, co-tenancy triggers — is the control panel for the whole property.
+A 63,000 SF legacy center like On The Blvd carries leases written in different decades, often on different forms. The Operator Landlord's job is standardization at renewal: consistent CAM pool definitions, current escalation mechanics, exclusive clauses that match today's mix rather than 1998's. An abstracted lease summary for every suite — term, options, exclusives, co-tenancy triggers — is the control panel for the whole property.
 
 ## Reading leases you inherited
 

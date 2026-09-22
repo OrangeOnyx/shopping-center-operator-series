@@ -40,9 +40,9 @@ A workable calendar discipline looks like this:
 
 One boundary worth respecting: don't protest reflexively every year with no case. Assessors' offices are staffed by professionals doing recurring business, and credibility is an asset. Bring the appeals where the evidence supports them.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center sits in Lafayette Parish, Louisiana — a roughly 70,000 SF legacy multi-tenant center owned by Belle Realty of Lafayette, LLC and operated hands-on. For a center like this, taxes and insurance are not background noise; they are two of the largest lines in the expense budget, and in NNN structures they flow through to tenants as reimbursements, which means errors compound into tenant relationships. The Operator Landlord approach treats both as managed workstreams: assessment dates on the recurring calendar alongside CAM deadlines, insurance renewals shopped and documented like any major vendor contract, and the property's condition records kept current so that every conversation with an assessor or an underwriter starts from evidence rather than memory.
+On The Blvd Shopping Center sits in Lafayette Parish, Louisiana — a roughly 63,000 SF legacy multi-tenant center owned by Belle Realty of Lafayette, LLC and operated hands-on. For a center like this, taxes and insurance are not background noise; they are two of the largest lines in the expense budget, and in NNN structures they flow through to tenants as reimbursements, which means errors compound into tenant relationships. The Operator Landlord approach treats both as managed workstreams: assessment dates on the recurring calendar alongside CAM deadlines, insurance renewals shopped and documented like any major vendor contract, and the property's condition records kept current so that every conversation with an assessor or an underwriter starts from evidence rather than memory.
 
 ## Insurance: designing the program
 

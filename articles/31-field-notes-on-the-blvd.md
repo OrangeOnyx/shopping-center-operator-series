@@ -1,17 +1,17 @@
 ---
-title: "Field Notes from On The Blvd: What a 70,000 SF Legacy Center in Lafayette Teaches You Every Week"
+title: "Field Notes from On The Blvd: What a 63,000 SF Legacy Center in Lafayette Teaches You Every Week"
 series: "The Shopping Center Operator Series"
 part: "Part IX — Field Notes from On The Blvd"
 eyebrow: "FIELD NOTES FROM ON THE BLVD"
-deck: "Thirty articles of operating principles, distilled into the weekly lessons of one legacy center on Arnold Blvd."
+deck: "Thirty articles of operating principles, distilled into the weekly lessons of one legacy center on Arnould Blvd."
 author: "Cypress Command"
 date: "2026-09-22"
 read_time: "9 min"
 ---
 
-# Field Notes from On The Blvd: What a 70,000 SF Legacy Center in Lafayette Teaches You Every Week
+# Field Notes from On The Blvd: What a 63,000 SF Legacy Center in Lafayette Teaches You Every Week
 
-This series has covered owning, acquiring, financing, leasing, operating, financial management, marketing, and selling a retail shopping center. It closes where the ideas live: at On The Blvd Shopping Center, 101–149 Arnold Blvd in Lafayette, Louisiana — roughly 70,000 square feet of legacy multi-tenant retail, owned by Belle Realty of Lafayette, LLC and operated under the Operator Landlord approach. These are field notes, not a case study. The numbers that would make it a case study are private, and the lessons that make it worth reading are not. What follows is what a center like this teaches, week after week, in principles and patterns.
+This series has covered owning, acquiring, financing, leasing, operating, financial management, marketing, and selling a retail shopping center. It closes where the ideas live: at On The Blvd Shopping Center, 101–149 Arnould Blvd in Lafayette, Louisiana — roughly 63,000 square feet of legacy multi-tenant retail, owned by Belle Realty of Lafayette, LLC and operated under the Operator Landlord approach. These are field notes, not a case study. The numbers that would make it a case study are private, and the lessons that make it worth reading are not. What follows is what a center like this teaches, week after week, in principles and patterns.
 
 ## Field note one: ownership is an operating business
 
@@ -19,9 +19,9 @@ The first thing a legacy center teaches is that the deed is not the asset. The a
 
 Every week at a center this size has the same anatomy: rents and CAM to bill and collect, vendors to schedule and check, a roof and a lot and a lighting system aging on their own schedules, tenants with requests ranging from trivial to existential, and a corridor of customers voting with their turn signals. None of it waits for a quarterly review. An owner who treats the property as a financial instrument discovers, usually at the worst moment, that the instrument is made of gutters, grease traps, and relationships.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-In this closing article the heading is redundant by design: every section here is the view from Arnold Blvd. That is the point of the field-notes format. At a roughly 70,000 SF legacy multi-tenant center at 101–149 Arnold Blvd in Lafayette, Louisiana, owned by Belle Realty of Lafayette, LLC and operated under the Operator Landlord approach, the abstractions of the previous thirty articles resolve into a weekly rhythm of walks, calls, reconciliations, and tenant conversations. The series' principles were drawn from that rhythm, and the rhythm is where they have to work.
+In this closing article the heading is redundant by design: every section here is the view from Arnould Blvd. That is the point of the field-notes format. At a roughly 63,000 SF legacy multi-tenant center at 101–149 Arnould Blvd in Lafayette, Louisiana, owned by Belle Realty of Lafayette, LLC and operated under the Operator Landlord approach, the abstractions of the previous thirty articles resolve into a weekly rhythm of walks, calls, reconciliations, and tenant conversations. The series' principles were drawn from that rhythm, and the rhythm is where they have to work.
 
 This is the founding claim of the series, and the field notes keep confirming it. The Operator Landlord approach — active partnership with tenants rather than passive rent collection — is not a philosophy layered on top of the work. It is a description of the work, done on purpose.
 
@@ -29,7 +29,7 @@ The operator's background matters here in a specific way. Belle Realty's operato
 
 ## Field note two: systems beat memory
 
-A 70,000 SF center is small enough that one person can hold most of it in their head, and that is precisely the trap. The week you rely on memory is the week memory picks the failure.
+A 63,000 SF center is small enough that one person can hold most of it in their head, and that is precisely the trap. The week you rely on memory is the week memory picks the failure.
 
 The pattern the center teaches is unglamorous: recurring work belongs in recurring systems, not in someone's recall. The weekly walk with a checklist. The vendor schedule with reminders that fire whether or not anyone remembers the last service date. The lease abstract that answers "what does this tenant's lease actually say about the dumpster enclosure" in two minutes instead of two hours of PDF archaeology. The CAM reconciliation that starts in November instead of February.
 

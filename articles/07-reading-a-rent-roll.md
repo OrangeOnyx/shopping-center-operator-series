@@ -34,7 +34,7 @@ A standard retail rent roll carries these fields, and each one earns its place:
 
 ## An illustrative example
 
-The table below is **illustrative only** — a hypothetical six-tenant strip within a 70,000 SF neighborhood center, drawn to demonstrate the calculations.
+The table below is **illustrative only** — a hypothetical six-tenant strip within a 63,000 SF neighborhood center, drawn to demonstrate the calculations.
 
 | Tenant | Suite | SF | Base rent/SF | Annual base | Start | Expiry | Options | Escalation |
 |---|---|---|---|---|---|---|---|---|
@@ -71,9 +71,9 @@ Third, **sales and health data**. Rent rolls rarely include tenant sales, yet sa
 
 Fourth, **artificially supported income**. A seller who signed a tenant at an above-market rate with a large concession six months before listing has engineered the roll. Free rent, moving allowances, and unamortized tenant improvements live in the lease file, not the rent roll — one more reason the roll is the map and the leases are the territory.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center is roughly 70,000 square feet of multi-tenant retail in Lafayette, owned and operated under an Operator Landlord model. For a center of that size, these four numbers are not an acquisition exercise — they are a monthly dashboard. WALT tells the operator how much lease term is in the bank. Rollover by year sets the leasing calendar. Concentration says how much of the income walks out the door if one tenant stumbles. A rent roll reviewed this way stops being a report and becomes an early-warning system.
+On The Blvd Shopping Center is roughly 63,000 square feet of multi-tenant retail in Lafayette, owned and operated under an Operator Landlord model. For a center of that size, these four numbers are not an acquisition exercise — they are a monthly dashboard. WALT tells the operator how much lease term is in the bank. Rollover by year sets the leasing calendar. Concentration says how much of the income walks out the door if one tenant stumbles. A rent roll reviewed this way stops being a report and becomes an early-warning system.
 
 ## The practical next step
 

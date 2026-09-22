@@ -44,7 +44,7 @@ Sequence the plan by urgency first — life safety and water intrusion always ju
 
 A plan without funding is a wish list. The funding mechanism is the capital reserve: money set aside from operations every month, before it can be spent on anything else.
 
-**Illustrative example** (all figures hypothetical): Imagine a 70,000 SF neighborhood center whose capital plan shows the following over the next ten years: roof replacement at $280,000 in year 6, parking lot overlay and restripe at $190,000 in year 3, sealcoating cycles of $18,000 in years 1, 4, 7, and 10, HVAC replacements of $12,000 per year on average, façade work at $60,000 in year 5, and signage and lighting upgrades of $45,000 in year 2. The ten-year total is roughly $793,000, or about $79,300 per year — call it $6,600 per month of reserve funding.
+**Illustrative example** (all figures hypothetical): Imagine a 63,000 SF neighborhood center whose capital plan shows the following over the next ten years: roof replacement at $280,000 in year 6, parking lot overlay and restripe at $190,000 in year 3, sealcoating cycles of $18,000 in years 1, 4, 7, and 10, HVAC replacements of $12,000 per year on average, façade work at $60,000 in year 5, and signage and lighting upgrades of $45,000 in year 2. The ten-year total is roughly $793,000, or about $79,300 per year — call it $6,600 per month of reserve funding.
 
 Now the tradeoff becomes visible. If the center's cash flow supports $4,000 per month of reserves, the plan must stretch, the cheaper scopes must be evaluated, or the owner accepts accumulating deferred maintenance and its consequences at refinance or sale. None of those answers is wrong — but the reserve math forces the choice into the open, in advance, instead of at the worst possible moment. Set the reserve up as a separate account with automatic monthly transfers. Money that stays in the operating account gets spent.
 
@@ -58,9 +58,9 @@ At sale, the effect is larger. Buyers price uncertainty aggressively. Every unex
 
 The narrative is the same in both rooms: this asset is known, its needs are scheduled, and its operator runs it deliberately. That narrative is worth real dollars, and it costs only the discipline you should be practicing anyway.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-A 70,000 SF legacy center like On The Blvd on Arnold Boulevard in Lafayette is exactly the asset class this discipline serves. Decades of Gulf Coast sun, rain, and storm seasons have written their schedule into the roof, the lot, and the mechanical systems whether anyone has written it down or not. The Operator Landlord approach means writing it down: knowing each major system's condition and remaining life, funding the reserve before the month consumes the cash, and choosing the sequence of roof, lot, and façade work instead of having the sequence chosen by failure. Legacy does not mean neglected. It means the capital plan is not optional — it is the operating strategy.
+A 63,000 SF legacy center like On The Blvd on Arnould Boulevard in Lafayette is exactly the asset class this discipline serves. Decades of Gulf Coast sun, rain, and storm seasons have written their schedule into the roof, the lot, and the mechanical systems whether anyone has written it down or not. The Operator Landlord approach means writing it down: knowing each major system's condition and remaining life, funding the reserve before the month consumes the cash, and choosing the sequence of roof, lot, and façade work instead of having the sequence chosen by failure. Legacy does not mean neglected. It means the capital plan is not optional — it is the operating strategy.
 
 ## The practical next step
 

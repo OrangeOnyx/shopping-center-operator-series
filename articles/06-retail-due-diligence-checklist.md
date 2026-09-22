@@ -76,9 +76,9 @@ Diligence is one of the places where professional fees are clearly cheaper than 
 
 The operator's job is not to replace these specialists but to direct them: ask the specific question, get the specific answer, and decide. This article is education, not legal advice — every deal should run its document, title, and environmental questions through licensed professionals in the deal's jurisdiction.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center is a legacy multi-tenant center of roughly 70,000 square feet on Arnold Boulevard in Lafayette. For a center of that age and scale, the checklist above is not abstract: the lease file and the estoppels are the income, the roof and the lot are the capital plan, and the CAM reconciliations tell you whether the prior owner ran the recoveries the leases allow. An operator who has lived inside those documents as an owner reads a seller's diligence package differently — faster, and with a shorter list of surprises.
+On The Blvd Shopping Center is a legacy multi-tenant center of roughly 63,000 square feet on Arnould Boulevard in Lafayette. For a center of that age and scale, the checklist above is not abstract: the lease file and the estoppels are the income, the roof and the lot are the capital plan, and the CAM reconciliations tell you whether the prior owner ran the recoveries the leases allow. An operator who has lived inside those documents as an owner reads a seller's diligence package differently — faster, and with a shorter list of surprises.
 
 ## The practical next step
 

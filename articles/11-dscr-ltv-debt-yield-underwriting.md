@@ -73,9 +73,9 @@ Retail income is lumpy in ways multifamily and industrial income is not, and und
 - **Co-tenancy clauses.** If small-shop rents drop when an anchor closes, lenders model that drop whether or not you expect it.
 - **Percentage rent and reimbursements.** Variable income gets averaged, discounted, or ignored. Only durable income gets full credit.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-At On The Blvd Shopping Center — a 70,000 SF legacy multi-tenant center in Lafayette — these ratios are not abstract. The Operator Landlord approach is, in underwriting terms, a NOI-quality program: renew early to lengthen WALT, keep reimbursements clean and collectible, and resolve maintenance issues before an appraiser or credit analyst finds them. A center this size cannot carry a dark space quietly; every month of vacancy shows up in every ratio at once.
+At On The Blvd Shopping Center — a 63,000 SF legacy multi-tenant center in Lafayette — these ratios are not abstract. The Operator Landlord approach is, in underwriting terms, a NOI-quality program: renew early to lengthen WALT, keep reimbursements clean and collectible, and resolve maintenance issues before an appraiser or credit analyst finds them. A center this size cannot carry a dark space quietly; every month of vacancy shows up in every ratio at once.
 
 ## Where self-underwriting goes wrong
 

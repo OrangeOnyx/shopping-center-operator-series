@@ -94,9 +94,9 @@ Practical forms of support that cost little:
 
 Notice what this is not. The landlord is not running tenants' ad accounts, writing their posts, or funding their campaigns. The tenant owns their marketing. The landlord removes friction and adds coordination. That boundary keeps the workload sustainable and the relationship healthy.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd is a roughly 70,000 SF legacy multi-tenant center at 101–149 Arnold Blvd in Lafayette, Louisiana, owned by Belle Realty of Lafayette, LLC. For a center of this size and vintage, the marketing plan in this article is not a compromise — it is the correct plan. A claimed map presence for the center and its tenants, one accurate web page, a working sign system, and a small calendar of shared events covers nearly all of what a neighborhood corridor rewards. None of it requires a marketing hire. All of it compounds quietly, the way good operations do.
+On The Blvd is a roughly 63,000 SF legacy multi-tenant center at 101–149 Arnould Blvd in Lafayette, Louisiana, owned by Belle Realty of Lafayette, LLC. For a center of this size and vintage, the marketing plan in this article is not a compromise — it is the correct plan. A claimed map presence for the center and its tenants, one accurate web page, a working sign system, and a small calendar of shared events covers nearly all of what a neighborhood corridor rewards. None of it requires a marketing hire. All of it compounds quietly, the way good operations do.
 
 ## The practical next step
 

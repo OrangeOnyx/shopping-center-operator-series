@@ -60,9 +60,9 @@ When a prospect appears, score it before negotiating. A simple six-factor framew
 
 Ten or better: pursue. Seven to nine: negotiate for terms that fix the gap. Below seven: hold the suite for a better fit, unless vacancy pressure argues otherwise — an honest tradeoff worth stating out loud.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-A 70,000 SF multi-tenant center like On The Blvd in Lafayette is exactly the scale where mix decisions are personal and compounding. Each suite is a meaningful percentage of the whole, so one wrong use — or one right daily-needs tenant — visibly moves the center's rhythm. The Operator Landlord approach treats mix as an active portfolio: knowing which categories the trade area asks for, and which the current tenants' customers would use next.
+A 63,000 SF multi-tenant center like On The Blvd in Lafayette is exactly the scale where mix decisions are personal and compounding. Each suite is a meaningful percentage of the whole, so one wrong use — or one right daily-needs tenant — visibly moves the center's rhythm. The Operator Landlord approach treats mix as an active portfolio: knowing which categories the trade area asks for, and which the current tenants' customers would use next.
 
 ## Planning for succession
 

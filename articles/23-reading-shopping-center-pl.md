@@ -46,7 +46,7 @@ Operating expenses for a multi-tenant retail center cluster into a familiar set 
 
 ## An illustrative P&L
 
-The table below shows a simplified annual P&L for a hypothetical ~70,000 SF neighborhood center. **All figures are illustrative** and chosen to demonstrate structure, not to represent any actual property or market.
+The table below shows a simplified annual P&L for a hypothetical ~63,000 SF neighborhood center. **All figures are illustrative** and chosen to demonstrate structure, not to represent any actual property or market.
 
 | Line item | Illustrative annual amount |
 |---|---|
@@ -67,9 +67,9 @@ The table below shows a simplified annual P&L for a hypothetical ~70,000 SF neig
 
 Notice what this table makes visible: vacancy costs more than any single expense line except taxes, and reimbursements cover most — but not all — of the recoverable expenses. Both facts would be invisible if vacancy were netted silently against rent.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center is a roughly 70,000 SF legacy multi-tenant center in Lafayette, operated under the Operator Landlord philosophy. For a center of that profile, the P&L disciplines above are not abstractions. A legacy asset typically carries a mix of lease vintages — some with full NNN reimbursement structures, others with caps, exclusions, or older gross-style terms — which means the gap between recoverable expenses and actual reimbursements must be tracked suite by suite. The operator's habit of keeping vacancy, concessions, and reimbursements as visible lines is what lets a small team see the property's real trajectory month over month.
+On The Blvd Shopping Center is a roughly 63,000 SF legacy multi-tenant center in Lafayette, operated under the Operator Landlord philosophy. For a center of that profile, the P&L disciplines above are not abstractions. A legacy asset typically carries a mix of lease vintages — some with full NNN reimbursement structures, others with caps, exclusions, or older gross-style terms — which means the gap between recoverable expenses and actual reimbursements must be tracked suite by suite. The operator's habit of keeping vacancy, concessions, and reimbursements as visible lines is what lets a small team see the property's real trajectory month over month.
 
 ## NOI is not cash flow
 

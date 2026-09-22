@@ -58,7 +58,7 @@ Here is the process as an operator should run it.
 7. **Deliver inside the lease window.** Many leases require reconciliation statements within 90 to 180 days of year-end. Missing the window can waive the landlord's right to collect.
 8. **Collect or credit, and log it.** Apply credits against the next rent or cut a check per the lease. Record delivery dates and responses.
 
-**Illustrative example** (all figures hypothetical): Imagine a 70,000 SF neighborhood center with a CAM pool of $210,000 for the year, taxes of $95,000, and insurance of $40,000. A tenant occupying 3,500 SF has a 5% pro-rata share on a leasable denominator, with no applicable cap. Their actual share is $10,500 of CAM, $4,750 of taxes, and $2,000 of insurance — $17,250 total. If they paid estimates of $1,300 per month ($15,600 for the year), the reconciliation bills a balance of $1,650. If they had paid $1,550 per month, the statement carries a $1,350 credit. Same lease, same math, opposite direction. Tenants accept both when the arithmetic is visible.
+**Illustrative example** (all figures hypothetical): Imagine a 63,000 SF neighborhood center with a CAM pool of $210,000 for the year, taxes of $95,000, and insurance of $40,000. A tenant occupying 3,500 SF has a 5% pro-rata share on a leasable denominator, with no applicable cap. Their actual share is $10,500 of CAM, $4,750 of taxes, and $2,000 of insurance — $17,250 total. If they paid estimates of $1,300 per month ($15,600 for the year), the reconciliation bills a balance of $1,650. If they had paid $1,550 per month, the statement carries a $1,350 credit. Same lease, same math, opposite direction. Tenants accept both when the arithmetic is visible.
 
 ## Audit rights and disputes
 
@@ -68,9 +68,9 @@ Most disputes are not fraud claims. They are category arguments: whether the man
 
 There is a lender dimension too. When you refinance or sell, the buyer's or lender's underwriting will test whether recoveries match the leases. A history of on-time, documented reconciliations — with few disputes and settled audits — reads as management quality. A shoebox of unreconciled years reads as risk, and risk gets priced.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-At a 70,000 SF legacy center like On The Blvd on Arnold Boulevard in Lafayette, reconciliation is personal. The tenants are businesses the operator sees every week. Under the Operator Landlord approach, the annual statement is not a bill that arrives from a faceless manager; it is a report from a partner. That means delivering it on time, walking through it with any tenant who asks, and fixing errors without making the tenant chase. Legacy centers often carry leases written under prior ownership with different CAM definitions, caps, and denominators. The discipline is building a lease-by-lease abstract so each tenant is reconciled against their own document — not against whatever the spreadsheet assumed.
+At a 63,000 SF legacy center like On The Blvd on Arnould Boulevard in Lafayette, reconciliation is personal. The tenants are businesses the operator sees every week. Under the Operator Landlord approach, the annual statement is not a bill that arrives from a faceless manager; it is a report from a partner. That means delivering it on time, walking through it with any tenant who asks, and fixing errors without making the tenant chase. Legacy centers often carry leases written under prior ownership with different CAM definitions, caps, and denominators. The discipline is building a lease-by-lease abstract so each tenant is reconciled against their own document — not against whatever the spreadsheet assumed.
 
 ## The practical next step
 

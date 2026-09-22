@@ -49,7 +49,7 @@ Asset quality then sorts within the size band. Stabilized with a plan to hold: b
 
 ## An illustrative decision walk
 
-Consider a hypothetical ~70,000 SF neighborhood center in a market like Lafayette, Louisiana — legacy construction, multi-tenant, anchored by daily-needs retail, with some near-term rollover and a parking lot that will need capital within a few years. Loan need: modest single-digit millions.
+Consider a hypothetical ~63,000 SF neighborhood center in a market like Lafayette, Louisiana — legacy construction, multi-tenant, anchored by daily-needs retail, with some near-term rollover and a parking lot that will need capital within a few years. Loan need: modest single-digit millions.
 
 A deal of that profile typically points first to **local and regional banks**. The size fits their appetite, the market is one they know, and the near-term rollover is a story a local lender can underwrite with a site visit and a conversation — especially for a borrower with recourse capacity and an operating track record. Pricing on bank debt for this profile is often competitive at moderate leverage; terms typically run shorter, so the borrower accepts refinance risk in exchange for flexibility and relationship.
 
@@ -69,9 +69,9 @@ When quotes arrive, the rate is the least interesting line on the page. Five oth
 
 A disciplined comparison puts all five alongside rate and fees in a single spreadsheet. The cheapest quote frequently stops being cheapest by the third row.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center is roughly 70,000 SF of multi-tenant retail in Lafayette, operator-owned. A center of that size and character lives in community-bank territory, and the Operator Landlord model is built for it: the operating record — collections, reconciliations, renewal history, reserve discipline — is the pitch. Lenders in relationship markets finance borrowers they trust on assets they can drive past. Keeping the financing file current and the story specific is worth more than any single basis point.
+On The Blvd Shopping Center is roughly 63,000 SF of multi-tenant retail in Lafayette, operator-owned. A center of that size and character lives in community-bank territory, and the Operator Landlord model is built for it: the operating record — collections, reconciliations, renewal history, reserve discipline — is the pitch. Lenders in relationship markets finance borrowers they trust on assets they can drive past. Keeping the financing file current and the story specific is worth more than any single basis point.
 
 ## The practical next step
 

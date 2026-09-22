@@ -61,9 +61,9 @@ Here is the distinction that defines the rest of this series.
 
 The difference is not effort alone; it is posture. One treats the center as a bond that pays coupons. The other treats it as a business that must be operated. Both are real choices, and the next article in this series examines them honestly. But only one of them reliably compounds value in a legacy asset.
 
-### The view from Arnold Blvd
+### The view from Arnould Blvd
 
-On The Blvd Shopping Center, at 101–149 Arnold Blvd in Lafayette, Louisiana, is a legacy multi-tenant retail center of approximately 70,000 square feet, owned by Belle Realty of Lafayette, LLC. At that scale, the two-job reality is concrete, not theoretical. Seventy thousand square feet is large enough that the tenant ecosystem matters — one vacancy changes the traffic pattern for neighbors — and small enough that the owner can know every tenant, every vendor, and every roof section personally. The center is operated under what we call the Operator Landlord approach: active partnership with tenants rather than passive rent collection. The operator came to this work after more than eight years practicing law in commercial real estate and business transactions, which shapes a particular bias: read the lease, calendar the deadline, put the agreement in writing. That bias shows up throughout this series.
+On The Blvd Shopping Center, at 101–149 Arnould Blvd in Lafayette, Louisiana, is a legacy multi-tenant retail center of approximately 63,000 square feet, owned by Belle Realty of Lafayette, LLC. At that scale, the two-job reality is concrete, not theoretical. Sixty-three thousand square feet is large enough that the tenant ecosystem matters — one vacancy changes the traffic pattern for neighbors — and small enough that the owner can know every tenant, every vendor, and every roof section personally. The center is operated under what we call the Operator Landlord approach: active partnership with tenants rather than passive rent collection. The operator came to this work after more than eight years practicing law in commercial real estate and business transactions, which shapes a particular bias: read the lease, calendar the deadline, put the agreement in writing. That bias shows up throughout this series.
 
 ## Who does the work
 

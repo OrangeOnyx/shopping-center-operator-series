@@ -54,9 +54,9 @@ Every working arrangement in this article rests on one rule: **AI drafts, flags,
 
 Build the rule into the workflow, not into hope. Practically: every AI-drafted document moves through a review step with a named owner; every AI-generated summary of a lease is checked against the source before it enters the file; and the team agrees that an unreviewed AI output is treated as unfinished work, not as a shortcut.
 
-## The view from Arnold Blvd
+## The view from Arnould Blvd
 
-On The Blvd Shopping Center is a roughly 70,000 SF legacy multi-tenant center in Lafayette, run under the Operator Landlord approach. A center of that age and size generates exactly the work described above: decades of lease amendments to keep abstracted, a full calendar of expirations and reconciliations, and a constant flow of tenant communication. The operator's background in commercial real estate law makes one habit non-negotiable — no document leaves the building unreviewed. AI assistance fits into that operation the same way a good paralegal once did: it prepares the work so the judgment can go where it belongs.
+On The Blvd Shopping Center is a roughly 63,000 SF legacy multi-tenant center in Lafayette, run under the Operator Landlord approach. A center of that age and size generates exactly the work described above: decades of lease amendments to keep abstracted, a full calendar of expirations and reconciliations, and a constant flow of tenant communication. The operator's background in commercial real estate law makes one habit non-negotiable — no document leaves the building unreviewed. AI assistance fits into that operation the same way a good paralegal once did: it prepares the work so the judgment can go where it belongs.
 
 ## The practical next step
 
