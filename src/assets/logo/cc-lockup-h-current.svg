@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 100" width="440" height="100" role="img" aria-label="Cypress Command" xmlns:c2pa="http://c2pa.org/manifest">
+  <title>Cypress Command</title>
+  <path fill-rule="evenodd" fill="currentColor" d="M 10 0 H 90 A 10 10 0 0 1 100 10 V 90 A 10 10 0 0 1 90 100 H 10 A 10 10 0 0 1 0 90 V 10 A 10 10 0 0 1 10 0 Z M 22 22 V 78 H 78 V 61 H 100 V 42 H 78 V 22 Z M 34 34 V 66 H 66 V 34 Z"/>
+  <rect x="122" y="0" width="2.5" height="100" fill="currentColor"/>
+  <g font-family="Archivo, Inter, Arial, sans-serif" font-weight="800" font-size="35" letter-spacing="1" fill="currentColor">
+    <text x="146" y="47">CYPRESS</text>
+    <text x="146" y="87">COMMAND</text>
+  </g>
+</svg>

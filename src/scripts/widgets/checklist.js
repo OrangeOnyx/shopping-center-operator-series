@@ -40,7 +40,7 @@ export function renderChecklist(el, cfg, checklistId) {
       cb.addEventListener('change', () => {
         saved[key] = cb.checked;
         row.classList.toggle('done', cb.checked);
-        localStorage.setItem(storageKey, JSON.stringify(saved));
+        try { localStorage.setItem(storageKey, JSON.stringify(saved)); } catch {}
         update();
       });
       body.appendChild(row);
@@ -71,7 +71,7 @@ export function renderChecklist(el, cfg, checklistId) {
   frame.querySelector('[data-act="reset"]').addEventListener('click', () => {
     if (!confirm('Reset all checklist progress for this article?')) return;
     saved = {};
-    localStorage.removeItem(storageKey);
+    try { localStorage.removeItem(storageKey); } catch {}
     frame.querySelectorAll('.ix-item input').forEach((cb) => { cb.checked = false; });
     frame.querySelectorAll('.ix-item').forEach((r) => r.classList.remove('done'));
     update();
@@ -80,7 +80,7 @@ export function renderChecklist(el, cfg, checklistId) {
     const lines = [cfg.title + ' — ' + new Date().toISOString().slice(0, 10)];
     cfg.sections.forEach((sec, si) => { lines.push('', sec.title); sec.items.forEach((item, ii) => lines.push((saved[si + ':' + ii] ? '[x] ' : '[ ] ') + item.t)); });
     const btn = frame.querySelector('[data-act="copy"]');
-    navigator.clipboard.writeText(lines.join('\n')).then(() => { btn.textContent = 'Copied'; setTimeout(() => { btn.textContent = 'Copy summary'; }, 1600); });
+    navigator.clipboard.writeText(lines.join('\n')).then(() => { btn.textContent = 'Copied'; setTimeout(() => { btn.textContent = 'Copy summary'; }, 1600); }).catch(() => { btn.textContent = 'Copy failed'; setTimeout(() => { btn.textContent = 'Copy summary'; }, 1600); });
   });
   update();
   el.appendChild(frame);

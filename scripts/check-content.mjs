@@ -30,6 +30,14 @@ export function validateFrontMatter(text, path, seriesSlugs) {
   return v;
 }
 
+export function validatePart(partString, manifest) {
+  if (manifest.kind !== 'series') return [];
+  const parts = manifest.parts ?? [];
+  const name = (partString ?? '').split('—').pop()?.trim() ?? '';
+  if (!parts.some((p) => p.name === name)) return [`part "${partString ?? ''}" does not match any manifest part`];
+  return [];
+}
+
 function walk(dir, acc = []) {
   for (const n of readdirSync(dir)) { const p = join(dir, n); statSync(p).isDirectory() ? walk(p, acc) : n.endsWith('.md') && acc.push(p); }
   return acc;
@@ -38,6 +46,8 @@ function walk(dir, acc = []) {
 if (process.argv[1] && process.argv[1].endsWith('check-content.mjs')) {
   const seriesFiles = readdirSync('src/content/series').filter((f) => f.endsWith('.json'));
   const seriesSlugs = seriesFiles.map((f) => JSON.parse(readFileSync(join('src/content/series', f), 'utf8')).slug);
+  const manifestByFolder = {};
+  for (const f of seriesFiles) manifestByFolder[f.replace('.json', '')] = JSON.parse(readFileSync(join('src/content/series', f), 'utf8'));
   const problems = [];
   for (const f of seriesFiles) {
     const s = JSON.parse(readFileSync(join('src/content/series', f), 'utf8'));
@@ -47,7 +57,13 @@ if (process.argv[1] && process.argv[1].endsWith('check-content.mjs')) {
   for (const p of walk('src/content/articles')) {
     const folder = p.split(/[\\/]/).at(-2);
     if (!seriesSlugs.includes(folder)) problems.push(`${p}: folder "${folder}" has no manifest`);
-    problems.push(...validateFrontMatter(readFileSync(p, 'utf8'), p, seriesSlugs));
+    const text = readFileSync(p, 'utf8');
+    problems.push(...validateFrontMatter(text, p, seriesSlugs));
+    const manifest = manifestByFolder[folder];
+    if (manifest) {
+      const fm = parseFrontMatter(text);
+      problems.push(...validatePart(fm?.part, manifest).map((msg) => `${p}: ${msg}`));
+    }
   }
   if (problems.length) { console.error('Content check failed:\n' + problems.join('\n')); process.exit(1); }
   console.log('Content check: clean');

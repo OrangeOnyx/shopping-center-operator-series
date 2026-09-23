@@ -1,11 +1,16 @@
 ---
+import tokens from '../../design-system/tokens.json';
 interface Props { title: string; description: string; canonical: string; ogImage?: string; type?: 'website' | 'article'; jsonLd?: object[] }
 const { title, description, canonical, ogImage = '/img/hero.jpg', type = 'website', jsonLd = [] } = Astro.props;
 const site = 'https://articles.cypresscommand.com';
+const paperDay = tokens.color.paper.$value;
+const paperNight = tokens.color.paper.$extensions['cc.night'];
 ---
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={site + canonical} />
+<meta name="theme-color" media="(prefers-color-scheme: light)" content={paperDay} />
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content={paperNight} />
 <meta property="og:site_name" content="Cypress Command" />
 <meta property="og:type" content={type} />
 <meta property="og:title" content={title} />

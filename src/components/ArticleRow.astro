@@ -14,6 +14,7 @@ const { article: a, showCollection } = Astro.props;
   </span>
   <span class="row-meta">
     {a.interactive && <span class="cc-tag cc-tag-accent">Interactive</span>}
+    <span class="meta">{a.data.date}</span>
     <span class="meta">{a.data.read_time}</span>
     <DeskChip desk={a.data.desk} link={false} />
   </span>

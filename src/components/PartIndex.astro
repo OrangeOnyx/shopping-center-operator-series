@@ -1,9 +1,10 @@
 ---
 import ArticleRow from './ArticleRow.astro';
+import { partName } from '../lib/articles';
 import type { Article } from '../lib/collections';
 interface Props { parts: { num: number; roman: string; name: string }[]; articles: Article[] }
 const { parts, articles } = Astro.props;
-const groups = parts.map((p) => ({ part: p, items: articles.filter((a) => (a.data.part ?? '').split('—').pop()!.trim() === p.name) })).filter((g) => g.items.length);
+const groups = parts.map((p) => ({ part: p, items: articles.filter((a) => partName(a.data.part) === p.name) })).filter((g) => g.items.length);
 ---
 <div id="part-index">
   {groups.map((g) => (

@@ -38,7 +38,11 @@ export async function getSeries(slug: string) {
 
 export async function getPublishedArticles(): Promise<Article[]> {
   const entries = await getCollection('articles', ({ data }) => data.status === 'published');
-  return entries.map(toArticle);
+  return entries.map(toArticle).sort((a, b) =>
+    a.collection.localeCompare(b.collection) ||
+    (a.num - b.num) ||
+    b.data.date.localeCompare(a.data.date) ||
+    a.slug.localeCompare(b.slug));
 }
 
 export async function getArticlesIn(collectionSlug: string): Promise<Article[]> {
@@ -46,8 +50,7 @@ export async function getArticlesIn(collectionSlug: string): Promise<Article[]> 
   const kind = series?.data.kind ?? 'series';
   const all = await getPublishedArticles();
   const mine = all.filter((a) => a.collection === collectionSlug || a.data.lanes.includes(collectionSlug));
-  const sorted = sortForCollection(mine.map((a) => ({ ...a, date: a.data.date })), kind);
-  return sorted;
+  return sortForCollection(mine.map((a) => ({ ...a, date: a.data.date })), kind).map(({ date, ...a }) => a as Article);
 }
 
 export async function getArticlesByDesk(desk: string): Promise<Article[]> {

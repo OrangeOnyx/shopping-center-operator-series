@@ -1,6 +1,6 @@
 # Fact review — field notes harvested from the Grok journal
 
-Generated 2026-09-23. One row per sentence containing a number, a dollar figure, or a named place or party, in the deck or the body. Rows that state only approved facts can be accepted as-is; the list is deliberately over-inclusive because it is the gate. Fill the Decision column with **accept**, **generalize**, or **cut**. A note moves to `status: published` only when every one of its rows is decided and applied.
+Generated 2026-09-22. One row per sentence containing a number, a dollar figure, or a named place or party, in the deck or the body. Rows that state only approved facts can be accepted as-is; the list is deliberately over-inclusive because it is the gate. Fill the Decision column with **accept**, **generalize**, or **cut**. A note moves to `status: published` only when every one of its rows is decided and applied.
 
 Approved facts (from ARTICLE-BRIEF.md): 101–149 Arnould Blvd; ~63,000 SF (62,883 SF GLA); 27 units; two buildings; 4.84 acres; zoned CH; Arnould vs. "Arnold Heights Subd. Ext. No. 1"; variance 99-11797, 324 provided / 344 required; plat striping 314; bank servitude 2004-00057697, 13 spaces, expires 12/30/2034; bank parcel sold, not part of the center; church easement §3a liquor waiver survives termination, liquor line on plat. Dollar terms stay out.
 
@@ -8,7 +8,6 @@ Approved facts (from ARTICLE-BRIEF.md): 101–149 Arnould Blvd; ~63,000 SF (62,8
 |---|---|---|---|
 | anatomy-of-an-open-air-center | It is not a 400,000-square-foot power center with a Target and a sea of asphalt. |  |  |
 | anatomy-of-an-open-air-center | It is the 40,000–90,000 SF neighborhood strip you already know — grocery-adjacent, restaurant-heavy, or a mixed service row on a state highway. |  |  |
-| anatomy-of-an-open-air-center | 27 demised units. |  |  |
 | anatomy-of-an-open-air-center | 62,883 square feet of GLA on 4.84 acres, zoned CH, addressed 101–149 Arnould Blvd. |  |  |
 | anatomy-of-an-open-air-center | Land is not “4.84 acres.” |  |  |
 | anatomy-of-an-open-air-center | Building is not “62,883 SF.” |  |  |
@@ -27,8 +26,6 @@ Approved facts (from ARTICLE-BRIEF.md): 101–149 Arnould Blvd; ~63,000 SF (62,8
 | parking-is-the-real-gla | A 20 percent landscape requirement is not decoration. |  |  |
 | parking-is-the-real-gla | A vacant 2,000 SF box is not automatically leasable to the highest rent if it consumes the last restaurant-capable parking. |  |  |
 | buying-the-diligence-stack | Recorded plat (here: Montagnet & Domingue, 1994, last revised 2019). |  |  |
-| buying-the-diligence-stack | 1. |  |  |
-| plat-versus-street | 1.” |  |  |
 | plat-versus-street | Title confirmed both in June 2026. |  |  |
 | plat-versus-street | Street for operations, marketing, and 911. |  |  |
 | who-owns-the-center | Belle Realty of Lafayette, LLC owns. |  |  |
@@ -48,7 +45,6 @@ Approved facts (from ARTICLE-BRIEF.md): 101–149 Arnould Blvd; ~63,000 SF (62,8
 | curb-cuts-and-reciprocal-access | On The Boulevard: eight Belle curb cuts. |  |  |
 | curb-cuts-and-reciprocal-access | One full-movement Arnould drive on a 55-foot median opening. |  |  |
 | curb-cuts-and-reciprocal-access | A second Arnould drive shared with JD Bank. |  |  |
-| curb-cuts-and-reciprocal-access | Johnston access. |  |  |
 | curb-cuts-and-reciprocal-access | Three Patricia cuts including a service drive. |  |  |
 | curb-cuts-and-reciprocal-access | Two Marie Antoinette cuts plus a pedestrian breezeway apron. |  |  |
 | curb-cuts-and-reciprocal-access | The bank corner is not Belle property. |  |  |
