@@ -25,3 +25,48 @@ function mdText(node) {
   if (node.type === 'text') return node.value;
   return (node.children || []).map(mdText).join('');
 }
+
+/** Concatenate the text descendants of a node (headings, etc). */
+function text(node) {
+  if (node.type === 'text') return node.value;
+  return (node.children || []).map(text).join('');
+}
+
+/**
+ * Wrap "The view from …" H3 sections in a field-note aside, and the closing
+ * "The practical next step" H2 section in a next-step aside. Operates on
+ * tree.children directly; walks forward, adjusting the cursor past each
+ * wrapped region as it splices the open/close html nodes in.
+ */
+export function remarkPlates() {
+  return (tree) => {
+    const children = tree.children;
+    let i = 0;
+    while (i < children.length) {
+      const node = children[i];
+      if (node.type === 'heading' && node.depth === 3 && /^the view from/i.test(text(node).trim().toLowerCase())) {
+        let j = i + 1;
+        while (j < children.length && !(children[j].type === 'heading' && children[j].depth <= 3)) j++;
+        children.splice(j, 0, { type: 'html', value: '</aside>' });
+        children.splice(i, 0, {
+          type: 'html',
+          value: '<aside class="plate-note wash-ink"><span class="plate-label">FIELD NOTE · ARNOULD BLVD</span>',
+        });
+        i = j + 2;
+        continue;
+      }
+      if (node.type === 'heading' && node.depth === 2 && text(node).trim().toLowerCase() === 'the practical next step') {
+        let j = i + 1;
+        while (j < children.length && !(children[j].type === 'heading' && children[j].depth === 2)) j++;
+        children.splice(j, 0, { type: 'html', value: '</aside>' });
+        children.splice(i, 0, {
+          type: 'html',
+          value: '<aside class="plate-note wash-olive next-step"><span class="plate-label">NEXT STEPS</span>',
+        });
+        i = j + 2;
+        continue;
+      }
+      i++;
+    }
+  };
+}

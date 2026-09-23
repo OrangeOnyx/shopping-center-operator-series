@@ -9,7 +9,7 @@
     "check": "node scripts/check-brand.mjs && node scripts/check-content.mjs",
     "build": "npm run check && astro build && node scripts/check-links.mjs && node scripts/check-redirects.mjs",
     "preview": "astro preview",
-    "test": "node --test src/lib/*.test.ts scripts/*.test.mjs"
+    "test": "node --test src/lib/*.test.ts src/lib/*.test.mjs scripts/*.test.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^7.3.1",

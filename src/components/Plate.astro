@@ -2,7 +2,8 @@
 interface Props { src: string; alt: string; label: string; caption?: string }
 const { src, alt, label, caption } = Astro.props;
 ---
-<figure class="plate">
+<figure class="plate cc-reveal">
+  <span class="plate-rule cc-rule-draw" aria-hidden="true"></span>
   <span class="plate-label">{label}</span>
   <img src={src} alt={alt} loading="lazy" />
   {caption && <figcaption>{caption}</figcaption>}
