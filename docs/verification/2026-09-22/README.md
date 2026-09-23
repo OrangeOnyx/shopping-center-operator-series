@@ -1,6 +1,8 @@
 # Verification record — 2026-09-22 (Task 14)
 
-Built from branch `hub` after 13 feature tasks (55 pages). Screenshots captured headlessly against `npx astro preview --port 4321 --host 127.0.0.1` serving a fresh `npm run build` output, using headless Chrome (`--headless=new`). Night theme is forced per-page via the `?theme=night` query override added to `src/layouts/Base.astro` for this task (does not persist; used only to capture the night screenshots deterministically).
+Built from branch `hub` after 13 feature tasks (55 pages). Screenshots captured headlessly against `npx astro preview --port 4321 --host 127.0.0.1` serving a fresh `npm run build` output. Night theme is forced per-page via the `?theme=night` query override added to `src/layouts/Base.astro` for this task (does not persist; used only to capture the night screenshots deterministically).
+
+The 1280px desktop set was captured with headless Chrome (`--headless=new --window-size=1280,2400 --screenshot=...`). The 390px phone set was recaptured with Playwright (`npx playwright@1.56.1 screenshot --browser=chromium --channel=chrome --viewport-size=390,1200 --full-page ...`) after fix-round 1: headless Chrome on Windows enforces a minimum window width of roughly 500px, so the original `--window-size=390,...` Chrome captures actually laid the page out at ~500px and the resulting PNG was cropped down to 390px wide — the hub capture was missing its masthead nav entirely and article-36's headline was cut mid-word. Playwright honors the requested viewport, so the 390 set now reflects the page's real rendering at 390px.
 
 ## Screenshots
 
@@ -47,7 +49,8 @@ Note on article 36 (`/shopping-center/36-complete-property-management-checklist/
 | Checklist persistence (article 36) | Verified by controller in browser | 3 of 39 items persisted after reload. Not captured headlessly — see note above. |
 | Search hits | Verified by controller | Not exercised headlessly in this pass. |
 | Theme persistence | Verified by controller | The `?theme=night` query override added for this task's screenshots is a one-load forcing mechanism and does not itself demonstrate cross-navigation persistence; the controller confirmed persistence (via `localStorage` `cc-theme`) in a real browser. |
-| Phone-width overflow (390px, no horizontal scroll) | Verified by controller | Not measured in this pass (headless screenshots do not check for horizontal overflow); controller confirmed no horizontal scroll at 390px in a real browser. |
+| Phone-width overflow (390px, no horizontal scroll) | Verified by controller | Not measured directly in this pass; controller confirmed no horizontal scroll at 390px in a real browser on the pages checked. |
+| Phone-width captures: Playwright viewport 390, full page | **PARTIAL — 20/22 pass, 2 fail** | `ls docs/verification/2026-09-22/*-390.png \| wc -l` = 22; PNG-width check (`readUInt32BE(16)` on each file) prints 390 for 20 files, but **580 for `article-07-day-390.png` and `article-07-night-390.png`**. This is not a capture bug — reproduced twice against the running preview server. Playwright's `--full-page` renders the true content width; `/shopping-center/07-reading-a-rent-roll/` contains a 9-column example rent-roll table (`.prose table`, `width:100%`, no horizontal-scroll wrapper in `src/styles/site.css`) that does not fit an 390px viewport and forces the page to lay out at 580px. **This contradicts the "zero horizontal overflow on every page checked" premise for this specific page** — flagged for the controller; no CSS fix applied here since it is a design-system change outside this task's scope (screenshot recapture only). |
 
 ## Code change accompanying this record
 
