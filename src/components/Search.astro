@@ -1,0 +1,32 @@
+---
+interface Props { scope?: string; placeholder?: string }
+const { scope = '', placeholder = 'Search the articles' } = Astro.props;
+---
+<div class="search" data-scope={scope}>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+  <input type="search" placeholder={placeholder} aria-label={placeholder} autocomplete="off" />
+  <div class="search-results" role="listbox"></div>
+</div>
+<script>
+  type Item = { url: string; title: string; deck: string; collection: string; collectionTitle: string; desk: string; headings: string[] };
+  let index: Item[] | null = null;
+  async function load() { if (!index) index = await (await fetch('/search-index.json')).json(); return index!; }
+  document.querySelectorAll<HTMLElement>('.search').forEach((box) => {
+    const input = box.querySelector('input')!;
+    const out = box.querySelector('.search-results')!;
+    const scope = box.dataset.scope || '';
+    input.addEventListener('focus', () => { load(); });
+    input.addEventListener('input', async () => {
+      const q = input.value.trim().toLowerCase();
+      if (!q) { out.classList.remove('open'); out.innerHTML = ''; return; }
+      const all = await load();
+      const hits = all.filter((i) => (!scope || i.collection === scope) &&
+        [i.title, i.deck, i.desk, ...i.headings].join(' ').toLowerCase().includes(q)).slice(0, 12);
+      out.innerHTML = hits.length
+        ? hits.map((i) => `<a href="${i.url}"><span class="sr-title">${i.title}</span><div class="sr-meta">${i.collectionTitle}${i.desk ? ' · ' + i.desk : ''}</div></a>`).join('')
+        : '<div class="search-empty">No articles match that search. Try a broader term.</div>';
+      out.classList.add('open');
+    });
+    document.addEventListener('click', (e) => { if (!box.contains(e.target as Node)) out.classList.remove('open'); });
+  });
+</script>
