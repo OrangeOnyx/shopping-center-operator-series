@@ -1,8 +1,10 @@
 ---
-import { getCollection } from 'astro:content';
-const articles = await getCollection('articles');
-const series = await getCollection('series');
+import { getSeriesList, getArticlesIn, getInteractive } from '../lib/collections';
+const series = await getSeriesList();
+const sc = await getArticlesIn('shopping-center');
+const fn = await getArticlesIn('field-notes');
+const ix = await getInteractive();
 ---
 <html lang="en"><head><meta charset="utf-8"><title>Cypress Command</title></head>
-<body><p>{articles.length} articles, {series.length} collections</p>
-<ul>{articles.slice(0, 3).map((a) => <li>{a.id} — {a.data.desk}</li>)}</ul></body></html>
+<body><p>{series.map((s) => s.data.slug).join(',')}</p>
+<p>sc={sc.length} fn={fn.length} ix={ix.length} first={sc[0]?.slug} url={sc[0]?.url}</p></body></html>
