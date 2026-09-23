@@ -20,6 +20,7 @@ const articles = defineCollection({
     desk: z.enum(DESKS).optional(),
     lanes: z.array(z.string()).default([]),
     status: z.enum(['published', 'review']).default('published'),
+    source: z.string().optional(),
   }),
 });
 
