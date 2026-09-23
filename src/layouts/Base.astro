@@ -28,6 +28,8 @@ const { title, description, canonical = Astro.url.pathname, ogImage, type, jsonL
       try {
         var t = localStorage.getItem('cc-theme');
         if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day';
+        var q = new URLSearchParams(location.search).get('theme');
+        if (q === 'night' || q === 'day') t = q;
         document.documentElement.setAttribute('data-theme', t);
       } catch (e) {}
     })();
