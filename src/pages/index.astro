@@ -15,22 +15,24 @@ const interactive = (await getInteractive()).slice(-3).reverse();
 const published = series.filter((s) => s.data.state === 'published').length;
 ---
 <Base title="Cypress Command — Articles" description="Operator-grade writing on the work that runs real businesses. The Shopping Center Operator Series, Field Notes, and more series in progress.">
-  <header class="page-head hub-head"><div class="wrap">
-    <span class="eyebrow">Cypress Command · Articles</span>
-    <h1 class="display">Operator-grade writing on the work that runs real businesses.</h1>
-    <p class="deck">A finished forty-article series on owning and running a shopping center, a lane of field notes from the operator's desk, and four series in progress.</p>
-    <div class="hero-actions"><a class="btn btn-primary" href="#collections">Browse the collections</a><a class="btn btn-secondary" href="/shopping-center/">Start with the series</a></div>
-  </div></header>
+  <section class="hero-band"><div class="wrap">
+    <div class="hero-panel cc-surface-brand cc-elev-brand cc-reveal">
+      <span class="cc-eyebrow">Cypress Command · Articles</span>
+      <h1 class="display">Operator-grade writing on the work that runs real businesses.</h1>
+      <p class="deck">A finished forty-article series on owning and running a shopping center, a lane of field notes from the operator's desk, and four series in progress.</p>
+      <div class="hero-actions"><a class="btn btn-accent" href="#collections">Browse the collections</a><a class="btn btn-outline-paper" href="/shopping-center/">Start with the series</a></div>
+    </div>
+  </div></section>
 
   <section class="section" id="collections"><div class="wrap">
     <div class="section-head"><span class="num">01</span><span class="title">Collections</span><span class="kicker">{published} published · {series.length - published} in progress</span></div>
     <div class="cards">{series.map((s) => <CollectionCard series={s} count={counts[s.data.slug]} />)}</div>
   </div></section>
 
-  <section class="section"><div class="wrap">
+  <section class="section band wash-terra"><div class="wrap">
     <div class="section-head"><span class="num">02</span><span class="title">Find an article</span><span class="kicker">Across every collection</span></div>
     <Search placeholder="Search every collection — try “CAM reconciliation”, “parking”, “checklist”" />
-    <p class="muted">Or browse by desk:</p>
+    <p class="muted">Or browse by desk (a desk is a category, not a status):</p>
     <DeskChips />
   </div></section>
 
