@@ -72,6 +72,24 @@
   --cc-space-6: 24px; --cc-space-8: 32px; --cc-space-12: 48px; --cc-space-16: 64px;
   --cc-space-24: 96px;
 
+  /* --- Elevation (warm ink-tinted; product UI and marketing only, never documents/print) --- */
+  --cc-shadow-color: 30 27 22;                       /* ink, as RGB triplet */
+  --cc-shadow-1: 0 1px 2px rgb(var(--cc-shadow-color) / 0.08), 0 1px 1px rgb(var(--cc-shadow-color) / 0.04);           /* rest: cards that need lift, inputs on paper-deep */
+  --cc-shadow-2: 0 4px 12px rgb(var(--cc-shadow-color) / 0.10), 0 1px 3px rgb(var(--cc-shadow-color) / 0.06);          /* raised: hover on interactive cards, dropdowns, popovers */
+  --cc-shadow-3: 0 16px 40px rgb(var(--cc-shadow-color) / 0.16), 0 4px 12px rgb(var(--cc-shadow-color) / 0.08);        /* overlay: modals, drawers, command palette */
+  --cc-shadow-brand: 0 24px 60px rgb(30 77 58 / 0.22);                                                                /* cypress-tinted, for a hero panel lifting off paper — one per page */
+
+  /* --- Motion --- */
+  --cc-dur-fast: 120ms;      /* hover, focus, toggles */
+  --cc-dur-base: 200ms;      /* state changes, tabs, tag swaps */
+  --cc-dur-slow: 320ms;      /* reveals, panels, page transitions */
+  --cc-dur-reveal: 560ms;    /* hero and plate entrance, once per page load */
+  --cc-ease-standard: cubic-bezier(0.2, 0, 0, 1);      /* most transitions */
+  --cc-ease-emphasized: cubic-bezier(0.3, 0, 0, 1);    /* entrances */
+  --cc-ease-exit: cubic-bezier(0.4, 0, 1, 1);          /* dismissals */
+  --cc-rise: 8px;            /* entrance travel distance */
+  --cc-lift: -2px;           /* hover lift on interactive cards */
+
   /* --- Radius & rules --- */
   --cc-radius-doc: 2px;
   --cc-radius-ui: 4px;
@@ -107,6 +125,11 @@
   --cc-wash-ink:     rgba(244, 239, 226, 0.06);
   --cc-on-brand-accent: #D2802F;
   --cc-selection:    rgba(210, 128, 47, 0.30);
+  --cc-shadow-color: 0 0 0;
+  --cc-shadow-1: 0 1px 2px rgb(0 0 0 / 0.40), 0 1px 1px rgb(0 0 0 / 0.24);
+  --cc-shadow-2: 0 4px 12px rgb(0 0 0 / 0.45), 0 1px 3px rgb(0 0 0 / 0.30);
+  --cc-shadow-3: 0 16px 40px rgb(0 0 0 / 0.55), 0 4px 12px rgb(0 0 0 / 0.35);
+  --cc-shadow-brand: 0 24px 60px rgb(0 0 0 / 0.50);
   color-scheme: dark;
 }
 
@@ -128,8 +151,22 @@
     --cc-wash-oxblood: rgba(210, 115, 99, 0.14);
     --cc-wash-ink:     rgba(244, 239, 226, 0.06);
     --cc-selection:    rgba(210, 128, 47, 0.30);
+    --cc-shadow-color: 0 0 0;
+    --cc-shadow-1: 0 1px 2px rgb(0 0 0 / 0.40), 0 1px 1px rgb(0 0 0 / 0.24);
+    --cc-shadow-2: 0 4px 12px rgb(0 0 0 / 0.45), 0 1px 3px rgb(0 0 0 / 0.30);
+    --cc-shadow-3: 0 16px 40px rgb(0 0 0 / 0.55), 0 4px 12px rgb(0 0 0 / 0.35);
+    --cc-shadow-brand: 0 24px 60px rgb(0 0 0 / 0.50);
     color-scheme: dark;
   }
+}
+
+/* ---------- Document / print scope: flat ---------- */
+.cc-doc, [data-surface="print"] { --cc-shadow-1: none; --cc-shadow-2: none; --cc-shadow-3: none; --cc-shadow-brand: none; }
+@media print { :root { --cc-shadow-1: none; --cc-shadow-2: none; --cc-shadow-3: none; --cc-shadow-brand: none; } }
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  :root { --cc-dur-fast: 0ms; --cc-dur-base: 0ms; --cc-dur-slow: 0ms; --cc-dur-reveal: 0ms; --cc-rise: 0px; --cc-lift: 0px; }
 }
 
 /* ---------- Playbook scope: same tokens, no Cypress surface ---------- */

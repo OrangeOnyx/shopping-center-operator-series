@@ -8,6 +8,7 @@ test('flags raw hex, font faces, and shadows; allows tokens', () => {
     { path: 'b.css', text: 'color: var(--cc-terra); font-family: var(--cc-font-display); box-shadow: none;' },
     { path: 'c.css', text: 'box-shadow:  none; box-shadow:none;' },
     { path: 'd.css', text: 'box-shadow:0 1px 2px var(--x);' },
+    { path: 'e.css', text: 'box-shadow: var(--cc-shadow-2); box-shadow:var(--cc-shadow-brand);' },
   ]);
   assert.equal(v.length, 4);
   assert.equal(v.filter((s) => s.startsWith('a.css')).length, 3);

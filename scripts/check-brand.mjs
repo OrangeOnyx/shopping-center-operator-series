@@ -3,7 +3,7 @@ import { join } from 'node:path';
 
 const HEX = /#[0-9a-fA-F]{3,8}\b/g;
 const FACE = /font-family\s*:\s*["']?(Besley|Archivo|Courier|Inter|Libertinus|Georgia|Fraunces|system-ui|serif|sans-serif|monospace)/g;
-const SHADOW = /box-shadow\s*:\s*(?!\s*none\b)[^;]+/g;
+const SHADOW = /box-shadow\s*:\s*(?!\s*(?:none\b|var\(--cc-shadow-))[^;]+/g;
 
 export function checkBrand(files) {
   const out = [];

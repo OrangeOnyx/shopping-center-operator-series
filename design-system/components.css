@@ -125,5 +125,31 @@
 [data-brand="playbook"] .pb-level-frontier { color: var(--pb-level-frontier); }
 [data-brand="playbook"] .pb-risk { color: var(--pb-risk); }
 
+/* ---- Elevation ---- */
+.cc-elev-1 { box-shadow: var(--cc-shadow-1); }
+.cc-elev-2 { box-shadow: var(--cc-shadow-2); }
+.cc-elev-3 { box-shadow: var(--cc-shadow-3); }
+.cc-card-interactive { transition: transform var(--cc-dur-fast) var(--cc-ease-standard), box-shadow var(--cc-dur-fast) var(--cc-ease-standard), border-color var(--cc-dur-fast) var(--cc-ease-standard); cursor: pointer; }
+.cc-card-interactive:hover { transform: translateY(var(--cc-lift)); box-shadow: var(--cc-shadow-2); border-color: var(--cc-fg-muted); }
+.cc-card-interactive:active { transform: translateY(0); box-shadow: var(--cc-shadow-1); }
+.cc-popover { background: var(--cc-bg); border: var(--cc-hairline) solid var(--cc-border); border-radius: var(--cc-radius-ui); box-shadow: var(--cc-shadow-2); padding: var(--cc-space-2); }
+.cc-modal { background: var(--cc-bg); border: var(--cc-hairline) solid var(--cc-border); border-radius: var(--cc-radius-ui); box-shadow: var(--cc-shadow-3); padding: var(--cc-space-6); }
+.cc-scrim { background: rgba(30, 27, 22, 0.45); }
+.cc-surface-brand.cc-elev-brand { box-shadow: var(--cc-shadow-brand); }
+
 /* ---- Motion ---- */
-@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+@keyframes cc-rise { from { opacity: 0; transform: translateY(var(--cc-rise)); } to { opacity: 1; transform: translateY(0); } }
+@keyframes cc-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes cc-draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.cc-reveal { animation: cc-rise var(--cc-dur-reveal) var(--cc-ease-emphasized) both; }
+.cc-reveal[data-delay="1"] { animation-delay: 80ms; } .cc-reveal[data-delay="2"] { animation-delay: 160ms; } .cc-reveal[data-delay="3"] { animation-delay: 240ms; } .cc-reveal[data-delay="4"] { animation-delay: 320ms; }
+.cc-fade-in { animation: cc-fade var(--cc-dur-slow) var(--cc-ease-standard) both; }
+.cc-rule-draw { transform-origin: left; animation: cc-draw var(--cc-dur-reveal) var(--cc-ease-emphasized) both; }
+.cc-btn { transition: background-color var(--cc-dur-fast) var(--cc-ease-standard), color var(--cc-dur-fast) var(--cc-ease-standard), border-color var(--cc-dur-fast) var(--cc-ease-standard), transform var(--cc-dur-fast) var(--cc-ease-standard); }
+.cc-btn:active { transform: translateY(1px); }
+.cc-tab { transition: color var(--cc-dur-base) var(--cc-ease-standard), border-color var(--cc-dur-base) var(--cc-ease-standard); }
+.cc-rail-item { transition: background-color var(--cc-dur-fast) var(--cc-ease-standard), color var(--cc-dur-fast) var(--cc-ease-standard); }
+.cc-toggle::after { transition: left var(--cc-dur-base) var(--cc-ease-standard); }
+.cc-toggle { transition: background-color var(--cc-dur-base) var(--cc-ease-standard); }
+a { transition: color var(--cc-dur-fast) var(--cc-ease-standard), text-decoration-color var(--cc-dur-fast) var(--cc-ease-standard); }
+@media (prefers-reduced-motion: reduce) { .cc-reveal, .cc-fade-in, .cc-rule-draw { animation: none; } * { transition-duration: 0ms !important; } }
