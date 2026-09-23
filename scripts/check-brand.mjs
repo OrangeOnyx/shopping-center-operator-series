@@ -3,7 +3,7 @@ import { join } from 'node:path';
 
 const HEX = /#[0-9a-fA-F]{3,8}\b/g;
 const FACE = /font-family\s*:\s*["']?(Besley|Archivo|Courier|Inter|Libertinus|Georgia|Fraunces|system-ui|serif|sans-serif|monospace)/g;
-const SHADOW = /box-shadow\s*:\s+(?!none\b)[^;]+/g;
+const SHADOW = /box-shadow\s*:\s*(?!\s*none\b)[^;]+/g;
 
 export function checkBrand(files) {
   const out = [];
@@ -23,7 +23,7 @@ export function walk(dir, acc = []) {
   for (const name of readdirSync(dir)) {
     const p = join(dir, name);
     if (statSync(p).isDirectory()) walk(p, acc);
-    else if (/\.(astro|css|ts|js|mjs)$/.test(name) && !name.endsWith('.test.ts') && !name.endsWith('.test.mjs')) acc.push({ path: p, text: readFileSync(p, 'utf8') });
+    else if (/\.(astro|css|ts|js|mjs)$/.test(name) && !/\.test\.(ts|mjs|js)$/.test(name)) acc.push({ path: p, text: readFileSync(p, 'utf8') });
   }
   return acc;
 }
