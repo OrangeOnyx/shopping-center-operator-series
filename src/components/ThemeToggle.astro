@@ -4,12 +4,15 @@
 </button>
 <script>
   const btn = document.getElementById('theme-toggle');
+  function label(t: string) {
+    btn?.setAttribute('aria-label', t === 'night' ? 'Switch to day mode' : 'Switch to night mode');
+  }
   function apply(t: string) {
     document.documentElement.setAttribute('data-theme', t);
     try { localStorage.setItem('cc-theme', t); } catch {}
-    btn?.setAttribute('aria-label', t === 'night' ? 'Switch to day mode' : 'Switch to night mode');
+    label(t);
   }
-  apply(document.documentElement.getAttribute('data-theme') || 'day');
+  label(document.documentElement.getAttribute('data-theme') || 'day');
   btn?.addEventListener('click', () => {
     apply(document.documentElement.getAttribute('data-theme') === 'night' ? 'day' : 'night');
   });
