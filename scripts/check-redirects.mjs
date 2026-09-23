@@ -23,8 +23,8 @@ if (process.argv[1] && process.argv[1].endsWith('check-redirects.mjs')) {
   const rules = JSON.parse(readFileSync('vercel.json', 'utf8')).redirects;
   const slugs = readdirSync('dist/shopping-center').filter((d) => /^\d\d-/.test(d));
   const cases = [];
-  for (const s of slugs) { cases.push(['/article', { id: s }]); cases.push(['/article.html', { id: s }]); }
-  cases.push(['/article', {}], ['/article.html', {}], ['/map', {}], ['/map.html', {}], ['/index.html', {}]);
+  for (const s of slugs) { cases.push(['/article', { id: s }]); cases.push(['/article.html', { id: s }]); cases.push(['/article/', { id: s }]); }
+  cases.push(['/article', {}], ['/article.html', {}], ['/article/', {}], ['/map', {}], ['/map.html', {}], ['/map/', {}], ['/index.html', {}]);
   const failures = [];
   for (const [path, query] of cases) {
     const dest = matchRedirect(rules, path, query);

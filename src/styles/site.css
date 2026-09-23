@@ -107,7 +107,7 @@ h4, .h4 { font-family: var(--cc-font-sans); font-weight: 700; font-size: var(--c
 .plate img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; }
 .plate figcaption { margin-top: var(--cc-space-3); font-family: var(--cc-font-display); font-weight: 900; font-size: 13px; }
 .article-layout { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: var(--cc-space-16); padding: var(--cc-space-12) 0 var(--cc-space-16); }
-@media (max-width: 1023px) { .article-layout { grid-template-columns: 1fr; } .rail { display: none; } }
+@media (max-width: 1023px) { .article-layout { grid-template-columns: minmax(0, 1fr); } .rail { display: none; } }
 .prose { max-width: var(--cc-measure); font-family: var(--cc-font-display); font-size: var(--cc-text-body-doc); line-height: var(--cc-lh-body-doc); }
 .prose > h2 { margin: var(--cc-space-12) 0 var(--cc-space-4); padding-top: var(--cc-space-6); border-top: 2px solid var(--cc-fg); }
 .prose > :first-child { margin-top: 0; }
@@ -121,7 +121,7 @@ h4, .h4 { font-family: var(--cc-font-sans); font-weight: 700; font-size: var(--c
 .prose a { text-decoration: underline; text-underline-offset: 3px; }
 .prose blockquote { font-style: italic; font-size: 22px; line-height: 30px; border-left: 3px solid var(--cc-accent); padding: 4px 0 4px var(--cc-space-4); margin: var(--cc-space-8) 0; }
 .prose code { font-family: var(--cc-font-mono); font-size: 0.9em; background: var(--cc-bg-elev); padding: 1px 5px; }
-.prose table { width: 100%; border-collapse: collapse; margin: var(--cc-space-6) 0; font-family: var(--cc-font-sans); font-size: 14px; line-height: 21px; }
+.prose table { width: 100%; border-collapse: collapse; margin: var(--cc-space-6) 0; font-family: var(--cc-font-sans); font-size: 14px; line-height: 21px; display: block; overflow-x: auto; }
 .prose th { text-align: left; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--cc-fg-muted); border-bottom: 2px solid var(--cc-fg); padding: 8px 10px 8px 0; }
 .prose td { border-bottom: var(--cc-hairline) solid var(--cc-border); padding: 10px 10px 10px 0; vertical-align: top; }
 .prose td:first-child { font-weight: 500; }

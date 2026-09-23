@@ -44,13 +44,13 @@ Note on article 36 (`/shopping-center/36-complete-property-management-checklist/
 
 | Check | Result | Notes |
 |---|---|---|
-| Build gates | **PASS** | `npm run build` → brand check: clean; content check: clean; 55 pages built in 1.15s; link check: 924 internal references resolve; redirect check: 85 legacy URLs resolve. |
+| Build gates | **PASS** | `npm run build` → brand check: clean; content check: clean; 55 pages built in 1.15s; link check: 924 internal references resolve; redirect check: 127 legacy URLs resolve (updated in fix round 2 — `vercel.json` gained trailing-slash-form rules for `/article/` and `/map/` since Vercel's `trailingSlash: true` normalizes bare `/article` and `/map` to their slashed form with a 308 before evaluating `redirects`). |
 | Legacy-term scan | **PASS — clean** | `grep -rli -E "orange ocean\|groundwork\|atlas\|cypress command platform\|libertinus\|inter-variable" dist --include=*.html \| grep -v "35-why-otb-command"` → `clean` (article 35 correctly excluded as its OTB Command history mention is legitimate). |
 | Checklist persistence (article 36) | Verified by controller in browser | 3 of 39 items persisted after reload. Not captured headlessly — see note above. |
 | Search hits | Verified by controller | Not exercised headlessly in this pass. |
 | Theme persistence | Verified by controller | The `?theme=night` query override added for this task's screenshots is a one-load forcing mechanism and does not itself demonstrate cross-navigation persistence; the controller confirmed persistence (via `localStorage` `cc-theme`) in a real browser. |
 | Phone-width overflow (390px, no horizontal scroll) | Verified by controller | Not measured directly in this pass; controller confirmed no horizontal scroll at 390px in a real browser on the pages checked. |
-| Phone-width captures: Playwright viewport 390, full page | **PARTIAL — 20/22 pass, 2 fail** | `ls docs/verification/2026-09-22/*-390.png \| wc -l` = 22; PNG-width check (`readUInt32BE(16)` on each file) prints 390 for 20 files, but **580 for `article-07-day-390.png` and `article-07-night-390.png`**. This is not a capture bug — reproduced twice against the running preview server. Playwright's `--full-page` renders the true content width; `/shopping-center/07-reading-a-rent-roll/` contains a 9-column example rent-roll table (`.prose table`, `width:100%`, no horizontal-scroll wrapper in `src/styles/site.css`) that does not fit an 390px viewport and forces the page to lay out at 580px. **This contradicts the "zero horizontal overflow on every page checked" premise for this specific page** — flagged for the controller; no CSS fix applied here since it is a design-system change outside this task's scope (screenshot recapture only). |
+| Phone-width captures: Playwright viewport 390, full page | **PASS — 22/22** | `ls docs/verification/2026-09-22/*-390.png \| wc -l` = 22; PNG-width check (`readUInt32BE(16)` on each file) prints 390 for all 22 files, including `article-07-day-390.png` and `article-07-night-390.png` (recaptured in fix round 2, see below). |
 
 ## Code change accompanying this record
 
@@ -62,3 +62,9 @@ if (q === 'night' || q === 'day') t = q;
 ```
 
 Production and the default (no query param) behavior are unaffected.
+
+## Fix round 2 (2026-09-22) — redirect trailing-slash gap and article-07 table overflow
+
+`vercel.json`: added trailing-slash-form redirect rules for `/article/` (both the `id`-query and plain forms) and `/map/`, because Vercel's `trailingSlash: true` normalizes bare `/article` and `/map` to their slashed form with a 308 *before* evaluating `redirects`, so the un-slashed sources never matched on the live preview. `scripts/check-redirects.mjs` and `scripts/check-redirects.test.mjs` updated to cover the new forms; the CLI case count is now 40 × 3 + 7 = 127.
+
+`src/styles/site.css`: `.prose table` gained `display: block; overflow-x: auto;` so a wide table scrolls within its own box instead of forcing the page wider. That alone was not sufficient — the article-07 table still forced the page to 580px because `.article-layout`'s mobile media query (`@media (max-width: 1023px) { .article-layout { grid-template-columns: 1fr; ... } }`) used a bare `1fr` track, and a CSS grid item's default `min-width: auto` equals its min-content size, so the `article` grid item (holding the table) wouldn't shrink below the table's min-content width and overflowed its track. The desktop rule already guards against exactly this (`grid-template-columns: minmax(0, 1fr) 260px`); the mobile override just needed the same `minmax(0, ...)` guard, so it now reads `grid-template-columns: minmax(0, 1fr);`. Verified with a headless-Chrome probe (via Playwright) that `document.documentElement.scrollWidth` is 390 at a 390px viewport post-fix (580 pre-fix), and the table itself now reports `scrollWidth: 580` / `clientWidth: 390` (i.e., it scrolls internally, as intended) rather than the whole page growing.
