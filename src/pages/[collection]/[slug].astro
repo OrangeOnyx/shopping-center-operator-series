@@ -12,10 +12,9 @@ export async function getStaticPaths() {
   const series = await getSeriesList();
   const paths = [];
   for (const s of series) {
-    const list = await getArticlesIn(s.data.slug);
+    const list = (await getArticlesIn(s.data.slug)).filter((a) => a.collection === s.data.slug);
     for (let i = 0; i < list.length; i++) {
       const a = list[i];
-      if (a.collection !== s.data.slug) continue; // lane-surfaced articles keep their home URL
       paths.push({ params: { collection: a.collection, slug: a.slug }, props: { article: a, series: s, prev: list[i - 1], next: list[i + 1], total: list.length } });
     }
   }
