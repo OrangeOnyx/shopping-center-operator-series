@@ -14,7 +14,7 @@ ts = ts.slice(0, end + 3);
 new Function(ts)();
 const notes = globalThis.__notes;
 
-const FLAG = /(Montagnet|Domingue|1994|2019|18\.73|40-foot|55-foot|Johnston|Patricia|Marie Antoinette|\b\d+ ?percent\b|\bpercent\b|square feet of GLA|\$\d|\b(19|20)\d\d\b(?!-))/i;
+const FLAG = /\d|\$|Johnston|Patricia|Marie Antoinette|Montagnet|Domingue|JD Bank|Belle|\bLot\b/;
 const DESK_LABEL = { own: 'own', run: 'run', lease: 'lease', finance: 'finance', buy: 'buy', sell: 'sell' };
 mkdirSync('src/content/articles/field-notes', { recursive: true });
 mkdirSync('docs/fact-review', { recursive: true });
@@ -41,11 +41,13 @@ ${body}
 *Cypress Command builds practical AI-enabled operating systems for owner-led businesses — including the owners and operators of commercial real estate. This article is educational. It is not legal, tax, or investment advice.*
 `;
   writeFileSync(`src/content/articles/field-notes/${n.slug}.md`, md);
-  for (const s of n.sections) for (const p of s.body) for (const sentence of p.split(/(?<=[.!?])\s+/)) if (FLAG.test(sentence)) rows.push([n.slug, sentence.trim()]);
+  const split = (p) => p.split(/(?<=[.!?][”"’']?)\s+/);
+  for (const sentence of split(n.dek)) if (FLAG.test(sentence)) rows.push([n.slug, '(deck) ' + sentence.trim()]);
+  for (const s of n.sections) for (const p of s.body) for (const sentence of split(p)) if (FLAG.test(sentence)) rows.push([n.slug, sentence.trim()]);
 }
 const table = `# Fact review — field notes harvested from the Grok journal
 
-Generated ${new Date().toISOString().slice(0, 10)}. One row per sentence containing a specific claim outside the brief's approved-facts list. Fill the Decision column with **accept**, **generalize**, or **cut**. A note moves to \`status: published\` only when every one of its rows is decided and applied.
+Generated ${new Date().toISOString().slice(0, 10)}. One row per sentence containing a number, a dollar figure, or a named place or party, in the deck or the body. Rows that state only approved facts can be accepted as-is; the list is deliberately over-inclusive because it is the gate. Fill the Decision column with **accept**, **generalize**, or **cut**. A note moves to \`status: published\` only when every one of its rows is decided and applied.
 
 Approved facts (from ARTICLE-BRIEF.md): 101–149 Arnould Blvd; ~63,000 SF (62,883 SF GLA); 27 units; two buildings; 4.84 acres; zoned CH; Arnould vs. "Arnold Heights Subd. Ext. No. 1"; variance 99-11797, 324 provided / 344 required; plat striping 314; bank servitude 2004-00057697, 13 spaces, expires 12/30/2034; bank parcel sold, not part of the center; church easement §3a liquor waiver survives termination, liquor line on plat. Dollar terms stay out.
 
