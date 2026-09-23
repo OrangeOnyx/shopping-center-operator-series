@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { remarkPlates } from './remark-article.mjs';
+import { remarkPlates, remarkStripFooter } from './remark-article.mjs';
 
 function heading(depth, value) {
   return { type: 'heading', depth, children: [{ type: 'text', value }] };
@@ -104,4 +104,68 @@ test('remarkPlates is case-insensitive on "the view from" and leaves unrelated h
   assert.equal(c[3].type, 'html');
   assert.equal(c[3].value, '</aside>');
   assert.equal(c[4].type, 'heading');
+});
+
+test('remarkPlates closes a depth-3 "the view from" section at the end of the document when it is the last section', () => {
+  const tree = {
+    type: 'root',
+    children: [heading(2, 'Intro'), paragraph(), heading(3, 'The view from Somewhere'), paragraph()],
+  };
+
+  remarkPlates()(tree);
+  const c = tree.children;
+
+  assert.equal(c.length, 6);
+  assert.equal(c[0].type, 'heading');
+  assert.equal(c[1].type, 'paragraph');
+
+  assert.equal(c[2].type, 'html');
+  assert.equal(c[2].value, '<aside class="plate-note wash-ink"><span class="plate-label">FIELD NOTE · ARNOULD BLVD</span>');
+  assert.equal(c[3].type, 'heading');
+  assert.equal(c[3].depth, 3);
+  assert.equal(c[4].type, 'paragraph');
+
+  // The field-note close is the final node — there is no following heading to stop at.
+  assert.equal(c[5].type, 'html');
+  assert.equal(c[5].value, '</aside>');
+});
+
+test('remarkPlates leaves "Viewing the roof" untouched — it does not start with "the view from"', () => {
+  const tree = { type: 'root', children: [heading(3, 'Viewing the roof'), paragraph()] };
+
+  remarkPlates()(tree);
+  const c = tree.children;
+
+  assert.equal(c.length, 2);
+  assert.equal(c[0].type, 'heading');
+  assert.equal(c[0].depth, 3);
+  assert.equal(c[1].type, 'paragraph');
+});
+
+test('remarkStripFooter then remarkPlates: the next-step close is the final node once the disclaimer is stripped', () => {
+  const tree = {
+    type: 'root',
+    children: [
+      heading(2, 'The practical next step'),
+      paragraph(),
+      { type: 'thematicBreak' },
+      {
+        type: 'paragraph',
+        children: [{ type: 'emphasis', children: [{ type: 'text', value: 'Cypress Command builds the operating layer.' }] }],
+      },
+    ],
+  };
+
+  remarkStripFooter()(tree);
+  remarkPlates()(tree);
+  const c = tree.children;
+
+  assert.equal(c.length, 4);
+  assert.equal(c[0].type, 'html');
+  assert.equal(c[0].value, '<aside class="plate-note wash-olive next-step"><span class="plate-label">NEXT STEPS</span>');
+  assert.equal(c[1].type, 'heading');
+  assert.equal(c[2].type, 'paragraph');
+
+  assert.equal(c[3].type, 'html');
+  assert.equal(c[3].value, '</aside>');
 });

@@ -9,10 +9,12 @@ test('flags raw hex, font faces, and shadows; allows tokens', () => {
     { path: 'c.css', text: 'box-shadow:  none; box-shadow:none;' },
     { path: 'd.css', text: 'box-shadow:0 1px 2px var(--x);' },
     { path: 'e.css', text: 'box-shadow: var(--cc-shadow-2); box-shadow:var(--cc-shadow-brand);' },
+    { path: 'f.css', text: 'box-shadow: var(--cc-shadow-2), 0 0 8px var(--x); box-shadow: var(--cc-shadow-9);' },
   ]);
-  assert.equal(v.length, 4);
+  assert.equal(v.length, 6);
   assert.equal(v.filter((s) => s.startsWith('a.css')).length, 3);
   assert.equal(v.filter((s) => s.startsWith('d.css')).length, 1);
+  assert.equal(v.filter((s) => s.startsWith('f.css')).length, 2);
 });
 
 test('ignores hex inside svg files and in comments about tokens', () => {

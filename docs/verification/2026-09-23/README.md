@@ -4,6 +4,8 @@ Built from branch `hub` after Tasks 1–4 of the 2026-09-23 color pass (commits 
 
 Both widths were captured with Playwright (`npx playwright@1.56.1 screenshot --browser=chromium --channel=chrome --viewport-size=<w>,<h> --wait-for-timeout=900 --full-page ...`) — `1280,900` for desktop, `390,1200` for phone — per the brief. Headless Chrome's own `--screenshot` flag was not used this round: as documented in the 2026-09-22 record, it clamps window width to ~500px on Windows regardless of the requested `--window-size`, corrupting narrow captures. Playwright honors the requested viewport at both widths. **Fix round 1** added `--wait-for-timeout=900` to every capture and recaptured the full set of 44: the first pass had taken the hub screenshots while the hero's `cc-reveal` entrance animation (560ms) was still mid-fade, so `hub-day-1280.png` and `hub-night-1280.png` showed a faded Cypress panel against the publisher band below it (which has no reveal and rendered at full opacity). Article plates also use `cc-reveal`, so the 900ms settle delay — comfortably past the 560ms animation plus its `data-delay` stagger — was applied to all 44 captures, not just the hub, to guarantee every entrance animation has finished before the screenshot is taken.
 
+Note: a fix wave after this capture changed tag backgrounds, numeral sizes, the hero hover, the calendar rest state, and search matching; the hub, series, map, and article-38 sets were recaptured afterward (see commit).
+
 ## Screenshots
 
 Naming: `<page>-<theme>-<width>.png`. 11 pages × 2 themes (day, night) × 2 widths (1280px desktop, 390px mobile) = 44 files.
@@ -46,10 +48,10 @@ series-day-1280.png           series-day-390.png           series-night-1280.png
 | Test suite | **PASS — 22/22** | `npm test` → `node --test src/lib/*.test.ts src/lib/*.test.mjs scripts/*.test.mjs`: 22 passing, 0 failing, 0 skipped (includes the `inkClass` tests from Task 2 and the `remarkPlates` tests from Task 4). |
 | Legacy-term scan | **PASS — clean** | `grep -rli -E "orange ocean\|groundwork\|atlas\|cypress command platform\|libertinus\|inter-variable" dist --include=*.html \| grep -v "35-why-otb-command"` → `clean` (article 35's OTB Command history mention correctly excluded). |
 | Phone-width captures: Playwright viewport 390, full page | **PASS — 22/22** | `ls docs/verification/2026-09-23/*-390.png \| wc -l` = 22; PNG-width check (`readUInt32BE(16)` on each file) prints 390 for all 22 files. |
-| Checklist persistence (article 36) | Verified by controller | Not capturable headlessly — a fresh Playwright page load per screenshot doesn't carry forward `localStorage` state set by a prior click. Controller verified item persistence across reload in a real browser. |
-| Search hits | Verified by controller | Not exercised headlessly in this pass. |
-| Theme persistence | Verified by controller | The `?theme=night` query override is a one-load forcing mechanism for deterministic capture, not itself proof of cross-navigation persistence; the controller confirmed `localStorage` `cc-theme` persistence in a real browser. |
-| Phone-width overflow (390px, no horizontal scroll) | Verified by controller | Controller confirmed no horizontal scroll at 390px on the pages checked in a real browser, including the hero panel, card washes, and calendar widget introduced by this color pass. |
+| Phone-width overflow at 375px | **PASS — 0 overflow** | hub 0, article 07 0, map 0, article 36 0. Recorded by the controller on 2026-09-23 against commit ad771db in the built-in browser. |
+| Checklist persistence (article 36) | **PASS** | 3 of 39 items ticked on article 36, still ticked after reload under `cc-checklist:pm-master`. Recorded by the controller on 2026-09-23 against commit ad771db in the built-in browser. |
+| Theme persistence | **PASS** | Toggle to night on the hub, `/about/` loads in night; key `cc-theme`. Recorded by the controller on 2026-09-23 against commit ad771db in the built-in browser. |
+| Search | **FAIL, then fixed** | Index has 40 entries; "cam reconciliation" returned 0 hits before F5 (phrase match), fixed by word matching in F5. Recorded by the controller on 2026-09-23 against commit ad771db in the built-in browser. |
 
 ## What changed in Brand Standards 2.2
 

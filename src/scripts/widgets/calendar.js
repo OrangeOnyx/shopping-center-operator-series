@@ -1,7 +1,7 @@
 export function renderCalendar(el, months) {
   const frame = document.createElement('div');
   frame.className = 'ix-frame';
-  frame.innerHTML = `<div class="ix-head"><span class="ix-title"><b>Interactive</b> — walk the operating year</span><span class="cc-caption">Twelve blocks, three forces: finance, weather, retail</span></div><span class="cc-caption">Quarters: Olive Q1 · Mustard Q2 · Terra Q3 · Ink Q4</span><div class="cal-grid" role="tablist"></div><div class="cal-detail" role="tabpanel"></div>`;
+  frame.innerHTML = `<div class="ix-head"><span class="ix-title"><b>Interactive</b> — walk the operating year</span><span class="cc-caption">Twelve blocks, three forces: finance, weather, retail</span></div><div class="ix-legend">Quarters: Olive Q1 · Mustard Q2 · Terra Q3 · Ink Q4</div><div class="cal-grid" role="tablist"></div><div class="cal-detail" role="tabpanel"></div>`;
   const grid = frame.querySelector('.cal-grid');
   const detail = frame.querySelector('.cal-detail');
   const quarterInk = (i) => (i < 3 ? 'ink-olive' : i < 6 ? 'ink-mustard' : i < 9 ? 'ink-terra' : 'ink-ink');
