@@ -1,0 +1,6 @@
+---
+const LABELS: Record<string, string> = { own: 'Own', run: 'Run', lease: 'Lease', finance: 'Finance', buy: 'Buy', sell: 'Sell' };
+interface Props { desk?: string }
+const { desk } = Astro.props;
+---
+{desk && <a class="cc-tag cc-tag-neutral" href={`/desk/${desk}/`}>{LABELS[desk]}</a>}

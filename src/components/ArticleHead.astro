@@ -1,0 +1,29 @@
+---
+import DeskChip from './DeskChip.astro';
+import Plate from './Plate.astro';
+import { partName, pad2 } from '../lib/articles';
+import type { Article } from '../lib/collections';
+interface Props { article: Article; collectionTitle: string; collectionUrl: string; total: number }
+const { article, collectionTitle, collectionUrl, total } = Astro.props;
+const d = article.data;
+const eyebrow = d.eyebrow || (article.collection === 'field-notes' ? 'FIELD NOTE' : '');
+---
+<header class="page-head">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href={collectionUrl}>{collectionTitle}</a>
+      {d.part && <><span aria-hidden="true">·</span><span>{d.part}</span></>}
+    </nav>
+    {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+    <h1>{d.title}</h1>
+    <p class="deck">{d.deck}</p>
+    <div class="article-meta">
+      <span class="meta">By {d.author}</span>
+      <span class="meta">{d.date}</span>
+      <span class="meta">{d.read_time} read</span>
+      {article.num > 0 && <span class="meta">Article {pad2(article.num)} of {total}</span>}
+      <DeskChip desk={d.desk} />
+    </div>
+    {d.feature_image && <Plate src={d.feature_image} alt={d.title} label={`PLATE ${pad2(article.num)} · ${partName(d.part) || 'FIELD NOTE'}`} caption={d.feature_caption} />}
+  </div>
+</header>

@@ -1,0 +1,23 @@
+---
+interface Props { headings: { depth: number; slug: string; text: string }[] }
+const h2s = Astro.props.headings.filter((h) => h.depth === 2);
+---
+{h2s.length > 1 && (
+  <aside class="rail" aria-label="Contents">
+    <div class="rail-inner">
+      <span class="cc-label">Contents</span>
+      <div id="rail-list">{h2s.map((h) => <a href={`#${h.slug}`} data-target={h.slug}>{h.text}</a>)}</div>
+    </div>
+  </aside>
+)}
+<script>
+  const links = Array.from(document.querySelectorAll<HTMLAnchorElement>('#rail-list a'));
+  if (links.length) {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) links.forEach((a) => a.classList.toggle('active', a.dataset.target === en.target.id));
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    links.forEach((a) => { const el = document.getElementById(a.dataset.target!); if (el) obs.observe(el); });
+  }
+</script>

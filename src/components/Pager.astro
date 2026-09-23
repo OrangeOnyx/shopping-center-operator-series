@@ -1,0 +1,11 @@
+---
+import { pad2 } from '../lib/articles';
+import type { Article } from '../lib/collections';
+interface Props { prev?: Article; next?: Article }
+const { prev, next } = Astro.props;
+const label = (a: Article, w: string) => a.num > 0 ? `${w} — ${pad2(a.num)}` : w;
+---
+<nav class="pager" aria-label="Previous and next">
+  {prev ? <a href={prev.url}><span class="pager-label">{label(prev, 'Previous')}</span><span class="pager-title">{prev.data.title}</span></a> : <span></span>}
+  {next ? <a href={next.url}><span class="pager-label">{label(next, 'Next')}</span><span class="pager-title">{next.data.title}</span></a> : <span></span>}
+</nav>
