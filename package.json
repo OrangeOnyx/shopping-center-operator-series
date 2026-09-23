@@ -1,9 +1,0 @@
-{
-  "name": "shopping-center-operator-series-v2",
-  "version": "2.0.0",
-  "private": true,
-  "description": "The Shopping Center Operator Series — a Cypress Command article library with day/night themes and interactive articles.",
-  "scripts": {
-    "dev": "node dev-server.js"
-  }
-}
