@@ -36,7 +36,7 @@ const jsonLd = [
 ];
 const related = (await getArticlesIn(series.data.slug)).filter((a) => a.slug !== article.slug && d.part && a.data.part === d.part).slice(0, 3);
 ---
-<Base title={`${d.title} — ${series.data.title}`} description={d.deck} ogImage={d.feature_image} type="article" jsonLd={jsonLd} bodyClass="cc-doc">
+<Base title={`${d.title} — ${series.data.title}`} description={d.deck} ogImage={d.feature_image} type="article" jsonLd={jsonLd} bodyClass="cc-doc" dataStatus={d.status}>
   <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progress-bar"></div></div>
   <ArticleHead article={article} collectionTitle={series.data.title} collectionUrl={`/${series.data.slug}/`} total={total} />
   <div class="wrap article-layout">

@@ -1,5 +1,14 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "cleanUrls": true,
-  "trailingSlash": false
+  "framework": "astro",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/article.html", "has": [{ "type": "query", "key": "id", "value": "(?<slug>[^&]+)" }], "destination": "/shopping-center/:slug/", "permanent": true },
+    { "source": "/article", "has": [{ "type": "query", "key": "id", "value": "(?<slug>[^&]+)" }], "destination": "/shopping-center/:slug/", "permanent": true },
+    { "source": "/article.html", "destination": "/shopping-center/", "permanent": true },
+    { "source": "/article", "destination": "/shopping-center/", "permanent": true },
+    { "source": "/map.html", "destination": "/shopping-center/map/", "permanent": true },
+    { "source": "/map", "destination": "/shopping-center/map/", "permanent": true },
+    { "source": "/index.html", "destination": "/", "permanent": true }
+  ]
 }
