@@ -1,0 +1,18 @@
+<script>
+  import checklists from '../data/widgets/checklists.json';
+  import aiMap from '../data/widgets/ai-map.json';
+  import sheets from '../data/widgets/sheets.json';
+  import calendar from '../data/widgets/calendar.json';
+  import { renderChecklist } from '../scripts/widgets/checklist.js';
+  import { renderAiMap } from '../scripts/widgets/ai-map.js';
+  import { renderSheetExplorer } from '../scripts/widgets/sheets.js';
+  import { renderCalendar } from '../scripts/widgets/calendar.js';
+
+  document.querySelectorAll<HTMLElement>('.ix[data-ix]').forEach((el) => {
+    const type = el.dataset.ix;
+    if (type === 'checklist') { const id = el.dataset.id!; renderChecklist(el, (checklists as any)[id], id); }
+    else if (type === 'ai-map') renderAiMap(el, aiMap);
+    else if (type === 'sheet-explorer') renderSheetExplorer(el, sheets);
+    else if (type === 'calendar') renderCalendar(el, calendar);
+  });
+</script>

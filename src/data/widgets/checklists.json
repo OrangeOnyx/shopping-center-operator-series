@@ -1,0 +1,352 @@
+{
+  "pm-master": {
+    "title": "The master checklist",
+    "storageNote": "Progress saves in this browser as you check items.",
+    "sections": [
+      {
+        "title": "Daily & weekly — the field rhythm",
+        "items": [
+          {
+            "t": "Walk the center: storefronts, sidewalks, parking field, lighting",
+            "n": "Look for trip hazards, burned-out poles, cart damage, standing water."
+          },
+          {
+            "t": "Check the main field and remote lots for litter, illegal dumping, and cart corrals",
+            "n": "Remote lots get skipped first; make them an explicit stop."
+          },
+          {
+            "t": "Inspect dumpster and rear service areas; confirm gates and enclosure",
+            "n": "Rear-of-house condition shows up in tenant satisfaction first."
+          },
+          {
+            "t": "Review tenant communication queue; respond within one business day",
+            "n": "Under the Operator Landlord approach, responsiveness is the product."
+          },
+          {
+            "t": "Confirm signage is lit and pylon faces are intact",
+            "n": "Signage is common-area work that directly feeds leasing."
+          }
+        ]
+      },
+      {
+        "title": "Monthly — the money rhythm",
+        "items": [
+          {
+            "t": "Run the rent cycle: statements, reminders, escalate delinquencies per the lease",
+            "n": "Courtesy reminder before the first; defined escalation after."
+          },
+          {
+            "t": "Reconcile the rent roll to the bank; investigate every variance",
+            "n": "A rent roll that does not match the bank is fiction."
+          },
+          {
+            "t": "Review the P&L against budget; annotate significant variances",
+            "n": "An unexplained variance grows. A named explanation can be managed."
+          },
+          {
+            "t": "Issue owner report: income, expenses, occupancy, work, decisions needed",
+            "n": "Same format every month — the report is a rhythm, not an event."
+          },
+          {
+            "t": "Check certificate of insurance expirations — tenants and vendors",
+            "n": "Request renewals 30 days before lapse, in writing."
+          },
+          {
+            "t": "Review aged work orders; nothing open past 30 days without a reason",
+            "n": "Every open order needs an owner and a next step."
+          }
+        ]
+      },
+      {
+        "title": "Quarterly — compliance & vendors",
+        "items": [
+          {
+            "t": "Pull and re-file current COIs for every tenant and active vendor",
+            "n": "Match against the lease-required coverages, not just presence."
+          },
+          {
+            "t": "Fire & life-safety inspection: extinguishers, exits, alarms, panels",
+            "n": "Document with dated photos; file in the owner safe."
+          },
+          {
+            "t": "Meet or call each key vendor: roof, HVAC, landscaping, paving, security",
+            "n": "Ask what they are seeing that you are not."
+          },
+          {
+            "t": "Review the critical-dates board: expirations, options, notice windows",
+            "n": "Anything inside 12 months gets a named next step."
+          },
+          {
+            "t": "Walk the roof (or schedule the walk) and inspect fascia, gutters, drains",
+            "n": "Roof problems are cheap at quarterly cadence and expensive at annual."
+          },
+          {
+            "t": "Test site lighting photometrics at night; replace dark poles",
+            "n": "Lighting drives both safety perception and evening sales."
+          }
+        ]
+      },
+      {
+        "title": "Seasonal — the site rhythm",
+        "items": [
+          {
+            "t": "Spring: full exterior refresh — landscaping, pressure washing, striping touch-up",
+            "n": "Curb appeal is leasing inventory."
+          },
+          {
+            "t": "Pre-summer (Gulf South by June 1): storm prep — trees trimmed, drains cleared, loose items secured",
+            "n": "Document pre-storm condition with dated photos."
+          },
+          {
+            "t": "Summer: HVAC service verified on every suite; confirm contract coverage",
+            "n": "Summer HVAC failure is a tenant-relations event, not a maintenance item."
+          },
+          {
+            "t": "Fall: parking lot inspection — cracks sealed before freeze or wet season",
+            "n": "Water enters cracks; what freezes or floods lifts asphalt."
+          },
+          {
+            "t": "Winter: holiday operations plan — parking, signage, extended hours lighting",
+            "n": "Set it in October, not November."
+          }
+        ]
+      },
+      {
+        "title": "Annually — the planning rhythm",
+        "items": [
+          {
+            "t": "Build the operating budget for next year; set the reserve contribution",
+            "n": "Fund the roofs and lots you already know you own."
+          },
+          {
+            "t": "Complete CAM reconciliation against actuals per the lease deadlines",
+            "n": "Deadlines are lease obligations — verify your own language."
+          },
+          {
+            "t": "Full property condition survey: roof, envelope, paving, site, signage",
+            "n": "Feed findings into the capital plan and the reserve study."
+          },
+          {
+            "t": "Insurance renewal review: values, coverages, claims history, bids",
+            "n": "Start 120 days before expiry; never renew on autopilot."
+          },
+          {
+            "t": "Property tax assessment review; file appeals where warranted",
+            "n": "Deadlines are jurisdictional — calendar them at the start of the year."
+          },
+          {
+            "t": "Update the emergency and continuity plan; confirm contact tree",
+            "n": "Include tenants, vendors, insurer, counsel, and utilities."
+          }
+        ]
+      },
+      {
+        "title": "Per-lease standing records",
+        "items": [
+          {
+            "t": "A one-to-two-page abstract for every tenant, verified against the executed lease",
+            "n": "Dates, rent schedule, options, exclusives, CAM treatment, notices."
+          },
+          {
+            "t": "Every executed lease, amendment, and side letter filed and named consistently",
+            "n": "Suite_Tenant_DocumentType_Date."
+          },
+          {
+            "t": "Security deposit and guaranty on record for every suite",
+            "n": "Note the gaps; missing deposits surface at the worst times."
+          },
+          {
+            "t": "Renewal alert set at 12 / 9 / 6 months before every expiration",
+            "n": "Late renewal conversations are negotiated from weakness."
+          }
+        ]
+      },
+      {
+        "title": "Vendors & contracts",
+        "items": [
+          {
+            "t": "A vendor table: scope, contract terms, rates, COI expiration, contacts",
+            "n": "One table, one home, current to the month."
+          },
+          {
+            "t": "Every service contract reviewed before auto-renewal",
+            "n": "Diarize renewal windows the day the contract is signed."
+          },
+          {
+            "t": "Warranties on capital work filed in the owner safe with expiration dates",
+            "n": "A warranty you cannot find is a warranty you do not have."
+          }
+        ]
+      },
+      {
+        "title": "Systems & data",
+        "items": [
+          {
+            "t": "One source of truth for leases, vendors, work orders, and financials",
+            "n": "If it is not in the system, it did not happen."
+          },
+          {
+            "t": "Backup verified: exports run, restore tested, off-site copy current",
+            "n": "A backup that has never been restored is a hope."
+          },
+          {
+            "t": "Access review: who can reach the records, banking, and accounts — and should they",
+            "n": "Quarterly, and after any staffing change."
+          },
+          {
+            "t": "The checklist itself reviewed and revised",
+            "n": "Add what was missed; remove what no longer serves the property."
+          }
+        ]
+      }
+    ]
+  },
+  "doc-safe": {
+    "title": "The owner document safe",
+    "storageNote": "Progress saves in this browser as you check items.",
+    "sections": [
+      {
+        "title": "Entity & ownership",
+        "items": [
+          {
+            "t": "Formation documents and operating agreement for every owning entity",
+            "n": "Including amendments — the version history matters."
+          },
+          {
+            "t": "EIN records and registered agent documentation",
+            "n": "Required for banking, tax filings, and counsel."
+          },
+          {
+            "t": "Recorded warranty deeds and the complete chain of title instruments",
+            "n": "The paper that proves the asset is yours."
+          },
+          {
+            "t": "Title insurance policy and closing documents from acquisition",
+            "n": "The title policy is the first call when a boundary or servitude question arises."
+          },
+          {
+            "t": "Corporate resolutions or authorizations naming who may act for the entity",
+            "n": "Banks and title companies will ask for these."
+          }
+        ]
+      },
+      {
+        "title": "Property & land",
+        "items": [
+          {
+            "t": "The recorded plat and all recorded revisions",
+            "n": "For a legacy center, the plat is the operating map — parking, easements, setbacks."
+          },
+          {
+            "t": "Surveys: original, ALTA/NSPS, and any as-builts",
+            "n": "Marked-up survey copies belong here too."
+          },
+          {
+            "t": "Zoning records: classification, variances, and conditions of approval",
+            "n": "Legacy variances (parking, green area) are assets — keep the paper that proves them."
+          },
+          {
+            "t": "Environmental reports: Phase I, Phase II, and any remediation records",
+            "n": "Lenders and buyers will request these in every transaction."
+          },
+          {
+            "t": "Easements and servitudes: reciprocal access, utility, signage",
+            "n": "Include recorded exhibits and a simple indexed list."
+          }
+        ]
+      },
+      {
+        "title": "Leases & tenants",
+        "items": [
+          {
+            "t": "Every executed lease, amendment, side letter, and exhibit — complete and ordered",
+            "n": "Sequence matters: a missing amendment changes what the lease says."
+          },
+          {
+            "t": "A verified lease abstract for every suite",
+            "n": "One to two pages; verified against the executed documents."
+          },
+          {
+            "t": "Estoppel certificates collected from tenants at acquisition and refinance",
+            "n": "Filed by suite, with the date of the certifying statement."
+          },
+          {
+            "t": "Guaranties and personal undertakings",
+            "n": "Note which are active and which have been released."
+          },
+          {
+            "t": "Insurance obligations per lease: required coverages and minimum limits",
+            "n": "So COIs can be checked against something written."
+          }
+        ]
+      },
+      {
+        "title": "Insurance & risk",
+        "items": [
+          {
+            "t": "All property policies, renewals, and endorsements — current and historical",
+            "n": "Historical policies matter for claims with long tails."
+          },
+          {
+            "t": "Claims file: FNOL, adjuster correspondence, settlements, and reserves",
+            "n": "Close every claim to a final paper trail."
+          },
+          {
+            "t": "Tenant and vendor COIs, current year plus recent history",
+            "n": "The active expirations also live in the operating system."
+          },
+          {
+            "t": "Flood and wind documentation where applicable — maps, elevation certificates, policies",
+            "n": "In Gulf South markets, this family is first-class, not an afterthought."
+          }
+        ]
+      },
+      {
+        "title": "Finance & tax",
+        "items": [
+          {
+            "t": "Loan documents: note, mortgage, guarantees, and every amendment or modification",
+            "n": "Include lender-required reporting commitments."
+          },
+          {
+            "t": "Appraisals and inspection reports from acquisition and refinance",
+            "n": "They benchmark value in future conversations."
+          },
+          {
+            "t": "Tax assessments, bills, and appeal records by year",
+            "n": "Win an appeal once and the record pays for itself annually."
+          },
+          {
+            "t": "Year-end financial statements and depreciation schedules",
+            "n": "Hand your accountant a complete year, not an archaeology project."
+          }
+        ]
+      },
+      {
+        "title": "Operations & continuity",
+        "items": [
+          {
+            "t": "Major service contracts: roof, HVAC, paving, landscaping, security",
+            "n": "Diarized with expiration and renewal windows."
+          },
+          {
+            "t": "Capital work records: contracts, warranties, permits, and completion documents",
+            "n": "Warranty + proof of install = enforceable protection."
+          },
+          {
+            "t": "Utilities: account numbers, meter locations, and service contracts",
+            "n": "Someone other than you should be able to transfer service in an emergency."
+          },
+          {
+            "t": "The one-page access map: where the safe is, how it is organized, who holds keys and passwords",
+            "n": "Sealed with counsel or a partner — the safe must survive its owner."
+          },
+          {
+            "t": "Redundancy verified: three copies, two media, one off-site — tested this year",
+            "n": "A copy that has never been opened is a rumor."
+          }
+        ]
+      }
+    ]
+  }
+}

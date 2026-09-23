@@ -1,0 +1,56 @@
+{
+  "helps": {
+    "label": "AI helps here",
+    "cards": [
+      {
+        "t": "Lease abstraction",
+        "d": "First-pass summaries of executed leases — dates, rent schedules, options, exclusives, CAM treatment. A person verifies every abstract against the source before it enters the file."
+      },
+      {
+        "t": "Drafting routine notices",
+        "d": "Renewal outreach, maintenance notifications, certificate requests, delinquency follow-ups. AI drafts in the operator's voice; a named person edits and sends."
+      },
+      {
+        "t": "Owner & lender reports",
+        "d": "Assembling monthly reports from rent roll and ledger data, formatting variance notes, preparing packages. Judgment about what the numbers mean stays with the operator."
+      },
+      {
+        "t": "Expense anomaly flags",
+        "d": "Surfacing the bill that doubled, the repair category trending up, the invoice off contract terms — early enough to ask why while it is cheap."
+      },
+      {
+        "t": "Document search & Q&A",
+        "d": "\"What does the lease say about signage?\" answered against the property's own documents — a pointer to the governing page, not a legal opinion."
+      },
+      {
+        "t": "Meeting & inspection notes",
+        "d": "Turning walk-through dictation or shorthand into dated, filed notes with owners and follow-ups."
+      }
+    ]
+  },
+  "humans": {
+    "label": "People stay in charge",
+    "cards": [
+      {
+        "t": "Negotiations & concessions",
+        "d": "Every term exchanged with a tenant is a judgment about the asset, the relationship, and the market. No tool sets your opening position."
+      },
+      {
+        "t": "Anything that commits the ownership",
+        "d": "Notices exercising rights, approvals spending money, letters creating obligations — a named person reads, decides, and signs."
+      },
+      {
+        "t": "Interpretation of rights",
+        "d": "An AI summary is a pointer, not an opinion. When the answer matters — exclusivity, caps, options — the documents are read in full, and counsel weighs in when stakes justify it."
+      },
+      {
+        "t": "Exceptions & emergencies",
+        "d": "The tenant in distress, the vendor dispute, the insurance claim. Systems route routine work; every exception goes to a person by design."
+      },
+      {
+        "t": "What gets sent",
+        "d": "The verification rule: AI drafts, flags, and organizes — a named person reviews, decides, and sends. Every time, without exception."
+      }
+    ]
+  }
+}

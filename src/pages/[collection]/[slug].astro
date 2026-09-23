@@ -5,6 +5,7 @@ import ArticleHead from '../../components/ArticleHead.astro';
 import ContentsRail from '../../components/ContentsRail.astro';
 import Pager from '../../components/Pager.astro';
 import PublisherNote from '../../components/PublisherNote.astro';
+import Widgets from '../../components/Widgets.astro';
 import { getSeriesList, getArticlesIn } from '../../lib/collections';
 import { partName } from '../../lib/articles';
 
@@ -42,6 +43,7 @@ const related = (await getArticlesIn(series.data.slug)).filter((a) => a.slug !==
     <article>
       <div class="prose" id="prose"><Content /></div>
       <PublisherNote />
+      {article.interactive && <Widgets />}
     </article>
     <ContentsRail headings={headings} />
   </div>
