@@ -1,0 +1,13 @@
+---
+import { pad2 } from '../lib/articles';
+import type { Article } from '../lib/collections';
+interface Props { article: Article; kicker?: string }
+const { article: a, kicker } = Astro.props;
+---
+<a class="cc-card cc-card-accent card" href={a.url}>
+  {a.data.feature_image && <img src={a.data.feature_image} alt="" loading="lazy" />}
+  <span class="card-kicker">{kicker ?? (a.num > 0 ? `Article ${pad2(a.num)}` : a.data.date)}</span>
+  <span class="card-title">{a.data.title}</span>
+  <span class="card-deck">{a.data.deck}</span>
+  <span class="meta">{a.data.read_time}{a.interactive ? ' · Interactive' : ''}</span>
+</a>

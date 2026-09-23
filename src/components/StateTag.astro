@@ -1,0 +1,5 @@
+---
+interface Props { state: 'published' | 'coming-soon' }
+const { state } = Astro.props;
+---
+{state === 'published' ? <span class="cc-tag cc-tag-success">Published</span> : <span class="cc-tag cc-tag-warning">In progress</span>}

@@ -1,0 +1,62 @@
+---
+import Base from '../../layouts/Base.astro';
+import Search from '../../components/Search.astro';
+import PartIndex from '../../components/PartIndex.astro';
+import ArticleRow from '../../components/ArticleRow.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import StateTag from '../../components/StateTag.astro';
+import Plate from '../../components/Plate.astro';
+import { getSeriesList, getArticlesIn } from '../../lib/collections';
+
+export async function getStaticPaths() {
+  const series = await getSeriesList();
+  return Promise.all(series.map(async (s) => ({ params: { collection: s.data.slug }, props: { series: s, articles: await getArticlesIn(s.data.slug) } })));
+}
+const { series, articles } = Astro.props;
+const s = series.data;
+const interactive = articles.filter((a) => a.interactive).slice(-3).reverse();
+const jsonLd = [{ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+  { '@type': 'ListItem', position: 1, name: 'Cypress Command Articles', item: 'https://articles.cypresscommand.com/' },
+  { '@type': 'ListItem', position: 2, name: s.title, item: `https://articles.cypresscommand.com/${s.slug}/` } ] }];
+---
+<Base title={`${s.title} — Cypress Command`} description={s.deck} ogImage={s.heroImage} jsonLd={jsonLd}>
+  <header class="page-head">
+    <div class="wrap">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="/">Collections</a><span aria-hidden="true">·</span><span>{s.shortTitle}</span></nav>
+      <div class="tag-row"><span class="eyebrow">{s.kind === 'lane' ? 'Lane' : 'Series'}</span><StateTag state={s.state} /></div>
+      <h1>{s.title}</h1>
+      <p class="deck">{s.deck}</p>
+      {s.state === 'published' && (
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#index">Browse the {s.kind === 'lane' ? 'notes' : 'series'}</a>
+          {s.hasMap && <a class="btn btn-secondary" href={`/${s.slug}/map/`}>See the map</a>}
+        </div>
+      )}
+      {s.heroImage && <Plate src={s.heroImage} alt="" label={`PLATE 01 · ${s.shortTitle.toUpperCase()}`} caption={s.heroCaption} />}
+    </div>
+  </header>
+
+  {s.state === 'coming-soon' && (
+    <section class="section"><div class="wrap">
+      <div class="section-head"><span class="num">Planned</span><span class="title">What this series will cover</span><span class="kicker">In progress</span></div>
+      {s.plannedTitles.length ? <ol class="planned">{s.plannedTitles.map((t) => <li>{t}</li>)}</ol> : <p class="muted">Titles are being drafted. The deck above is the promise.</p>}
+      <p class="muted">Meanwhile, the <a href="/shopping-center/">Shopping Center Operator Series</a> and the <a href="/field-notes/">Field Notes</a> are complete and free to read.</p>
+    </div></section>
+  )}
+
+  {s.state === 'published' && interactive.length > 0 && (
+    <section class="section"><div class="wrap">
+      <div class="section-head"><span class="num">Tools</span><span class="title">Interactive articles</span><span class="kicker">Progress saves in your browser</span></div>
+      <div class="cards">{interactive.map((a) => <ArticleCard article={a} />)}</div>
+    </div></section>
+  )}
+
+  {s.state === 'published' && (
+    <div class="wrap" id="index"><Search scope={s.slug} placeholder={`Search ${s.shortTitle}`} /></div>
+  )}
+
+  {s.state === 'published' && s.kind === 'series' && <PartIndex parts={s.parts} articles={articles} />}
+  {s.state === 'published' && s.kind === 'lane' && (
+    <section class="section"><div class="wrap"><div class="rows">{articles.map((a) => <ArticleRow article={a} showCollection={a.collection !== s.slug ? 'From the Shopping Center Operator Series' : undefined} />)}</div></div></section>
+  )}
+</Base>

@@ -1,0 +1,20 @@
+---
+import DeskChip from './DeskChip.astro';
+import { pad2 } from '../lib/articles';
+import type { Article } from '../lib/collections';
+interface Props { article: Article; showCollection?: string }
+const { article: a, showCollection } = Astro.props;
+---
+<a class="row" href={a.url}>
+  <span class="row-num">{a.num > 0 ? pad2(a.num) : '—'}</span>
+  <span>
+    <span class="row-title">{a.data.title}</span>
+    <span class="row-deck">{a.data.deck}</span>
+    {showCollection && <span class="meta">{showCollection}</span>}
+  </span>
+  <span class="row-meta">
+    {a.interactive && <span class="cc-tag cc-tag-accent">Interactive</span>}
+    <span class="meta">{a.data.read_time}</span>
+    <DeskChip desk={a.data.desk} />
+  </span>
+</a>
