@@ -3,20 +3,13 @@ import Base from '../../layouts/Base.astro';
 import DeskChips from '../../components/DeskChips.astro';
 import ArticleRow from '../../components/ArticleRow.astro';
 import { getArticlesByDesk, getSeriesList } from '../../lib/collections';
+import { DESK_IDS, DESKS, type DeskId } from '../../lib/desks';
 
-const DESKS: Record<string, { label: string; blurb: string }> = {
-  own: { label: 'Own', blurb: 'Title, plat, parking, entities, constraints.' },
-  run: { label: 'Run', blurb: 'Dates, rent roll, vacancy, maintenance.' },
-  lease: { label: 'Lease', blurb: 'Rent, exclusives, anchors, variance.' },
-  finance: { label: 'Finance', blurb: 'Underwriting, debt, recoveries.' },
-  buy: { label: 'Buy', blurb: 'Diligence, access, names that do not match.' },
-  sell: { label: 'Sell', blurb: 'What a buyer audits.' },
-};
 export async function getStaticPaths() {
-  return ['own', 'run', 'lease', 'finance', 'buy', 'sell'].map((desk) => ({ params: { desk } }));
+  return DESK_IDS.map((desk) => ({ params: { desk } }));
 }
 const { desk } = Astro.params;
-const meta = DESKS[desk!];
+const meta = DESKS[desk as DeskId];
 const series = await getSeriesList();
 const titles = Object.fromEntries(series.map((s) => [s.data.slug, s.data.title]));
 const articles = await getArticlesByDesk(desk!);

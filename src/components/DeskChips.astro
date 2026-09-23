@@ -1,8 +1,8 @@
 ---
-const DESKS = [['own', 'Own'], ['run', 'Run'], ['lease', 'Lease'], ['finance', 'Finance'], ['buy', 'Buy'], ['sell', 'Sell']];
+import { DESK_IDS, DESKS } from '../lib/desks';
 interface Props { active?: string }
 const { active } = Astro.props;
 ---
 <div class="tag-row desk-chips" aria-label="Desks">
-  {DESKS.map(([id, label]) => <a class={`cc-tag ${active === id ? 'cc-tag-accent' : 'cc-tag-neutral'}`} href={`/desk/${id}/`} aria-current={active === id ? 'page' : undefined}>{label}</a>)}
+  {DESK_IDS.map((id) => <a class={`cc-tag ${active === id ? 'cc-tag-accent' : 'cc-tag-neutral'}`} href={`/desk/${id}/`} aria-current={active === id ? 'page' : undefined}>{DESKS[id].label}</a>)}
 </div>

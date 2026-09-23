@@ -1,6 +1,7 @@
 ---
-const LABELS: Record<string, string> = { own: 'Own', run: 'Run', lease: 'Lease', finance: 'Finance', buy: 'Buy', sell: 'Sell' };
-interface Props { desk?: string }
-const { desk } = Astro.props;
+import { DESKS } from '../lib/desks';
+interface Props { desk?: string; link?: boolean }
+const { desk, link = true } = Astro.props;
 ---
-{desk && <a class="cc-tag cc-tag-neutral" href={`/desk/${desk}/`}>{LABELS[desk]}</a>}
+{desk && link && <a class="cc-tag cc-tag-neutral" href={`/desk/${desk}/`}>{DESKS[desk].label}</a>}
+{desk && !link && <span class="cc-tag cc-tag-neutral">{DESKS[desk].label}</span>}
