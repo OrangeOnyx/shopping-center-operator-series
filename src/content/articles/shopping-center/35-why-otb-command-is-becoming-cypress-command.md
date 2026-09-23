@@ -43,7 +43,7 @@ From the property's side of the fence, the rename is barely visible — and that
 
 ## Postscript — September 22, 2026
 
-The rename landed in two steps. The tool became "Cypress Command" on September 11, 2026, and on September 22 the product name was fixed as **Command Platform** — the full composite, never shortened in market-facing use — with the flagship deployment moved to **otb.cypresscommand.com**. Cypress Command, without the third word, remains the name of the practice that publishes this series. The manuals, the print footers, and the generated documents now carry the full product name; the open repository keeps its original `otb-command` name because repository names are infrastructure, not branding. On the same day, Brand Standards 2.0 shortened the software's public name to Command Platform, so that "Cypress Command" names only the company.
+The rename landed in two steps. The tool became "Cypress Command" on September 11, 2026, with the flagship deployment moved to **otb.cypresscommand.com**. On September 22, Brand Standards 2.0 settled the naming hierarchy: the company is Cypress Command, and the software beneath it carries a functional name, **Command Platform**, the way the service is called Command Installation. Cypress Command alone remains the name of the practice that publishes this series. The manuals, the print footers, and the generated documents now carry the product name; the open repository keeps its original `otb-command` name because repository names are infrastructure, not branding.
 
 ## The practical next step
 
