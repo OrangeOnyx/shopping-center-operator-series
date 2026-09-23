@@ -216,10 +216,10 @@ h4, .h4 { font-family: var(--cc-font-sans); font-weight: 700; font-size: var(--c
 .cal-mname { font-family: var(--cc-font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cc-fg-muted); display: block; }
 .cal-mtitle { font-size: 13px; font-weight: 700; line-height: 18px; display: block; margin-top: 2px; }
 .cal-month:hover .cal-mtitle { color: var(--cc-accent); }
-.cal-month.active { background: var(--cc-bg-elev); border-top-color: var(--cc-accent); }
+.cal-month.active { background: var(--part-wash, var(--cc-bg-elev)); border-top-color: var(--part-ink, var(--cc-accent)); }
 .cal-detail { padding: var(--cc-space-6) var(--cc-space-4); }
 .cal-detail-title { font-family: var(--cc-font-display); font-weight: 700; font-size: 22px; line-height: 28px; margin-bottom: var(--cc-space-1); }
-.cal-detail-focus { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cc-accent); margin-bottom: var(--cc-space-4); }
+.cal-detail-focus { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--part-ink, var(--cc-accent)); margin-bottom: var(--cc-space-4); }
 .cal-detail ul { list-style: none; margin: 0; padding: 0; }
 .cal-detail li { font-size: 14px; line-height: 22px; padding: var(--cc-space-2) 0 var(--cc-space-2) var(--cc-space-4); border-top: var(--cc-hairline) solid var(--cc-border); position: relative; }
 .cal-detail li::before { content: "—"; position: absolute; left: 0; color: var(--cc-accent); }
@@ -289,6 +289,4 @@ h4, .h4 { font-family: var(--cc-font-sans); font-weight: 700; font-size: var(--c
 .plate-note.wash-olive .plate-label { color: var(--cc-olive); }
 .plate-note h2, .plate-note h3 { margin-top: var(--cc-space-2); border-top: 0; padding-top: 0; }
 .prose blockquote { background: var(--cc-bg-elev); padding: var(--cc-space-4) var(--cc-space-6); border-radius: var(--cc-radius-doc); }
-.cal-month.active { border-top-color: var(--part-ink); background: var(--part-wash); }
-.cal-detail-focus { color: var(--part-ink, var(--cc-accent)); }
 .ink-legend .cc-tag::before { display: none; }

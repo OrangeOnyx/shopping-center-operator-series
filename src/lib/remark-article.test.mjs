@@ -60,6 +60,38 @@ test('remarkPlates wraps the view-from H3 in a field-note aside and the practica
   assert.equal(c[11].value, '</aside>');
 });
 
+test('remarkPlates wraps a depth-2 "view from" heading through the next heading depth <= 2, closing before the next-step open', () => {
+  const tree = {
+    type: 'root',
+    children: [heading(2, 'The view from Arnould Blvd'), paragraph(), heading(2, 'The practical next step')],
+  };
+
+  remarkPlates()(tree);
+  const c = tree.children;
+
+  assert.equal(c.length, 7);
+
+  // Field-note open precedes the depth-2 "view from" heading.
+  assert.equal(c[0].type, 'html');
+  assert.equal(c[0].value, '<aside class="plate-note wash-ink"><span class="plate-label">FIELD NOTE · ARNOULD BLVD</span>');
+  assert.equal(c[1].type, 'heading');
+  assert.equal(c[1].depth, 2);
+  assert.equal(c[2].type, 'paragraph');
+
+  // The field-note close lands before the next-step open, not after it.
+  assert.equal(c[3].type, 'html');
+  assert.equal(c[3].value, '</aside>');
+  assert.equal(c[4].type, 'html');
+  assert.equal(c[4].value, '<aside class="plate-note wash-olive next-step"><span class="plate-label">NEXT STEPS</span>');
+
+  assert.equal(c[5].type, 'heading');
+  assert.equal(c[5].depth, 2);
+
+  // The next-step close is the final node.
+  assert.equal(c[6].type, 'html');
+  assert.equal(c[6].value, '</aside>');
+});
+
 test('remarkPlates is case-insensitive on "the view from" and leaves unrelated headings untouched', () => {
   const tree = {
     type: 'root',

@@ -26,14 +26,8 @@ function mdText(node) {
   return (node.children || []).map(mdText).join('');
 }
 
-/** Concatenate the text descendants of a node (headings, etc). */
-function text(node) {
-  if (node.type === 'text') return node.value;
-  return (node.children || []).map(text).join('');
-}
-
 /**
- * Wrap "The view from …" H3 sections in a field-note aside, and the closing
+ * Wrap "The view from …" H2/H3 sections in a field-note aside, and the closing
  * "The practical next step" H2 section in a next-step aside. Operates on
  * tree.children directly; walks forward, adjusting the cursor past each
  * wrapped region as it splices the open/close html nodes in.
@@ -44,9 +38,14 @@ export function remarkPlates() {
     let i = 0;
     while (i < children.length) {
       const node = children[i];
-      if (node.type === 'heading' && node.depth === 3 && /^the view from/i.test(text(node).trim().toLowerCase())) {
+      if (
+        node.type === 'heading' &&
+        (node.depth === 2 || node.depth === 3) &&
+        /^the view from/i.test(mdText(node).trim().toLowerCase())
+      ) {
+        const boundaryDepth = node.depth;
         let j = i + 1;
-        while (j < children.length && !(children[j].type === 'heading' && children[j].depth <= 3)) j++;
+        while (j < children.length && !(children[j].type === 'heading' && children[j].depth <= boundaryDepth)) j++;
         children.splice(j, 0, { type: 'html', value: '</aside>' });
         children.splice(i, 0, {
           type: 'html',
@@ -55,7 +54,7 @@ export function remarkPlates() {
         i = j + 2;
         continue;
       }
-      if (node.type === 'heading' && node.depth === 2 && text(node).trim().toLowerCase() === 'the practical next step') {
+      if (node.type === 'heading' && node.depth === 2 && mdText(node).trim().toLowerCase() === 'the practical next step') {
         let j = i + 1;
         while (j < children.length && !(children[j].type === 'heading' && children[j].depth === 2)) j++;
         children.splice(j, 0, { type: 'html', value: '</aside>' });
