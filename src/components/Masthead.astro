@@ -1,0 +1,23 @@
+---
+import Lockup from '../../design-system/logo/cc-lockup-h-current.svg';
+import ThemeToggle from './ThemeToggle.astro';
+const path = Astro.url.pathname;
+const links = [
+  { href: '/', label: 'Collections', match: (p: string) => p === '/' },
+  { href: '/field-notes/', label: 'Field Notes', match: (p: string) => p.startsWith('/field-notes/') },
+  { href: '/desk/own/', label: 'Desks', match: (p: string) => p.startsWith('/desk/') },
+  { href: '/about/', label: 'About', match: (p: string) => p.startsWith('/about/') },
+];
+---
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="brand" href="/" aria-label="Cypress Command — Articles">
+      <Lockup aria-hidden="true" />
+      <span class="brand-descriptor">Practical intelligence for real operations.</span>
+    </a>
+    <nav aria-label="Primary">
+      {links.map((l) => <a class="nav-link" href={l.href} aria-current={l.match(path) ? 'page' : undefined}>{l.label}</a>)}
+      <ThemeToggle />
+    </nav>
+  </div>
+</header>

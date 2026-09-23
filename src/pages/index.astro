@@ -1,10 +1,8 @@
 ---
-import { getSeriesList, getArticlesIn, getInteractive } from '../lib/collections';
+import Base from '../layouts/Base.astro';
+import { getSeriesList } from '../lib/collections';
 const series = await getSeriesList();
-const sc = await getArticlesIn('shopping-center');
-const fn = await getArticlesIn('field-notes');
-const ix = await getInteractive();
 ---
-<html lang="en"><head><meta charset="utf-8"><title>Cypress Command</title></head>
-<body><p>{series.map((s) => s.data.slug).join(',')}</p>
-<p>sc={sc.length} fn={fn.length} ix={ix.length} first={sc[0]?.slug} url={sc[0]?.url}</p></body></html>
+<Base title="Cypress Command — Articles" description="Operator-grade writing on the work that runs real businesses.">
+  <div class="wrap"><h1>Hub scaffold</h1><p>{series.length} collections</p></div>
+</Base>

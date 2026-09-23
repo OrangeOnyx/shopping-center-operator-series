@@ -1,0 +1,16 @@
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to night mode">
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 13.5A8.5 8.5 0 0 1 10.5 4 7.5 7.5 0 1 0 20 13.5Z"/></svg>
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+</button>
+<script>
+  const btn = document.getElementById('theme-toggle');
+  function apply(t: string) {
+    document.documentElement.setAttribute('data-theme', t);
+    try { localStorage.setItem('cc-theme', t); } catch {}
+    btn?.setAttribute('aria-label', t === 'night' ? 'Switch to day mode' : 'Switch to night mode');
+  }
+  apply(document.documentElement.getAttribute('data-theme') || 'day');
+  btn?.addEventListener('click', () => {
+    apply(document.documentElement.getAttribute('data-theme') === 'night' ? 'day' : 'night');
+  });
+</script>

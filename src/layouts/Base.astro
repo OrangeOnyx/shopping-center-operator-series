@@ -1,0 +1,44 @@
+---
+import '@fontsource/besley/400-italic.css';
+import '@fontsource/besley/700.css';
+import '@fontsource/besley/900.css';
+import '@fontsource/archivo/400.css';
+import '@fontsource/archivo/500.css';
+import '@fontsource/archivo/700.css';
+import '@fontsource/archivo/800.css';
+import '@fontsource/courier-prime/400.css';
+import '@fontsource/courier-prime/700.css';
+import '../../design-system/tokens.css';
+import '../../design-system/components.css';
+import '../styles/site.css';
+import Seo from '../components/Seo.astro';
+import Masthead from '../components/Masthead.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props { title: string; description: string; canonical?: string; ogImage?: string; type?: 'website' | 'article'; jsonLd?: object[]; bodyClass?: string }
+const { title, description, canonical = Astro.url.pathname, ogImage, type, jsonLd, bodyClass = '' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script is:inline>
+    (function () {
+      try {
+        var t = localStorage.getItem('cc-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <Seo title={title} description={description} canonical={canonical} ogImage={ogImage} type={type} jsonLd={jsonLd} />
+</head>
+<body class={bodyClass}>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <Masthead />
+  <main id="main"><slot /></main>
+  <Footer />
+</body>
+</html>
