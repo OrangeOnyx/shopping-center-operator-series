@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { splitId, numberOf, partName, articleUrl, sortForCollection, pad2 } from './articles.ts';
+import { splitId, numberOf, partName, articleUrl, sortForCollection, pad2, inkClass } from './articles.ts';
 
 test('splitId separates collection and slug', () => {
   assert.deepEqual(splitId('shopping-center/07-reading-a-rent-roll'), {
@@ -32,4 +32,16 @@ test('sortForCollection orders series by number and lanes by date desc', () => {
 test('pad2 zero-pads', () => {
   assert.equal(pad2(7), '07');
   assert.equal(pad2(40), '40');
+});
+
+test('inkClass maps a known ink to its class', () => {
+  assert.equal(inkClass('olive'), 'ink-olive');
+});
+
+test('inkClass maps undefined to ink-ink', () => {
+  assert.equal(inkClass(undefined), 'ink-ink');
+});
+
+test('inkClass maps an unknown ink to ink-ink', () => {
+  assert.equal(inkClass('oxblood'), 'ink-ink');
 });

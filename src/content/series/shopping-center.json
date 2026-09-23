@@ -8,17 +8,17 @@
   "order": 1,
   "hasMap": true,
   "parts": [
-    { "num": 1, "roman": "I", "name": "Owning" },
-    { "num": 2, "roman": "II", "name": "Acquiring" },
-    { "num": 3, "roman": "III", "name": "Financing" },
-    { "num": 4, "roman": "IV", "name": "Leasing" },
-    { "num": 5, "roman": "V", "name": "Operating" },
-    { "num": 6, "roman": "VI", "name": "Financial Management" },
-    { "num": 7, "roman": "VII", "name": "Marketing & Tenant Success" },
-    { "num": 8, "roman": "VIII", "name": "Selling" },
-    { "num": 9, "roman": "IX", "name": "Field Notes from On The Blvd" },
-    { "num": 10, "roman": "X", "name": "AI & Operating Systems" },
-    { "num": 11, "roman": "XI", "name": "Tools & Checklists" }
+    { "num": 1, "roman": "I", "name": "Owning", "ink": "terra" },
+    { "num": 2, "roman": "II", "name": "Acquiring", "ink": "olive" },
+    { "num": 3, "roman": "III", "name": "Financing", "ink": "mustard" },
+    { "num": 4, "roman": "IV", "name": "Leasing", "ink": "ink" },
+    { "num": 5, "roman": "V", "name": "Operating", "ink": "terra" },
+    { "num": 6, "roman": "VI", "name": "Financial Management", "ink": "olive" },
+    { "num": 7, "roman": "VII", "name": "Marketing & Tenant Success", "ink": "mustard" },
+    { "num": 8, "roman": "VIII", "name": "Selling", "ink": "ink" },
+    { "num": 9, "roman": "IX", "name": "Field Notes from On The Blvd", "ink": "ink" },
+    { "num": 10, "roman": "X", "name": "AI & Operating Systems", "ink": "ink" },
+    { "num": 11, "roman": "XI", "name": "Tools & Checklists", "ink": "ink" }
   ],
   "heroImage": "/img/hero.jpg",
   "heroCaption": "A neighborhood center at golden hour. The work this series describes happens here, every week."

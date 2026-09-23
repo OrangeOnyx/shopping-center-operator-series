@@ -1,16 +1,16 @@
 ---
 import ArticleRow from './ArticleRow.astro';
-import { partName } from '../lib/articles';
+import { partName, inkClass } from '../lib/articles';
 import type { Article } from '../lib/collections';
-interface Props { parts: { num: number; roman: string; name: string }[]; articles: Article[] }
+interface Props { parts: { num: number; roman: string; name: string; ink?: string }[]; articles: Article[] }
 const { parts, articles } = Astro.props;
 const groups = parts.map((p) => ({ part: p, items: articles.filter((a) => partName(a.data.part) === p.name) })).filter((g) => g.items.length);
 ---
 <div id="part-index">
   {groups.map((g) => (
-    <section class="section part-section" data-part={g.part.name} id={`part-${g.part.num}`}>
+    <section class={`section part-section ${inkClass(g.part.ink)}`} data-part={g.part.name} id={`part-${g.part.num}`}>
       <div class="wrap">
-        <div class="section-head part-head" role="button" tabindex="0" aria-expanded="true">
+        <div class="section-head part-head inked" role="button" tabindex="0" aria-expanded="true">
           <span class="num">Part {g.part.roman}</span>
           <span class="title">{g.part.name}</span>
           <span class="kicker">{g.items.length} article{g.items.length > 1 ? 's' : ''}</span>

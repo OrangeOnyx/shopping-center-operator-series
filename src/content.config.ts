@@ -35,7 +35,7 @@ const series = defineCollection({
     state: z.enum(['published', 'coming-soon']),
     order: z.number(),
     hasMap: z.boolean().default(false),
-    parts: z.array(z.object({ num: z.number(), roman: z.string(), name: z.string() })).default([]),
+    parts: z.array(z.object({ num: z.number(), roman: z.string(), name: z.string(), ink: z.enum(['terra', 'olive', 'mustard', 'ink']).default('ink') })).default([]),
     plannedTitles: z.array(z.string()).default([]),
     heroImage: z.string().optional(),
     heroCaption: z.string().optional(),
