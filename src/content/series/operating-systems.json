@@ -1,0 +1,21 @@
+{
+  "slug": "operating-systems",
+  "title": "The Operating Systems Series",
+  "shortTitle": "Operating Systems",
+  "deck": "How real businesses map recurring work, decide where AI helps, keep people accountable, and keep a workflow useful after the pilot ends.",
+  "kind": "series",
+  "state": "coming-soon",
+  "order": 3,
+  "plannedTitles": [
+    "Before You Choose an AI Tool, Map the Work",
+    "Five Signs a Workflow Has an Operating Problem, Not a People Problem",
+    "Where Human Review Belongs in an AI-Enabled Workflow",
+    "The Missing Role in Most Automation Projects: The Process Owner",
+    "How to Measure an AI Workflow Without Inventing a Dashboard",
+    "When a Team Is Chasing Updates, the System Is Telling You Something",
+    "The Smallest Useful AI System Is Often the Best Place to Start",
+    "Why a Good Workflow Fails When the Operating Routine Is Unclear",
+    "Design for the Work That Does Not Go According to Plan",
+    "From Pilot to Practice: What It Takes to Keep an AI Workflow Useful"
+  ]
+}

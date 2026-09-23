@@ -1,0 +1,12 @@
+{
+  "slug": "governed-ai",
+  "title": "The Governed AI Series",
+  "shortTitle": "Governed AI",
+  "deck": "The practical side of governance when AI touches real decisions: what the model prepares, what the owner signs, and where the boundary is written down.",
+  "kind": "series",
+  "state": "coming-soon",
+  "order": 6,
+  "plannedTitles": [
+    "AI in CRE Underwriting: What the Model Prepares and What the Owner Signs"
+  ]
+}

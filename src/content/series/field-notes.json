@@ -1,0 +1,9 @@
+{
+  "slug": "field-notes",
+  "title": "Field Notes",
+  "shortTitle": "Field Notes",
+  "deck": "Short, specific notes from the operator's desk. One observation, one lesson, no series required.",
+  "kind": "lane",
+  "state": "published",
+  "order": 2
+}

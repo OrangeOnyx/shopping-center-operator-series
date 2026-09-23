@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark';
 import { remarkStripFirstH1, remarkStripFooter } from './src/lib/remark-article.mjs';
 
 export default defineConfig({
@@ -7,6 +8,6 @@ export default defineConfig({
   trailingSlash: 'always',
   build: { format: 'directory' },
   markdown: {
-    remarkPlugins: [remarkStripFirstH1, remarkStripFooter],
+    processor: unified({ remarkPlugins: [remarkStripFirstH1, remarkStripFooter] }),
   },
 });

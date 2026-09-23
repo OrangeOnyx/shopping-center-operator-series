@@ -1,4 +1,8 @@
 ---
+import { getCollection } from 'astro:content';
+const articles = await getCollection('articles');
+const series = await getCollection('series');
 ---
 <html lang="en"><head><meta charset="utf-8"><title>Cypress Command</title></head>
-<body><p>Hub scaffold.</p></body></html>
+<body><p>{articles.length} articles, {series.length} collections</p>
+<ul>{articles.slice(0, 3).map((a) => <li>{a.id} — {a.data.desk}</li>)}</ul></body></html>
