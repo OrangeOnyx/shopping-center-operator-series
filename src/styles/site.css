@@ -235,3 +235,21 @@ h4, .h4 { font-family: var(--cc-font-sans); font-weight: 700; font-size: var(--c
 .flow-roman { font-family: var(--cc-font-display); font-weight: 900; font-size: 20px; }
 .flow-name { font-family: var(--cc-font-sans); font-weight: 700; font-size: 13px; }
 .flow-return { max-width: 60em; }
+
+/* Hub, desks, about, publisher band */
+.hub-head { padding-top: var(--cc-space-16); }
+.hub-head h1 { max-width: 16em; }
+.collection-card { display: flex; flex-direction: column; gap: var(--cc-space-3); color: var(--cc-fg); text-decoration: none; }
+.collection-card:hover { text-decoration: none; }
+.collection-card:hover .card-title { color: var(--cc-accent); }
+.desk-chips { margin-top: var(--cc-space-3); }
+.publisher-band { margin-top: var(--cc-space-16); padding: var(--cc-space-16) 0; }
+.publisher-inner { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: var(--cc-space-8); align-items: start; }
+.publisher-inner svg { width: 64px; height: 64px; color: var(--cc-on-brand); }
+.publisher-inner h2 { color: var(--cc-on-brand); margin: var(--cc-space-2) 0 var(--cc-space-4); }
+.publisher-inner p { max-width: 42em; margin: 0 0 var(--cc-space-4); font-size: 16px; line-height: 25px; }
+.publisher-signoff { font-family: var(--cc-font-display); font-style: italic; font-size: 19px; }
+.publisher-band .btn-secondary { background: transparent; color: var(--cc-on-brand); border-color: var(--cc-on-brand); }
+@media (max-width: 600px) { .publisher-inner { grid-template-columns: 1fr; } }
+.about-prose { padding-top: 0; }
+.site-footer { margin-top: 0; }

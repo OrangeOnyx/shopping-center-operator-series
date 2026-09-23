@@ -1,0 +1,17 @@
+---
+import StateTag from './StateTag.astro';
+import type { CollectionEntry } from 'astro:content';
+interface Props { series: CollectionEntry<'series'>; count: number }
+const { series, count } = Astro.props;
+const s = series.data;
+---
+<a class="cc-card cc-card-accent collection-card" href={`/${s.slug}/`}>
+  <div class="tag-row"><span class="eyebrow">{s.kind === 'lane' ? 'Lane' : 'Series'}</span><StateTag state={s.state} /></div>
+  <span class="card-title">{s.title}</span>
+  <span class="card-deck">{s.deck}</span>
+  <span class="meta">
+    {s.state === 'published'
+      ? `${count} ${s.kind === 'lane' ? (count === 1 ? 'note' : 'notes') : (count === 1 ? 'article' : 'articles')}`
+      : s.plannedTitles.length ? `${s.plannedTitles.length} titles planned` : 'Coming soon'}
+  </span>
+</a>

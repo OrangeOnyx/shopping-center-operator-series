@@ -1,8 +1,50 @@
 ---
 import Base from '../layouts/Base.astro';
-import { getSeriesList } from '../lib/collections';
+import CollectionCard from '../components/CollectionCard.astro';
+import DeskChips from '../components/DeskChips.astro';
+import Search from '../components/Search.astro';
+import ArticleRow from '../components/ArticleRow.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import PublisherBand from '../components/PublisherBand.astro';
+import { getSeriesList, getArticlesIn, getInteractive } from '../lib/collections';
+
 const series = await getSeriesList();
+const counts = Object.fromEntries(await Promise.all(series.map(async (s) => [s.data.slug, (await getArticlesIn(s.data.slug)).length])));
+const notes = (await getArticlesIn('field-notes')).slice(0, 4);
+const interactive = (await getInteractive()).slice(-3).reverse();
+const published = series.filter((s) => s.data.state === 'published').length;
 ---
-<Base title="Cypress Command — Articles" description="Operator-grade writing on the work that runs real businesses.">
-  <div class="wrap"><h1>Hub scaffold</h1><p>{series.length} collections</p></div>
+<Base title="Cypress Command — Articles" description="Operator-grade writing on the work that runs real businesses. The Shopping Center Operator Series, Field Notes, and more series in progress.">
+  <header class="page-head hub-head"><div class="wrap">
+    <span class="eyebrow">Cypress Command · Articles</span>
+    <h1 class="display">Operator-grade writing on the work that runs real businesses.</h1>
+    <p class="deck">A finished forty-article series on owning and running a shopping center, a lane of field notes from the operator's desk, and four series in progress.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#collections">Browse the collections</a><a class="btn btn-secondary" href="/shopping-center/">Start with the series</a></div>
+  </div></header>
+
+  <section class="section" id="collections"><div class="wrap">
+    <div class="section-head"><span class="num">01</span><span class="title">Collections</span><span class="kicker">{published} published · {series.length - published} in progress</span></div>
+    <div class="cards">{series.map((s) => <CollectionCard series={s} count={counts[s.data.slug]} />)}</div>
+  </div></section>
+
+  <section class="section"><div class="wrap">
+    <div class="section-head"><span class="num">02</span><span class="title">Find an article</span><span class="kicker">Across every collection</span></div>
+    <Search placeholder="Search every collection — try “CAM reconciliation”, “parking”, “checklist”" />
+    <p class="muted">Or browse by desk:</p>
+    <DeskChips />
+  </div></section>
+
+  {interactive.length > 0 && (
+    <section class="section"><div class="wrap">
+      <div class="section-head"><span class="num">03</span><span class="title">Interactive articles</span><span class="kicker">Progress saves in your browser</span></div>
+      <div class="cards">{interactive.map((a) => <ArticleCard article={a} />)}</div>
+    </div></section>
+  )}
+
+  <section class="section"><div class="wrap">
+    <div class="section-head"><span class="num">04</span><span class="title">Latest field notes</span><span class="kicker"><a href="/field-notes/">All notes</a></span></div>
+    <div class="rows">{notes.map((a) => <ArticleRow article={a} />)}</div>
+  </div></section>
+
+  <PublisherBand />
 </Base>
