@@ -1,17 +1,17 @@
 ---
 title: "Liquor lines and neighbor waivers"
-deck: "A $350 church license can outlive the license. Read the survival clause before you court a restaurant."
+deck: "A modest church easement can outlive its own rent check. Read the survival clause before you court a restaurant."
 author: "Cypress Command"
 date: "2026-09-17"
 read_time: "6 min"
 desk: "own"
-status: "review"
+status: "published"
 source: "grok-journal"
 ---
 
 # Liquor lines and neighbor waivers
 
-Neighbor deals look small until they govern use. A church easement at $350 a month for 25 years is not the story. The story is a liquor waiver that survives termination, with a line drawn on the plat and restaurants allowed within 175 feet. If that waiver dies, a food-and-beverage plan dies with it.
+Neighbor deals look small until they govern use. A church easement with a modest rent over a long term is not the story. The story is a liquor waiver that survives termination, with a line drawn on the plat that governs where restaurants may pour. If that waiver dies, a food-and-beverage plan dies with it.
 
 ## Draw the line on the working plan
 

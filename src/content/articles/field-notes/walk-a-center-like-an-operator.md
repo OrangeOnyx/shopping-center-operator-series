@@ -5,7 +5,7 @@ author: "Cypress Command"
 date: "2026-09-09"
 read_time: "7 min"
 desk: "run"
-status: "review"
+status: "published"
 source: "grok-journal"
 ---
 
@@ -13,7 +13,7 @@ source: "grok-journal"
 
 Most first visits start at the pylon and walk the storefronts. That is a shopper’s walk. An operator’s walk starts with access. Where can a car actually enter? Is the median a full movement or a right-in/right-out? Which curb cut is shared with a neighbor you do not control?
 
-On The Boulevard the only full-movement cut on Arnould sits on a 55-foot median opening. The second Arnould drive is shared with the bank. Johnston, Patricia, and Marie Antoinette each have their own cuts, some of them service-only. If you miss that, you will write a leasing story the site cannot deliver at 5:30 p.m. on a Friday.
+On The Boulevard the only full-movement cut on Arnould sits on a single median opening. The second Arnould drive is shared with the bank. The side streets each have their own cuts, some of them service-only. If you miss that, you will write a leasing story the site cannot deliver at 5:30 p.m. on a Friday.
 
 ## Count what the plat counted
 
@@ -21,7 +21,7 @@ Do not trust the aerial. Mature oaks hide overflow lots. Unlabeled head-in rows 
 
 ## Finish on the service street
 
-Dumpsters, grease, HVAC pads, employee parking, and delivery trucks live on the back. If the long building sits 18.73 feet off a 40-foot right-of-way, you will feel it. That dimension is not a curiosity. It is why a tenant’s rear door, a parallel parking row, and a city street are in a knife fight every morning.
+Dumpsters, grease, HVAC pads, employee parking, and delivery trucks live on the back. If the long building sits close to a public right-of-way, you will feel it. That dimension is not a curiosity. It is why a tenant’s rear door, a parallel parking row, and a city street are in a knife fight every morning.
 
 ---
 

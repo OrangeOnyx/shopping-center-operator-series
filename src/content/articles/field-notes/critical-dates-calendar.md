@@ -5,7 +5,7 @@ author: "Cypress Command"
 date: "2026-09-15"
 read_time: "7 min"
 desk: "run"
-status: "review"
+status: "published"
 source: "grok-journal"
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: "Exclusive use: the silent occupancy killer"
-deck: "One sentence in a 2024 lease can freeze a category for the rest of the field. Read every exclusive before you shop a vacant box."
+deck: "One sentence in an old lease can freeze a category for the rest of the field. Read every exclusive before you shop a vacant box."
 author: "Cypress Command"
 date: "2026-09-13"
 read_time: "7 min"
 desk: "lease"
-status: "review"
+status: "published"
 source: "grok-journal"
 ---
 

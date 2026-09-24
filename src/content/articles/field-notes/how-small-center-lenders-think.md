@@ -5,7 +5,7 @@ author: "Cypress Command"
 date: "2026-09-16"
 read_time: "8 min"
 desk: "finance"
-status: "review"
+status: "published"
 source: "grok-journal"
 ---
 
@@ -15,7 +15,7 @@ Community and regional lenders who finance 4–8 acre strips are not fooled by a
 
 ## What to bring to the first meeting
 
-Plat, variance, one-page exclusive matrix, rent roll as total rent, a map of curb cuts, and a sentence on the remote parking lot. If you cannot explain Lot 7 under the oaks, you are not ready for a credit committee that will look at the same aerial and think it does not exist.
+Plat, variance, one-page exclusive matrix, rent roll as total rent, a map of curb cuts, and a sentence on the remote parking lot. If you cannot explain the remote lot, you are not ready for a credit committee that will look at the same aerial and think it does not exist.
 
 ---
 

@@ -5,7 +5,7 @@ author: "Cypress Command"
 date: "2026-09-10"
 read_time: "9 min"
 desk: "own"
-status: "review"
+status: "published"
 source: "grok-journal"
 ---
 
@@ -15,9 +15,9 @@ Owners talk GLA. Cities talk stalls. The tighter of the two is the real capacity
 
 ## Two numbers, two jobs
 
-Cite 324 when you are talking to zoning, lenders, and buyers. Plan operations on what the plat actually stripes — here, 314, with a ten-stall gap that may live on an unlabeled Johnston row still waiting on ground confirmation. Mixing those numbers is how you approve a use the field cannot absorb.
+Cite 324 when you are talking to zoning, lenders, and buyers. Plan operations on what the plat actually stripes — here, 314, with a ten-stall gap between the plat and the variance count. Mixing those numbers is how you approve a use the field cannot absorb.
 
-Also watch green area. A 20 percent landscape requirement is not decoration. Removing a stall row to “open the front” can violate both parking and green at once.
+Also watch green area. A landscape-area requirement is not decoration. Removing a stall row to “open the front” can violate both parking and green at once.
 
 ## Leasing against the cap
 

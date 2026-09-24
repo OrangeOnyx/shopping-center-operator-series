@@ -5,7 +5,7 @@ author: "Cypress Command"
 date: "2026-09-08"
 read_time: "8 min"
 desk: "own"
-status: "review"
+status: "published"
 source: "grok-journal"
 ---
 
@@ -19,7 +19,7 @@ On The Boulevard in Lafayette is a clean specimen. Two buildings. 27 demised uni
 
 Land, building, parking, and access. Everything else — signage, landscaping, HVAC, CAM — is a consequence of those four. If you cannot draw those four from memory after a site walk, you do not know the asset yet.
 
-Land is not “4.84 acres.” Land is parcels, easements, a remote overflow lot, a sold-out bank notch that is not yours, and a church waiver that still governs liquor even if the rent check stops. Building is not “62,883 SF.” Building is demising walls, HVAC assignments, and which units back a 40-foot right-of-way.
+Land is not “4.84 acres.” Land is parcels, easements, a remote overflow lot, a sold-out bank notch that is not yours, and a church waiver that still governs liquor even if the rent check stops. Building is not “62,883 SF.” Building is demising walls, HVAC assignments, and which units back a public right-of-way.
 
 ## Why neighborhood scale is a different sport
 

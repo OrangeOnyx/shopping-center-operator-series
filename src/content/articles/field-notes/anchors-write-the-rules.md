@@ -5,13 +5,13 @@ author: "Cypress Command"
 date: "2026-09-14"
 read_time: "7 min"
 desk: "lease"
-status: "review"
+status: "published"
 source: "grok-journal"
 ---
 
 # Anchors write the operating rules
 
-Jason’s Deli anchors the Patricia and Arnould corner at On The Boulevard. The lease does not merely occupy 149. It requires a monthly HVAC PM contract with a named contractor, and the tenant maintains 100 percent of that unit’s HVAC. That is an operating system, not a rider.
+The anchor restaurant at the corner of the center sets the tone for the row. The lease does not merely occupy its suite. It sets the HVAC obligations in detail — who contracts, who pays, who maintains. That is an operating system, not a rider.
 
 ## Treat named vendors as constraints
 

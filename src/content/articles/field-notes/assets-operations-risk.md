@@ -5,7 +5,7 @@ author: "Cypress Command"
 date: "2026-09-19"
 read_time: "8 min"
 desk: "own"
-status: "review"
+status: "published"
 source: "grok-journal"
 ---
 
@@ -19,7 +19,7 @@ Monday: assets (any change to land-use, stalls, exclusives). Wednesday: operatio
 
 ## The case, in one paragraph
 
-On The Boulevard is 62,883 SF on 4.84 acres at 101–149 Arnould Blvd, Lafayette. Two buildings, 27 units, CH zoning, a parking variance that caps floor area, a remote lot under oaks, a bank notch that is not yours, and a liquor waiver that outlives a church rent check. Run it as a system or it will run you as a collection of storefronts.
+On The Boulevard is 62,883 SF on 4.84 acres at 101–149 Arnould Blvd, Lafayette. Two buildings, 27 units, CH zoning, a parking variance that caps floor area, a bank notch that is not yours, and a liquor waiver that outlives a church rent check. Run it as a system or it will run you as a collection of storefronts.
 
 ---
 

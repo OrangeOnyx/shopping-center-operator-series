@@ -5,13 +5,13 @@ author: "Cypress Command"
 date: "2026-09-11"
 read_time: "6 min"
 desk: "buy"
-status: "review"
+status: "published"
 source: "grok-journal"
 ---
 
 # Plat versus street: names that do not match
 
-On The Boulevard sits on Arnould Boulevard. The recorded subdivision is “Arnold Heights Subd. Ext. No. 1.” One letter, two legal facts. Title confirmed both in June 2026. Keep both. Never collapse them.
+On The Boulevard sits on Arnould Boulevard. The recorded subdivision is “Arnold Heights Subd. Ext. No. 1.” One letter, two legal facts. Title work confirmed both spellings. Keep both. Never collapse them.
 
 This pattern is common on mid-century neighborhood centers. Streets get renamed or respelt. Subdivisions keep the original plat caption. Your abstracts, lender surveys, and insurance binders have to carry the ugly version.
 

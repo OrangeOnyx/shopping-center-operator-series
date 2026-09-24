@@ -5,13 +5,13 @@ author: "Cypress Command"
 date: "2026-09-17"
 read_time: "8 min"
 desk: "own"
-status: "review"
+status: "published"
 source: "grok-journal"
 ---
 
 # Curb cuts, medians, and reciprocal access
 
-On The Boulevard: eight Belle curb cuts. One full-movement Arnould drive on a 55-foot median opening. A second Arnould drive shared with JD Bank. Johnston access. Three Patricia cuts including a service drive. Two Marie Antoinette cuts plus a pedestrian breezeway apron. All aisles two-way per plat arrows.
+On The Boulevard, the curb cuts are a mix of Belle’s own drives and shared ones. One full-movement Arnould drive on a median opening. A second Arnould drive shared with the bank parcel under a recorded servitude. Johnston access. Side-street cuts on Patricia, including a service drive. Cuts on Marie Antoinette plus a pedestrian breezeway apron. All aisles two-way per plat arrows.
 
 The bank corner is not Belle property. It is reached through a reciprocal servitude. If you render it as yours, you will teach staff, brokers, and appraisers the wrong boundary.
 

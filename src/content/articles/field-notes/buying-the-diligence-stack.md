@@ -5,7 +5,7 @@ author: "Cypress Command"
 date: "2026-09-11"
 read_time: "10 min"
 desk: "buy"
-status: "review"
+status: "published"
 source: "grok-journal"
 ---
 
@@ -17,7 +17,7 @@ If you start with NOI you will underwrite a machine you have not seen. Neighborh
 
 ## What to pull before you fly
 
-Recorded plat (here: Montagnet & Domingue, 1994, last revised 2019). Variance entry number. Assessor parcels — all of them, including overflow. Reciprocal servitude instruments. Anchor HVAC and exclusive-use riders. Meter maps. You are not collecting trivia. You are mapping what you cannot change after closing.
+Recorded plat, with every recorded revision. Variance entry number. Assessor parcels — all of them, including overflow. Reciprocal servitude instruments. Anchor HVAC and exclusive-use riders. Meter maps. You are not collecting trivia. You are mapping what you cannot change after closing.
 
 ## A working rule
 
