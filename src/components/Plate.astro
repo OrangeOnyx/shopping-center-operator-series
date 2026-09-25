@@ -1,10 +1,11 @@
 ---
-interface Props { src: string; alt: string; label: string; caption?: string }
-const { src, alt, label, caption } = Astro.props;
+import Illustration from './Illustration.astro';
+interface Props { src?: string; illo?: string; alt: string; label: string; caption?: string }
+const { src, illo, alt, label, caption } = Astro.props;
 ---
-<figure class="plate cc-reveal">
+<figure class={`plate cc-reveal${illo && !src ? ' plate-drawing' : ''}`}>
   <span class="plate-rule cc-rule-draw" aria-hidden="true"></span>
   <span class="plate-label">{label}</span>
-  <img src={src} alt={alt} loading="lazy" />
+  {src ? <img src={src} alt={alt} loading="lazy" /> : illo && <Illustration name={illo} />}
   {caption && <figcaption>{caption}</figcaption>}
 </figure>

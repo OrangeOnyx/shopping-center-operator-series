@@ -1,0 +1,20 @@
+---
+import { partName, inkClass } from '../lib/articles';
+import type { Article } from '../lib/collections';
+interface Props { parts: { num: number; roman: string; name: string; ink?: string }[]; articles: Article[] }
+const { parts, articles } = Astro.props;
+const tiles = parts
+  .map((p) => ({ part: p, count: articles.filter((a) => partName(a.data.part) === p.name).length }))
+  .filter((t) => t.count);
+---
+<nav class="part-strip" aria-label="Parts of the series">
+  {tiles.map((t) => (
+    <a class={`part-tile ${inkClass(t.part.ink)}`} href={`#part-${t.part.num}`}>
+      <span class="inkblock part-tile-head">
+        <span class="part-tile-roman">{t.part.roman}</span>
+        <span class="part-tile-name">{t.part.name}</span>
+      </span>
+      <span class="part-tile-foot meta">{t.count} article{t.count > 1 ? 's' : ''}</span>
+    </a>
+  ))}
+</nav>

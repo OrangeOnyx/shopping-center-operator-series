@@ -1,11 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
 import CollectionCard from '../components/CollectionCard.astro';
-import DeskChips from '../components/DeskChips.astro';
+import DeskTiles from '../components/DeskTiles.astro';
 import Search from '../components/Search.astro';
 import ArticleRow from '../components/ArticleRow.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import PublisherBand from '../components/PublisherBand.astro';
+import Illustration from '../components/Illustration.astro';
 import { getSeriesList, getArticlesIn, getInteractive } from '../lib/collections';
 
 const series = await getSeriesList();
@@ -13,6 +14,11 @@ const counts = Object.fromEntries(await Promise.all(series.map(async (s) => [s.d
 const notes = (await getArticlesIn('field-notes')).slice(0, 4);
 const interactive = (await getInteractive()).slice(-3).reverse();
 const published = series.filter((s) => s.data.state === 'published').length;
+const heroTiles = [
+  { n: counts['shopping-center'], label: 'Shopping center articles', href: '/shopping-center/', ink: 'terra' },
+  { n: counts['field-notes'], label: 'Field notes from the desk', href: '/field-notes/', ink: 'olive' },
+  { n: series.length - published, label: 'Series in progress', href: '#collections', ink: 'mustard' },
+];
 ---
 <Base title="Cypress Command — Articles" description="Operator-grade writing on the work that runs real businesses. The Shopping Center Operator Series, Field Notes, and more series in progress.">
   <section class="hero-band"><div class="wrap">
@@ -21,6 +27,15 @@ const published = series.filter((s) => s.data.state === 'published').length;
       <h1 class="display">Operator-grade writing on the work that runs real businesses.</h1>
       <p class="deck">A finished forty-article series on owning and running a shopping center, a lane of field notes from the operator's desk, and four series in progress.</p>
       <div class="hero-actions"><a class="btn btn-primary" href="#collections">Browse the collections</a><a class="btn btn-outline-paper" href="/shopping-center/">Start with the series</a></div>
+      <div class="hero-tiles">
+        {heroTiles.map((t) => (
+          <a class={`inkblock hero-tile ink-${t.ink}`} href={t.href}><span class="hero-tile-n">{t.n}</span><span class="hero-tile-label">{t.label}</span></a>
+        ))}
+      </div>
+      <figure class="hero-drawing">
+        <Illustration name="survey" />
+        <figcaption><span class="plate-label">Plate 00 · Arnold Heights Subd. Ext. No. 1</span> On The Blvd as the plat draws it: two buildings, 324 spaces provided against 344 required, and the liquor line a church easement put on paper.</figcaption>
+      </figure>
     </div>
   </div></section>
 
@@ -33,7 +48,7 @@ const published = series.filter((s) => s.data.state === 'published').length;
     <div class="section-head"><span class="num">02</span><span class="title">Find an article</span><span class="kicker">Across every collection</span></div>
     <Search placeholder="Search every collection — try “CAM reconciliation”, “parking”, “checklist”" />
     <p class="muted">Or browse by desk (a desk is a category, not a status):</p>
-    <DeskChips />
+    <DeskTiles />
   </div></section>
 
   {interactive.length > 0 && (
@@ -45,7 +60,7 @@ const published = series.filter((s) => s.data.state === 'published').length;
 
   <section class="section"><div class="wrap">
     <div class="section-head"><span class="num">04</span><span class="title">Latest field notes</span><span class="kicker"><a href="/field-notes/">All notes</a></span></div>
-    <div class="rows">{notes.map((a) => <ArticleRow article={a} />)}</div>
+    <div class="rows ink-olive">{notes.map((a) => <ArticleRow article={a} />)}</div>
   </div></section>
 
   <PublisherBand />

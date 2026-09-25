@@ -277,6 +277,7 @@ h4, .h4 { font-family: var(--cc-font-sans); font-weight: 700; font-size: var(--c
 .ink-olive { --part-ink: var(--cc-olive); --part-wash: var(--cc-wash-olive); }
 .ink-mustard { --part-ink: var(--cc-mustard); --part-wash: var(--cc-wash-mustard); }
 .ink-ink { --part-ink: var(--cc-fg); --part-wash: var(--cc-wash-ink); }
+.ink-muscadine { --part-ink: var(--cc-muscadine); --part-wash: var(--cc-wash-muscadine); }
 .spine { border-left: 3px solid var(--part-ink, var(--cc-accent)); padding-left: var(--cc-space-4); }
 .section-head.inked { border-top-color: var(--part-ink); }
 .section-head.inked .num { color: var(--part-ink); }
@@ -292,3 +293,120 @@ h4, .h4 { font-family: var(--cc-font-sans); font-weight: 700; font-size: var(--c
 .plate-note.wash-olive .plate-label { color: var(--cc-olive); }
 .plate-note h2, .plate-note h3 { margin-top: var(--cc-space-2); border-top: 0; padding-top: 0; }
 .prose blockquote { background: var(--cc-bg-elev); padding: var(--cc-space-4) var(--cc-space-6); border-radius: var(--cc-radius-doc); }
+
+/* Editorial line illustrations — colors are roles, never raw values.
+   Olive = done or healthy, mustard = needs attention, terra = structure, plate ink = the part's own subject. */
+.illo { display: block; width: 100%; height: auto; color: var(--cc-fg); --illo-acc: var(--cc-plate-ink, var(--part-ink, var(--cc-accent))); --illo-wash: var(--part-wash, var(--cc-wash-terra)); --sw: 2; overflow: visible; }
+.illo :is(.k, .t, .a, .o, .m, .tr) { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.illo .k { stroke: currentColor; stroke-width: var(--sw); }
+.illo .k.heavy { stroke-width: calc(var(--sw) * 3.5); }
+.illo .t { stroke: var(--cc-fg-muted); stroke-width: calc(var(--sw) * 0.6); }
+.illo .a { stroke: var(--illo-acc); stroke-width: calc(var(--sw) * 1.4); }
+.illo .o { stroke: var(--cc-olive); stroke-width: calc(var(--sw) * 1.2); }
+.illo .m { stroke: var(--cc-mustard); stroke-width: calc(var(--sw) * 1.2); }
+.illo .tr { stroke: var(--cc-terra); stroke-width: calc(var(--sw) * 1.2); }
+.illo .dash { stroke-dasharray: 7 7; }
+.illo .f { fill: var(--cc-bg-elev); stroke: none; }
+.illo .w { fill: var(--illo-wash); stroke: none; }
+.illo .af { fill: var(--illo-acc); stroke: none; }
+.illo .wo { fill: color-mix(in srgb, var(--cc-olive) 24%, transparent); stroke: none; }
+.illo .wm { fill: color-mix(in srgb, var(--cc-mustard) 24%, transparent); stroke: none; }
+.illo .wt { fill: color-mix(in srgb, var(--cc-terra) 24%, transparent); stroke: none; }
+.illo .wi { fill: var(--cc-wash-ink); stroke: none; }
+.illo .fo { fill: var(--cc-olive); stroke: none; }
+.illo .fm { fill: var(--cc-mustard); stroke: none; }
+.illo .ft { fill: var(--cc-terra); stroke: none; }
+
+.plate-drawing { background: var(--part-wash, var(--cc-wash-terra)); }
+.plate-drawing .illo .f { fill: var(--cc-bg); }
+.plate-drawing .illo { padding: var(--cc-space-4) var(--cc-space-2) var(--cc-space-2); max-height: 340px; }
+.plate-drawing figcaption { font-weight: 700; font-size: 13px; color: var(--cc-fg-muted); }
+
+.card-illo { margin: 0 calc(-1 * var(--cc-space-4)); padding: var(--cc-space-3) var(--cc-space-4) var(--cc-space-2); border-bottom: var(--cc-hairline) solid var(--cc-border); background: var(--part-wash); }
+.card-illo .illo { --sw: 3; }
+.collection-card.cc-card-accent { border-top-color: var(--part-ink, var(--cc-accent)); }
+.collection-card .card-head { margin-bottom: 0; }
+
+/* Hub hero: the drawing inks on the cypress panel in paper and terra-night. */
+.hero-panel { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); grid-template-rows: auto auto auto 1fr; column-gap: var(--cc-space-12); }
+.hero-panel > :not(.hero-drawing) { grid-column: 1; }
+.hero-drawing { grid-column: 2; grid-row: 1 / -1; align-self: center; margin: 0; }
+.hero-drawing .illo { color: var(--cc-on-brand); --illo-acc: var(--cc-on-brand-accent); --illo-wash: color-mix(in srgb, var(--cc-on-brand) 10%, transparent); --sw: 2.6; }
+.hero-drawing .illo .t { stroke: color-mix(in srgb, var(--cc-on-brand) 62%, transparent); }
+.hero-drawing .illo .f { fill: color-mix(in srgb, var(--cc-on-brand) 8%, transparent); }
+.hero-drawing .illo .wi { fill: color-mix(in srgb, var(--cc-on-brand) 8%, transparent); }
+.hero-drawing .illo :is(.o, .m, .tr) { stroke: var(--cc-on-brand-accent); }
+.hero-drawing .illo .wo { fill: color-mix(in srgb, var(--cc-olive-light) 45%, transparent); }
+.hero-drawing .illo .wm { fill: color-mix(in srgb, var(--cc-mustard-light) 40%, transparent); }
+.hero-drawing .illo .wt { fill: color-mix(in srgb, var(--cc-terra-light) 45%, transparent); }
+.hero-drawing .illo .fm { fill: var(--cc-mustard-light); }
+.hero-drawing figcaption { margin-top: var(--cc-space-4); padding-top: var(--cc-space-3); border-top: var(--cc-hairline) solid color-mix(in srgb, var(--cc-on-brand) 30%, transparent); font-family: var(--cc-font-display); font-style: italic; font-size: 15px; line-height: 22px; color: var(--cc-on-brand); opacity: .9; }
+.hero-drawing .plate-label { display: block; font-style: normal; color: var(--cc-on-brand-accent); margin-bottom: var(--cc-space-1); }
+@media (max-width: 900px) {
+  .hero-panel { grid-template-columns: minmax(0, 1fr); }
+  .hero-drawing { grid-column: 1; grid-row: auto; margin-top: var(--cc-space-8); }
+}
+
+/* Brand 2.2: text on cypress is paper in both themes. Night flips --cc-paper to the dark ground, so pin on-brand to the light tone. */
+:root[data-theme="night"] .cc-surface-brand { --cc-on-brand: var(--cc-ink); }
+
+/* Solid ink blocks — the boards' four-ink move. Text on a block is the page ground color, so it
+   reads light-on-dark by day and dark-on-light by night. Only large type sits on a block:
+   paper on mustard is ~4.2:1, which passes AA for large text only. Small labels stay on paper. */
+.inkblock { background: var(--part-ink); color: var(--cc-bg); }
+.card-inkhead { display: flex; align-items: baseline; gap: var(--cc-space-3); margin: calc(-1 * var(--cc-space-4)) calc(-1 * var(--cc-space-4)) 0; padding: var(--cc-space-3) var(--cc-space-4); }
+.card-inkhead-num { font-family: var(--cc-font-display); font-weight: 900; font-size: 30px; line-height: 32px; letter-spacing: -0.03em; }
+.card-inkhead-kind { font-family: var(--cc-font-sans); font-weight: 700; font-size: 19px; line-height: 24px; }
+.collection-card .card-illo { margin-top: 0; }
+.card-state { margin-top: var(--cc-space-1); }
+.collection-card.cc-card-accent { border-top: 0; }
+
+.part-strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: var(--cc-space-3); margin: var(--cc-space-6) 0 var(--cc-space-4); }
+.part-tile { display: flex; flex-direction: column; border: var(--cc-hairline) solid var(--cc-border); border-radius: var(--cc-radius-doc); color: var(--cc-fg); text-decoration: none; overflow: hidden; transition: border-color var(--cc-dur-fast) var(--cc-ease-standard); }
+.part-tile:hover { text-decoration: none; border-color: var(--part-ink); }
+.part-tile-head { flex: 1; display: flex; flex-direction: column; gap: var(--cc-space-1); padding: var(--cc-space-3) var(--cc-space-4) var(--cc-space-4); min-height: 104px; }
+.part-tile-roman { font-family: var(--cc-font-display); font-weight: 900; font-size: 30px; line-height: 32px; letter-spacing: -0.03em; }
+.part-tile-name { font-family: var(--cc-font-sans); font-weight: 700; font-size: 19px; line-height: 23px; }
+.part-tile-foot { padding: var(--cc-space-2) var(--cc-space-4); background: var(--part-wash); }
+
+/* Part heads in the index: the numeral becomes a solid ink chip. */
+.section-head.inked.part-head .num { background: var(--part-ink); color: var(--cc-bg); font-size: 19px; line-height: 24px; padding: 2px 10px; border-radius: var(--cc-radius-doc); }
+
+/* Hub hero tiles: counts as big numerals on solid ink, sitting on the cypress surface. */
+.hero-tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--cc-space-3); margin-top: var(--cc-space-8); }
+.hero-tile { display: flex; flex-direction: column; gap: var(--cc-space-1); padding: var(--cc-space-3) var(--cc-space-4) var(--cc-space-4); border-radius: var(--cc-radius-ui); text-decoration: none; transition: transform var(--cc-dur-fast) var(--cc-ease-standard); }
+.hero-tile:hover { text-decoration: none; transform: translateY(var(--cc-lift)); }
+.hero-tile-n { font-family: var(--cc-font-display); font-weight: 900; font-size: 40px; line-height: 44px; letter-spacing: -0.03em; }
+.hero-tile-label { font-family: var(--cc-font-sans); font-weight: 700; font-size: 19px; line-height: 23px; }
+@media (max-width: 600px) { .hero-tiles { grid-template-columns: minmax(0, 1fr); } .hero-tile { flex-direction: row; align-items: baseline; gap: var(--cc-space-3); } }
+
+/* Desk tiles on the hub. */
+.desk-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: var(--cc-space-3); margin-top: var(--cc-space-3); }
+.desk-tile-head { min-height: 64px; justify-content: flex-end; }
+.desk-tile-foot { font-size: 13px; line-height: 19px; color: var(--cc-fg-muted); flex: 1; }
+.desk-tiles .part-tile-head { flex: none; }
+.desk-tiles .part-tile { background: var(--cc-bg); }
+
+/* Article head: the part as a solid band in its ink. */
+.part-band { display: inline-block; font-family: var(--cc-font-sans); font-weight: 700; font-size: 19px; line-height: 24px; padding: 4px 12px; border-radius: var(--cc-radius-doc); }
+.spine { border-left-color: var(--part-ink, var(--cc-accent)); }
+
+/* Numerals take the part's ink wherever a part is known. */
+.row-num { color: var(--part-ink, var(--cc-fg)); }
+.row-num-solid { background: var(--part-ink); color: var(--cc-bg); text-align: center; padding: 6px 0; border-radius: var(--cc-radius-doc); }
+.related .row { grid-template-columns: 56px minmax(0, 1fr) auto; }
+.hero-panel > .hero-tiles { grid-column: 1 / -1; }
+.cc-surface-brand a.hero-tile { color: var(--cc-bg); }
+
+/* Survey plate (traced plat). Labels sit in drawing units; sizes are tuned for the hero column. */
+.illo-survey { overflow: hidden; --sw: 4; }
+.illo text { stroke: none; }
+.illo .lbl { font-family: var(--cc-font-mono); font-size: 26px; letter-spacing: 0.14em; fill: var(--cc-fg-muted); }
+.illo .lbl-strong { font-family: var(--cc-font-sans); font-weight: 800; font-size: 34px; letter-spacing: 0.08em; fill: currentColor; }
+.illo .lbl-m { fill: var(--cc-mustard); }
+.hero-drawing .illo.illo-survey { --sw: 4.5; }
+.hero-drawing .illo .lbl { fill: color-mix(in srgb, var(--cc-on-brand) 72%, transparent); }
+.hero-drawing .illo .lbl-strong { fill: var(--cc-on-brand); }
+.hero-drawing .illo .lbl-m { fill: var(--cc-mustard-light); }
+.hero-drawing .illo .m { stroke: var(--cc-mustard-light); }
+.illo .lbl-sm { font-size: 20px; }

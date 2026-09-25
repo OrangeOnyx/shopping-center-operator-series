@@ -2,10 +2,15 @@
 import DeskChip from './DeskChip.astro';
 import Plate from './Plate.astro';
 import { partName, pad2, inkClass } from '../lib/articles';
+import { illustrationFor } from '../lib/illustrations';
 import type { Article } from '../lib/collections';
 interface Props { article: Article; collectionTitle: string; collectionUrl: string; total: number; ink?: string }
 const { article, collectionTitle, collectionUrl, total, ink } = Astro.props;
 const d = article.data;
+const illo = d.feature_image ? undefined : illustrationFor({ part: partName(d.part), collection: article.collection });
+const plateName = partName(d.part) || 'Field note';
+const inkName = ink ?? (article.collection === 'field-notes' ? 'olive' : undefined);
+const plateNo = article.num > 0 ? `${pad2(article.num)} · ` : '· ';
 const eyebrow = d.eyebrow || (article.collection === 'field-notes' ? 'FIELD NOTE' : '');
 ---
 <header class="page-head">
@@ -14,8 +19,8 @@ const eyebrow = d.eyebrow || (article.collection === 'field-notes' ? 'FIELD NOTE
       <a href={collectionUrl}>{collectionTitle}</a>
       {d.part && <><span aria-hidden="true">·</span><span>{d.part}</span></>}
     </nav>
-    <div class={`spine ${inkClass(ink)}`}>
-      {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+    <div class={`spine ${inkClass(inkName)}`}>
+      {(d.part || eyebrow) && <span class="inkblock part-band">{d.part ? d.part.replace('—', '·') : eyebrow.charAt(0) + eyebrow.slice(1).toLowerCase()}</span>}
       <h1>{d.title}</h1>
       <p class="deck">{d.deck}</p>
       <div class="article-meta">
@@ -26,9 +31,10 @@ const eyebrow = d.eyebrow || (article.collection === 'field-notes' ? 'FIELD NOTE
         <DeskChip desk={d.desk} />
       </div>
     </div>
-    {d.feature_image && (
-      <div class={inkClass(ink)} style="--cc-plate-ink: var(--part-ink)">
-        <Plate src={d.feature_image} alt={d.title} label={`PLATE ${pad2(article.num)} · ${partName(d.part) || 'FIELD NOTE'}`} caption={d.feature_caption} />
+    {(d.feature_image || illo) && (
+      <div class={inkClass(inkName)} style="--cc-plate-ink: var(--part-ink)">
+        <Plate src={d.feature_image} illo={illo} alt={d.title} label={`PLATE ${plateNo}${plateName.toUpperCase()}`}
+          caption={d.feature_caption ?? `${article.num > 0 ? `Fig. ${pad2(article.num)} · ` : ''}${plateName}. Illustrative drawing.`} />
       </div>
     )}
   </div>

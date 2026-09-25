@@ -1,0 +1,17 @@
+---
+import { DESKS, type DeskId } from '../lib/desks';
+// Series order, so each desk wears the ink of the part it maps to:
+// Own = Part I terra, Buy = Part II olive, Finance = Part III mustard, Lease = Part IV muscadine, Run = Part V terra, Sell = Part VIII muscadine.
+const ORDER: { id: DeskId; ink: string }[] = [
+  { id: 'own', ink: 'terra' }, { id: 'buy', ink: 'olive' }, { id: 'finance', ink: 'mustard' },
+  { id: 'lease', ink: 'muscadine' }, { id: 'run', ink: 'terra' }, { id: 'sell', ink: 'muscadine' },
+];
+---
+<nav class="desk-tiles" aria-label="Desks">
+  {ORDER.map(({ id, ink }) => (
+    <a class={`part-tile ink-${ink}`} href={`/desk/${id}/`}>
+      <span class="inkblock part-tile-head desk-tile-head"><span class="part-tile-name">{DESKS[id].label}</span></span>
+      <span class="part-tile-foot desk-tile-foot">{DESKS[id].blurb}</span>
+    </a>
+  ))}
+</nav>

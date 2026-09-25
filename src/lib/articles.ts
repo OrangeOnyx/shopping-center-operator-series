@@ -28,5 +28,5 @@ export function pad2(n: number): string {
 }
 
 export function inkClass(ink: string | undefined): string {
-  return 'ink-' + (ink && ['terra', 'olive', 'mustard', 'ink'].includes(ink) ? ink : 'ink');
+  return 'ink-' + (ink && ['terra', 'olive', 'mustard', 'muscadine', 'ink'].includes(ink) ? ink : 'ink');
 }

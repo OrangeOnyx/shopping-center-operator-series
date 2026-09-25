@@ -2,12 +2,13 @@
 import Base from '../../layouts/Base.astro';
 import Search from '../../components/Search.astro';
 import PartIndex from '../../components/PartIndex.astro';
-import InkLegend from '../../components/InkLegend.astro';
+import PartStrip from '../../components/PartStrip.astro';
 import ArticleRow from '../../components/ArticleRow.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import StateTag from '../../components/StateTag.astro';
 import Plate from '../../components/Plate.astro';
 import { getSeriesList, getArticlesIn } from '../../lib/collections';
+import { illustrationFor } from '../../lib/illustrations';
 
 export async function getStaticPaths() {
   const series = await getSeriesList();
@@ -15,6 +16,7 @@ export async function getStaticPaths() {
 }
 const { series, articles } = Astro.props;
 const s = series.data;
+const illo = s.heroImage ? undefined : illustrationFor({ collection: s.slug });
 const interactive = articles.filter((a) => a.interactive).slice(-3).reverse();
 const jsonLd = [{ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
   { '@type': 'ListItem', position: 1, name: 'Cypress Command Articles', item: 'https://articles.cypresscommand.com/' },
@@ -33,7 +35,7 @@ const jsonLd = [{ '@context': 'https://schema.org', '@type': 'BreadcrumbList', i
           {s.hasMap && <a class="btn btn-secondary" href={`/${s.slug}/map/`}>See the map</a>}
         </div>
       )}
-      {s.heroImage && <Plate src={s.heroImage} alt="" label={`PLATE 01 · ${s.shortTitle.toUpperCase()}`} caption={s.heroCaption} />}
+      {(s.heroImage || illo) && <Plate src={s.heroImage} illo={illo} alt="" label={`PLATE 01 · ${s.shortTitle.toUpperCase()}`} caption={s.heroCaption ?? `Fig. 01 · ${s.shortTitle}. Illustrative drawing.`} />}
     </div>
   </header>
 
@@ -57,10 +59,10 @@ const jsonLd = [{ '@context': 'https://schema.org', '@type': 'BreadcrumbList', i
   )}
 
   {s.state === 'published' && s.kind === 'series' && (
-    <div class="wrap"><InkLegend /></div>
+    <div class="wrap"><PartStrip parts={s.parts} articles={articles} /></div>
   )}
   {s.state === 'published' && s.kind === 'series' && <PartIndex parts={s.parts} articles={articles} />}
   {s.state === 'published' && s.kind === 'lane' && (
-    <section class="section"><div class="wrap"><div class="rows">{articles.map((a) => <ArticleRow article={a} showCollection={a.collection !== s.slug ? 'From the Shopping Center Operator Series' : undefined} />)}</div></div></section>
+    <section class="section ink-olive"><div class="wrap"><div class="rows">{articles.map((a) => <ArticleRow article={a} showCollection={a.collection !== s.slug ? 'From the Shopping Center Operator Series' : undefined} />)}</div></div></section>
   )}
 </Base>

@@ -1,14 +1,21 @@
 ---
 import StateTag from './StateTag.astro';
+import Illustration from './Illustration.astro';
+import { illustrationFor } from '../lib/illustrations';
 import type { CollectionEntry } from 'astro:content';
 interface Props { series: CollectionEntry<'series'>; count: number }
 const { series, count } = Astro.props;
 const s = series.data;
+const illo = illustrationFor({ collection: s.slug });
+const ink = ['terra', 'olive', 'mustard', 'muscadine'][(s.order - 1) % 4];
 ---
-<a class="cc-card cc-card-accent collection-card cc-card-interactive" href={`/${s.slug}/`}>
-  <div class={`card-head ${s.state === 'published' ? 'wash-olive' : 'wash-mustard'}`}>
-    <div class="tag-row"><span class="eyebrow">{s.kind === 'lane' ? 'Lane' : 'Series'}</span><StateTag state={s.state} /></div>
+<a class={`cc-card cc-card-accent collection-card cc-card-interactive ink-${ink}`} href={`/${s.slug}/`}>
+  <div class="inkblock card-inkhead">
+    <span class="card-inkhead-num">{String(s.order).padStart(2, '0')}</span>
+    <span class="card-inkhead-kind">{s.kind === 'lane' ? 'Lane' : 'Series'}</span>
   </div>
+  {illo && <div class="card-illo"><Illustration name={illo} decorative /></div>}
+  <span class="tag-row card-state"><StateTag state={s.state} /></span>
   <span class="card-title">{s.title}</span>
   <span class="card-deck">{s.deck}</span>
   <span class="meta">

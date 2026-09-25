@@ -11,11 +11,11 @@
     { "num": 1, "roman": "I", "name": "Owning", "ink": "terra" },
     { "num": 2, "roman": "II", "name": "Acquiring", "ink": "olive" },
     { "num": 3, "roman": "III", "name": "Financing", "ink": "mustard" },
-    { "num": 4, "roman": "IV", "name": "Leasing", "ink": "ink" },
+    { "num": 4, "roman": "IV", "name": "Leasing", "ink": "muscadine" },
     { "num": 5, "roman": "V", "name": "Operating", "ink": "terra" },
     { "num": 6, "roman": "VI", "name": "Financial Management", "ink": "olive" },
     { "num": 7, "roman": "VII", "name": "Marketing & Tenant Success", "ink": "mustard" },
-    { "num": 8, "roman": "VIII", "name": "Selling", "ink": "ink" },
+    { "num": 8, "roman": "VIII", "name": "Selling", "ink": "muscadine" },
     { "num": 9, "roman": "IX", "name": "Field Notes from On The Blvd", "ink": "ink" },
     { "num": 10, "roman": "X", "name": "AI & Operating Systems", "ink": "ink" },
     { "num": 11, "roman": "XI", "name": "Tools & Checklists", "ink": "ink" }

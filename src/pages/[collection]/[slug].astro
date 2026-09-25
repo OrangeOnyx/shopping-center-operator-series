@@ -7,7 +7,7 @@ import Pager from '../../components/Pager.astro';
 import PublisherNote from '../../components/PublisherNote.astro';
 import Widgets from '../../components/Widgets.astro';
 import { getSeriesList, getArticlesIn } from '../../lib/collections';
-import { partName } from '../../lib/articles';
+import { partName, inkClass } from '../../lib/articles';
 
 export async function getStaticPaths() {
   const series = await getSeriesList();
@@ -49,9 +49,9 @@ const related = (await getArticlesIn(series.data.slug)).filter((a) => a.slug !==
   </div>
   <div class="wrap"><Pager prev={prev} next={next} /></div>
   {related.length > 0 && (
-    <section class="section"><div class="wrap">
-      <div class="section-head"><span class="num">More</span><span class="title">In {partName(d.part)}</span></div>
-      <div class="rows">{related.map((a) => <a class="row" href={a.url}><span class="row-num">{String(a.num).padStart(2, '0')}</span><span><span class="row-title">{a.data.title}</span><span class="row-deck">{a.data.deck}</span></span><span class="row-meta"><span class="meta">{a.data.read_time}</span></span></a>)}</div>
+    <section class={`section related ${inkClass(series.data.parts.find((p) => p.name === partName(d.part))?.ink)}`}><div class="wrap">
+      <div class="section-head inked"><span class="num">More</span><span class="title">In {partName(d.part)}</span></div>
+      <div class="rows">{related.map((a) => <a class="row" href={a.url}><span class="row-num row-num-solid">{String(a.num).padStart(2, '0')}</span><span><span class="row-title">{a.data.title}</span><span class="row-deck">{a.data.deck}</span></span><span class="row-meta"><span class="meta">{a.data.read_time}</span></span></a>)}</div>
     </div></section>
   )}
   <script>

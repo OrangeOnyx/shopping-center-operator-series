@@ -1,0 +1,11 @@
+---
+import { illustration } from '../lib/illustrations';
+interface Props { name: string; class?: string; decorative?: boolean }
+const { name, class: cls = '', decorative = false } = Astro.props;
+const il = illustration(name);
+---
+{il && (
+  <svg class={`illo ${il.cls ?? ''} ${cls}`} viewBox={il.viewBox ?? '0 0 840 300'} preserveAspectRatio="xMidYMid meet"
+    role={decorative ? undefined : 'img'} aria-label={decorative ? undefined : il.label} aria-hidden={decorative ? 'true' : undefined}
+    set:html={il.svg} />
+)}
