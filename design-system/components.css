@@ -153,3 +153,33 @@
 .cc-toggle { transition: background-color var(--cc-dur-base) var(--cc-ease-standard); }
 a { transition: color var(--cc-dur-fast) var(--cc-ease-standard), text-decoration-color var(--cc-dur-fast) var(--cc-ease-standard); }
 @media (prefers-reduced-motion: reduce) { .cc-reveal, .cc-fade-in, .cc-rule-draw { animation: none; } * { transition-duration: 0ms !important; } }
+
+/* ---- [2.3] Category inks: one scope per category; everything inside reads --cc-cat-ink ---- */
+.cc-cat-terra     { --cc-cat-ink: var(--cc-terra);     --cc-cat-wash: var(--cc-wash-terra); }
+.cc-cat-olive     { --cc-cat-ink: var(--cc-olive);     --cc-cat-wash: var(--cc-wash-olive); }
+.cc-cat-mustard   { --cc-cat-ink: var(--cc-mustard);   --cc-cat-wash: var(--cc-wash-mustard); }
+.cc-cat-muscadine { --cc-cat-ink: var(--cc-muscadine); --cc-cat-wash: var(--cc-wash-muscadine); }
+.cc-cat-ink       { --cc-cat-ink: var(--cc-ink);       --cc-cat-wash: var(--cc-wash-ink); }
+
+/* ---- [2.3] Solid ink block: page-ground text, large type only ---- */
+.cc-block { background: var(--cc-cat-ink, var(--cc-accent)); color: var(--cc-bg); border-radius: var(--cc-radius-ui); padding: var(--cc-space-3) var(--cc-space-4); }
+.cc-doc .cc-block { border-radius: var(--cc-radius-doc); }
+.cc-block-num  { font-family: var(--cc-font-display); font-weight: 900; font-size: 30px; line-height: 32px; letter-spacing: -0.03em; }
+.cc-block-name { font-family: var(--cc-font-sans); font-weight: 700; font-size: 19px; line-height: 23px; }
+
+/* ---- [2.3] Draw: line illustrations ink in once on load (add .cc-drawing only if on screen at load) ----
+   Strokes need pathLength="1"; put a step index on groups with style="--s:N". */
+@keyframes cc-draw-stroke { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+.cc-drawing :is(path, line, rect, circle, polyline)[pathLength]:not(.cc-fill) {
+  stroke-dasharray: 1 1;
+  animation: cc-draw-stroke var(--cc-dur-reveal) var(--cc-ease-emphasized) both;
+  animation-delay: calc(var(--s, 0) * 80ms + 120ms);
+}
+.cc-drawing .cc-fill, .cc-drawing text { animation: cc-fade var(--cc-dur-slow) var(--cc-ease-standard) both; animation-delay: calc(var(--s, 0) * 80ms + 360ms); }
+@media (prefers-reduced-motion: reduce) { .cc-drawing * { animation: none !important; } }
+
+/* ---- [2.3] Carry: cross-document page transitions ---- */
+@view-transition { navigation: auto; }
+::view-transition-old(root) { animation: cc-fade var(--cc-dur-base) var(--cc-ease-exit) reverse both; }
+::view-transition-new(root) { animation: cc-rise var(--cc-dur-slow) var(--cc-ease-emphasized) both; }
+@media (prefers-reduced-motion: reduce) { @view-transition { navigation: none; } }

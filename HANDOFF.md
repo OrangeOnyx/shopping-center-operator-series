@@ -5,7 +5,7 @@
 
 ## What is live
 
-A multi-collection Astro 7 static hub, styled from Brand Standards 2.2, replacing the old single-series site on 2026-09-23.
+A multi-collection Astro 7 static hub, styled from Brand Standards 2.3 (2.2 at launch), replacing the old single-series site on 2026-09-23.
 
 | Collection | State | Contents |
 |---|---|---|
@@ -21,7 +21,7 @@ Routes: `/`, `/<collection>/`, `/<collection>/<slug>/`, `/shopping-center/map/`,
 ## How the repo works
 
 - `npm run build` runs four gates that must stay green: brand (no raw hex, font faces, or non-token shadows under `src/`), content (front matter, desks, lanes, part names vs manifest), links (every internal href resolves in `dist/`), redirects (127 legacy URL cases against `vercel.json`). `npm test` runs the unit tests (25).
-- `design-system/` is the verbatim Brand Standards 2.2 package (`C:\Users\adam\Projects\CYPRESS COMMANDv1\cypress-command-rebrand-v2.2-final.zip`). Never edit it; site rules live in `src/styles/site.css` and reference tokens only. Logos used inline come from `src/assets/logo/` (metadata-stripped copies).
+- `design-system/` is the verbatim Brand Standards 2.3 package (`C:\Users\adam\Projects\CYPRESS COMMANDv1\cypress-command-rebrand-v2.3-final.zip`, ratified 2026-09-25). Never edit it; site rules live in `src/styles/site.css` and reference tokens only. Logos used inline come from `src/assets/logo/` (metadata-stripped copies).
 - **Adding a series:** create `src/content/series/<slug>.json` (see `shopping-center.json`; each part carries an `ink` of terra/olive/mustard/ink) and a folder `src/content/articles/<slug>/`. Articles follow `../ARTICLE-BRIEF.md` (front matter: title, series, part, eyebrow, deck, author, date, read_time, optional feature_image/feature_caption, desk, lanes, status). `status: "review"` keeps a file out of the build.
 - **Article conventions the build relies on:** the body's first H1 and the trailing italic disclaimer are stripped at render; a heading starting "The view from …" becomes a field-note plate and `## The practical next step` becomes the olive next-step panel (`src/lib/remark-article.mjs`).
 - **Interactive widgets:** `<div class="ix" data-ix="checklist|ai-map|sheet-explorer|calendar" data-id="…">` in Markdown; data in `src/data/widgets/*.json`; scripts in `src/scripts/widgets/`; browser storage keys `cc-theme`, `cc-checklist:<id>`, `cc-collapsed-parts`.
@@ -31,7 +31,7 @@ Routes: `/`, `/<collection>/`, `/<collection>/<slug>/`, `/shopping-center/map/`,
 ## Decisions that shape the content
 
 - Product name is **Command Platform**; "Cypress Command" names the company only. Article 34/35 titles and the brief were updated. "OTB Command" appears only as history in 34 and 35.
-- Colors carry meaning (Brand Standards 2.2 "color in concert"): Terra = structural accent and lifecycle stages I/V; Olive = published/complete and stages II/VI; Mustard = in progress and stages III/VII; Ink = neutral, stages IV/VIII and the operating layer; Oxblood never appears. Legends name the inks on the map and series landing.
+- Colors carry meaning (Brand Standards 2.3): category inks rotate Terra · Olive · Mustard · Muscadine (Parts I/V, II/VI, III/VII, IV/VIII); Ink is the operating layer (Parts IX–XI); Olive and Mustard also mark published / in-progress states; Oxblood never appears. Solid ink blocks carry large type only. Motion: drawings ink in once on load, Carry page transitions, and the hero survey traverse (the site's one authored sequence, about 1.9 s). Legends name the inks on the map and series landing.
 - Article pages stay flat (`cc-doc`); elevation and hover lift are for the hub and landings only.
 - Fact review of the harvested notes: 28 sentences accepted, 22 generalized, 0 cut; the decisions and rewrites are in `docs/fact-review/grok-field-notes.md`. The rule that produced them: no tenant names, no easement dollar terms, no site dimensions or cut counts outside the brief's approved list.
 

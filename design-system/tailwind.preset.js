@@ -23,6 +23,7 @@ module.exports = {
         olive:        'var(--cc-olive)',
         mustard:      'var(--cc-mustard)',
         oxblood:      'var(--cc-oxblood)',
+        muscadine:    'var(--cc-muscadine)',   // [2.3] category ink
         // role aliases
         bg:           'var(--cc-bg)',
         'bg-elev':    'var(--cc-bg-elev)',

@@ -347,8 +347,6 @@ h4, .h4 { font-family: var(--cc-font-sans); font-weight: 700; font-size: var(--c
   .hero-drawing { grid-column: 1; grid-row: auto; margin-top: var(--cc-space-8); }
 }
 
-/* Brand 2.2: text on cypress is paper in both themes. Night flips --cc-paper to the dark ground, so pin on-brand to the light tone. */
-:root[data-theme="night"] .cc-surface-brand { --cc-on-brand: var(--cc-ink); }
 
 /* Solid ink blocks — the boards' four-ink move. Text on a block is the page ground color, so it
    reads light-on-dark by day and dark-on-light by night. Only large type sits on a block:

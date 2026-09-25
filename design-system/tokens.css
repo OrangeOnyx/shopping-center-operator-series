@@ -1,5 +1,5 @@
 /* ============================================================
-   Cypress Command — Design Tokens v2.0
+   Cypress Command — Design Tokens v2.3 (ratified 25 Sept 2026)
    Single source of truth for color, type, space, radius.
    Consumers: website, Command Platform, Playbook, print CSS.
    Day is default. Night via [data-theme="night"] or prefers-color-scheme.
@@ -20,6 +20,7 @@
   --cc-olive:        #49573C;   /* success / complete */
   --cc-mustard:      #8F6D0C;   /* in progress / attention (≥14px 700 only) */
   --cc-oxblood:      #8A2F1F;   /* critical / refusal — never emphasis */
+  --cc-muscadine:    #5A3B5C;   /* [2.3] category ink only — no state, no risk, no emphasis */
 
   /* --- Light variants (tokens exist; not used as fills) --- */
   --cc-terra-light:   #C7681D;
@@ -32,6 +33,7 @@
   --cc-wash-mustard: rgba(143, 109, 12, 0.12);
   --cc-wash-oxblood: rgba(138, 47, 31, 0.10);
   --cc-wash-ink:     rgba(30, 27, 22, 0.06);
+  --cc-wash-muscadine: rgba(90, 59, 92, 0.10);   /* [2.3] */
 
   /* --- Role aliases (use these in components) --- */
   --cc-bg:            var(--cc-paper);
@@ -45,7 +47,7 @@
   --cc-warning:       var(--cc-mustard);
   --cc-critical:      var(--cc-oxblood);
   --cc-surface-brand: var(--cc-cypress);
-  --cc-on-brand:      var(--cc-paper);
+  --cc-on-brand:      #F4EFE2;   /* [2.3] pinned to day Paper: text on Cypress stays light at night */
   --cc-on-brand-accent: #D2802F;
   --cc-focus:         var(--cc-terra);
   --cc-selection:     rgba(164, 78, 18, 0.22);
@@ -87,6 +89,7 @@
   --cc-ease-standard: cubic-bezier(0.2, 0, 0, 1);      /* most transitions */
   --cc-ease-emphasized: cubic-bezier(0.3, 0, 0, 1);    /* entrances */
   --cc-ease-exit: cubic-bezier(0.4, 0, 1, 1);          /* dismissals */
+  --cc-dur-sequence-max: 2000ms; /* [2.3] ceiling for the one authored sequence per site */
   --cc-rise: 8px;            /* entrance travel distance */
   --cc-lift: -2px;           /* hover lift on interactive cards */
 
@@ -118,6 +121,8 @@
   --cc-olive:        #9AA989;
   --cc-mustard:      #CFA032;
   --cc-oxblood:      #D27363;
+  --cc-muscadine:     #C39BC0;   /* [2.3] */
+  --cc-wash-muscadine: rgba(195, 155, 192, 0.14);
   --cc-wash-terra:   rgba(210, 128, 47, 0.14);
   --cc-wash-olive:   rgba(154, 169, 137, 0.14);
   --cc-wash-mustard: rgba(207, 160, 50, 0.14);
@@ -145,6 +150,8 @@
     --cc-olive:        #9AA989;
     --cc-mustard:      #CFA032;
     --cc-oxblood:      #D27363;
+    --cc-muscadine:     #C39BC0;   /* [2.3] */
+    --cc-wash-muscadine: rgba(195, 155, 192, 0.14);
     --cc-wash-terra:   rgba(210, 128, 47, 0.14);
     --cc-wash-olive:   rgba(154, 169, 137, 0.14);
     --cc-wash-mustard: rgba(207, 160, 50, 0.14);
@@ -166,7 +173,7 @@
 
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
-  :root { --cc-dur-fast: 0ms; --cc-dur-base: 0ms; --cc-dur-slow: 0ms; --cc-dur-reveal: 0ms; --cc-rise: 0px; --cc-lift: 0px; }
+  :root { --cc-dur-fast: 0ms; --cc-dur-base: 0ms; --cc-dur-slow: 0ms; --cc-dur-reveal: 0ms; --cc-dur-sequence-max: 0ms; --cc-rise: 0px; --cc-lift: 0px; }
 }
 
 /* ---------- Playbook scope: same tokens, no Cypress surface ---------- */
