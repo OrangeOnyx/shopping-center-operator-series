@@ -36,6 +36,24 @@ const { title, description, canonical = Astro.url.pathname, ogImage, type, jsonL
       } catch (e) {}
     })();
   </script>
+  <script is:inline>
+    /* Cross-document view transitions: the title you click carries into the article headline, and back.
+       Only one element may hold the name, so an article page (whose h1 already has it) never names a row. */
+    (function () {
+      var NAME = 'article-title';
+      function titleFor(url) {
+        var p = new URL(url, location.href).pathname, links = document.querySelectorAll('a.row, a.card');
+        for (var i = 0; i < links.length; i++) if (new URL(links[i].href).pathname === p) return links[i].querySelector('.row-title, .card-title');
+        return null;
+      }
+      function tag(vt, el) { if (!el || document.querySelector('.vt-title')) return; el.style.viewTransitionName = NAME; vt.finished.finally(function () { el.style.viewTransitionName = ''; }); }
+      addEventListener('pageswap', function (e) { if (e.viewTransition && e.activation && e.activation.entry) tag(e.viewTransition, titleFor(e.activation.entry.url)); });
+      addEventListener('pagereveal', function (e) {
+        var from = window.navigation && navigation.activation && navigation.activation.from;
+        if (e.viewTransition && from && from.url) tag(e.viewTransition, titleFor(from.url));
+      });
+    })();
+  </script>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <Seo title={title} description={description} canonical={canonical} ogImage={ogImage} type={type} jsonLd={jsonLd} />
 </head>

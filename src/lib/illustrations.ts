@@ -358,6 +358,14 @@ const governed = [
 const T = (x: number, y: number, text: string, c = 'lbl', anchor = 'middle') =>
   `<text class="${c}" x="${x}" y="${y}" text-anchor="${anchor}">${text}</text>`;
 const CORNERS: [number, number][] = [[1313.7, 662], [295.2, 662], [295.2, 473.3], [71.9, 473.3], [70, 155.5], [125.5, 96], [1313.7, 96], [1360, 143.2], [1360, 614.8]];
+// Each monument gets --t, its fraction of the way around the boundary, so it lands as the traverse reaches it.
+const TRAVERSE = (() => {
+  const pts = [...CORNERS, CORNERS[0]];
+  const segs = pts.slice(1).map(([x, y], i) => Math.hypot(x - pts[i][0], y - pts[i][1]));
+  const total = segs.reduce((a, b) => a + b, 0);
+  let run = 0;
+  return CORNERS.map(([x, y], i) => { const t = i === 0 ? 0 : (run += segs[i - 1]) / total; return { x, y, t: Math.round(t * 1000) / 1000 }; });
+})();
 const unitsIn = (pick: (u: [number, number, number, number]) => boolean) => SURVEY_UNITS.filter(pick);
 const bbox = (us: [number, number, number, number][]) => {
   const x = Math.min(...us.map((u) => u[0])), y = Math.min(...us.map((u) => u[1]));
@@ -371,7 +379,8 @@ const survey = [
     T(700, 690, 'ARNOULD BLVD'),
   ),
   G(1,
-    P('M 1313.71 661.99 L 295.16 661.99 L 295.16 473.33 L 71.85 473.33 A 3466.82 3532.59 0 0 0 70 155.48 A 55.55 56.6 0 0 1 125.47 96 L 1313.71 96 A 46.29 47.17 0 0 1 1360 143.17 L 1360 614.83 A 46.29 47.17 0 0 1 1313.71 662 Z', 'a'),
+    P('M 1313.71 661.99 L 295.16 661.99 L 295.16 473.33 L 71.85 473.33 A 3466.82 3532.59 0 0 0 70 155.48 A 55.55 56.6 0 0 1 125.47 96 L 1313.71 96 A 46.29 47.17 0 0 1 1360 143.17 L 1360 614.83 A 46.29 47.17 0 0 1 1313.71 662 Z', 'a traverse'),
+    ...TRAVERSE.map(({ x, y, t }) => `<circle class="af mon" style="--t:${t}" cx="${x}" cy="${y}" r="7"/>`),
   ),
   G(2,
     ...[longBldg, shortBldg].map((us) => { const [x, y, w, h] = bbox(us); return R(x, y, w, h, 'f'); }),
@@ -387,7 +396,6 @@ const survey = [
     P('M 3.96 337.68 L 86.02 350.49 L 1186.64 350.49 A 322.35 328.46 0 0 0 1471.09 176.56', 'm dash'),
     T(700, 338, 'LIQUOR LINE · CHURCH EASEMENT', 'lbl lbl-m'),
     T(700, 540, '324 PROVIDED · 344 REQUIRED', 'lbl lbl-strong'),
-    ...CORNERS.map(([x, y]) => C(x, y, 7, 'af')),
     L(1250, 72, 1310, 72, 'k'), P('M1296 62 L1312 72 L1296 82', 'k'), T(1330, 82, 'N', 'lbl', 'start'),
   ),
 ].join('');

@@ -59,7 +59,7 @@ const related = (await getArticlesIn(series.data.slug)).filter((a) => a.slug !==
     function onScroll() {
       const doc = document.documentElement;
       const max = doc.scrollHeight - window.innerHeight;
-      if (bar) bar.style.width = (max > 0 ? Math.min(100, (window.scrollY / max) * 100) : 0) + '%';
+      if (bar) bar.style.transform = `scaleX(${max > 0 ? Math.min(1, window.scrollY / max) : 0})`;
     }
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();

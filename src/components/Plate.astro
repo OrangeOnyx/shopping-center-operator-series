@@ -6,6 +6,6 @@ const { src, illo, alt, label, caption } = Astro.props;
 <figure class={`plate cc-reveal${illo && !src ? ' plate-drawing' : ''}`}>
   <span class="plate-rule cc-rule-draw" aria-hidden="true"></span>
   <span class="plate-label">{label}</span>
-  {src ? <img src={src} alt={alt} loading="lazy" /> : illo && <Illustration name={illo} />}
+  {src ? <img src={src} alt={alt} loading="lazy" /> : illo && <Illustration name={illo} animate />}
   {caption && <figcaption>{caption}</figcaption>}
 </figure>

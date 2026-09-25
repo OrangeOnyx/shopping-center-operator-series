@@ -410,3 +410,82 @@ h4, .h4 { font-family: var(--cc-font-sans); font-weight: 700; font-size: var(--c
 .hero-drawing .illo .lbl-m { fill: var(--cc-mustard-light); }
 .hero-drawing .illo .m { stroke: var(--cc-mustard-light); }
 .illo .lbl-sm { font-size: 20px; }
+
+/* ============================================================
+   Motion. Brand patterns only: reveal, lift, rule draw, indicator slide, toggle.
+   Durations come from tokens, so prefers-reduced-motion (which zeroes them) disables all of it.
+   ============================================================ */
+
+/* Drawing ink-in: strokes draw in step order (--s), then fills and labels settle. Default state is the
+   finished drawing; .is-drawing is added only to drawings on screen at load. */
+@keyframes illo-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes illo-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes illo-set { from { opacity: 0; transform: scale(0.2); } to { opacity: 1; transform: scale(1); } }
+.illo.is-drawing { --draw-lead: 120ms; --draw-step: 80ms; --draw-dur: var(--cc-dur-reveal); }
+.illo.is-drawing :is(.k, .t, .a, .o, .m, .tr):not(.dash) {
+  stroke-dasharray: 1 1;
+  animation: illo-draw var(--draw-dur) var(--cc-ease-emphasized) both;
+  animation-delay: calc(var(--s, 0) * var(--draw-step) + var(--draw-lead));
+}
+.illo.is-drawing :is(.f, .w, .af, .wo, .wm, .wt, .wi, .fo, .fm, .ft, .dash, text) {
+  animation: illo-fade var(--cc-dur-slow) var(--cc-ease-standard) both;
+  animation-delay: calc(var(--s, 0) * var(--draw-step) + var(--draw-lead) + 240ms);
+}
+
+/* The survey traverse — the one authored moment (approved exception to the 560ms reveal, hero only).
+   Street, then the boundary walked corner to corner with a monument set at each turn, then buildings,
+   stalls, and last the liquor line and the 324 / 344 count. About 1.9s end to end. */
+.illo-survey.is-drawing { --draw-lead: 80ms; --draw-step: 300ms; --draw-dur: 640ms; --traverse: 1000ms; }
+.illo-survey.is-drawing .traverse { animation-duration: var(--traverse); animation-timing-function: linear; }
+.illo-survey.is-drawing .mon {
+  transform-box: fill-box; transform-origin: center;
+  animation: illo-set var(--cc-dur-base) var(--cc-ease-emphasized) both;
+  animation-delay: calc(var(--draw-lead) + var(--draw-step) + var(--t) * var(--traverse));
+}
+
+/* Part sections open and close instead of popping. */
+.part-body { display: grid; grid-template-rows: 1fr; transition: grid-template-rows var(--cc-dur-slow) var(--cc-ease-standard); }
+.part-body > .part-rows { overflow: hidden; min-height: 0; }
+.part-section.collapsed .part-body { grid-template-rows: 0fr; }
+.part-section.collapsed .part-rows { display: flex; }
+.ix-caret { transition: transform var(--cc-dur-base) var(--cc-ease-standard); }
+
+/* Checklist sections, checks, and progress. */
+.ix-section-body, .ix-section.open .ix-section-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows var(--cc-dur-slow) var(--cc-ease-standard); }
+.ix-section.open .ix-section-body { grid-template-rows: 1fr; }
+.ix-section-inner { overflow: hidden; min-height: 0; }
+@keyframes ix-check { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+.ix-item.just-checked input:checked::before { animation: ix-check var(--cc-dur-base) var(--cc-ease-emphasized) both; }
+.ix-item input[type="checkbox"] { transition: background-color var(--cc-dur-fast) var(--cc-ease-standard), border-color var(--cc-dur-fast) var(--cc-ease-standard); }
+.ix-item-text { text-decoration: line-through; text-decoration-color: transparent; transition: text-decoration-color var(--cc-dur-base) var(--cc-ease-standard), color var(--cc-dur-base) var(--cc-ease-standard); }
+.ix-item.done .ix-item-text { text-decoration-color: currentColor; }
+.ix-bar > span { width: 100%; transform-origin: left; transform: scaleX(0); transition: transform var(--cc-dur-base) var(--cc-ease-standard); }
+.progress-bar { width: 100%; transform-origin: left; transform: scaleX(0); }
+
+/* Contents rail: one marker slides between headings. */
+.rail-inner { position: sticky; }
+.rail-indicator { position: absolute; left: -1px; top: 0; width: 2px; height: 0; background: var(--cc-accent); opacity: 0; transition: transform var(--cc-dur-base) var(--cc-ease-standard), height var(--cc-dur-base) var(--cc-ease-standard), opacity var(--cc-dur-base) var(--cc-ease-standard); }
+.rail-indicator.on { opacity: 1; }
+
+/* Feedback on rows and tiles. Tiles lift (brand pattern) outside documents; articles stay flat. */
+.row { transition: background-color var(--cc-dur-fast) var(--cc-ease-standard); }
+.row-title, .card-title, .pager-title { transition: color var(--cc-dur-fast) var(--cc-ease-standard); }
+.part-tile { transition: transform var(--cc-dur-fast) var(--cc-ease-standard), box-shadow var(--cc-dur-fast) var(--cc-ease-standard), border-color var(--cc-dur-fast) var(--cc-ease-standard); }
+.part-tile:hover { transform: translateY(var(--cc-lift)); box-shadow: var(--cc-shadow-2); }
+.part-tile:active { transform: translateY(0); box-shadow: var(--cc-shadow-1); }
+.hero-tile:active { transform: translateY(0); }
+
+/* Page transitions (cross-document). The masthead holds still; the clicked title carries into the headline. */
+@view-transition { navigation: auto; }
+.masthead { view-transition-name: masthead; }
+.vt-title { view-transition-name: article-title; }
+@keyframes vt-out { to { opacity: 0; } }
+@keyframes vt-in { from { opacity: 0; transform: translateY(var(--cc-rise)); } }
+::view-transition-old(root) { animation: vt-out var(--cc-dur-base) var(--cc-ease-exit) both; }
+::view-transition-new(root) { animation: vt-in var(--cc-dur-slow) var(--cc-ease-emphasized) both; }
+::view-transition-group(article-title) { animation-duration: var(--cc-dur-slow); animation-timing-function: var(--cc-ease-emphasized); }
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+  .illo.is-drawing *, .ix-item.just-checked input::before { animation: none !important; }
+}

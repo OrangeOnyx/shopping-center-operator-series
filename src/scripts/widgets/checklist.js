@@ -28,8 +28,9 @@ export function renderChecklist(el, cfg, checklistId) {
         <span class="ix-sec-count" data-sec-count>${doneCount}/${sec.items.length}</span>
         <span class="ix-caret" aria-hidden="true"></span>
       </div>
-      <div class="ix-section-body"></div>`;
-    const body = secEl.querySelector('.ix-section-body');
+      <div class="ix-section-body"><div class="ix-section-inner"></div></div>`;
+    const body = secEl.querySelector('.ix-section-inner');
+    body.inert = si !== 0;
     sec.items.forEach((item, ii) => {
       const key = si + ':' + ii;
       const row = document.createElement('label');
@@ -40,13 +41,14 @@ export function renderChecklist(el, cfg, checklistId) {
       cb.addEventListener('change', () => {
         saved[key] = cb.checked;
         row.classList.toggle('done', cb.checked);
+        if (cb.checked) { row.classList.add('just-checked'); setTimeout(() => row.classList.remove('just-checked'), 400); }
         try { localStorage.setItem(storageKey, JSON.stringify(saved)); } catch {}
         update();
       });
       body.appendChild(row);
     });
     const head = secEl.querySelector('.ix-section-head');
-    const toggle = () => { secEl.classList.toggle('open'); head.setAttribute('aria-expanded', secEl.classList.contains('open')); };
+    const toggle = () => { secEl.classList.toggle('open'); const open = secEl.classList.contains('open'); head.setAttribute('aria-expanded', open); body.inert = !open; };
     head.addEventListener('click', toggle);
     head.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
     sectionsEl.appendChild(secEl);
@@ -63,7 +65,7 @@ export function renderChecklist(el, cfg, checklistId) {
       sectionsEl.children[si].querySelector('[data-sec-count]').textContent = secDone + '/' + sec.items.length;
     });
     const pct = Math.round((done / total) * 100);
-    bar.style.width = pct + '%';
+    bar.style.transform = `scaleX(${pct / 100})`;
     countEl.textContent = done + ' of ' + total + ' complete';
     statusEl.textContent = pct === 100 ? 'Complete' : pct >= 75 ? 'In progress — strong' : pct >= 40 ? 'In progress' : pct > 0 ? 'In progress — early' : 'Not started';
     scoreEl.innerHTML = `Score: <b>${pct}%</b>`;

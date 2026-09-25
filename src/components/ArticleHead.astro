@@ -21,7 +21,7 @@ const eyebrow = d.eyebrow || (article.collection === 'field-notes' ? 'FIELD NOTE
     </nav>
     <div class={`spine ${inkClass(inkName)}`}>
       {(d.part || eyebrow) && <span class="inkblock part-band">{d.part ? d.part.replace('—', '·') : eyebrow.charAt(0) + eyebrow.slice(1).toLowerCase()}</span>}
-      <h1>{d.title}</h1>
+      <h1 class="vt-title">{d.title}</h1>
       <p class="deck">{d.deck}</p>
       <div class="article-meta">
         <span class="meta">By {d.author}</span>
