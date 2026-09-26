@@ -1,0 +1,465 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-26T09:27:23+00:00",
+  "title": "Design System: Cypress Command Articles",
+  "extensions": {
+    "canonicalSource": "design-system/tokens.css (Brand Standards 2.3, verbatim, never edited)",
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(95.2% 0.018 89.4)",
+        "tonalRamp": [
+          "oklch(15% 0.018 89.4)",
+          "oklch(26% 0.018 89.4)",
+          "oklch(38% 0.018 89.4)",
+          "oklch(49% 0.018 89.4)",
+          "oklch(61% 0.018 89.4)",
+          "oklch(72% 0.018 89.4)",
+          "oklch(84% 0.018 89.4)",
+          "oklch(95% 0.018 89.4)"
+        ]
+      },
+      "paper-deep": {
+        "role": "neutral",
+        "displayName": "Paper Deep",
+        "canonical": "oklch(91.4% 0.029 89.6)",
+        "tonalRamp": [
+          "oklch(15% 0.029 89.6)",
+          "oklch(26% 0.029 89.6)",
+          "oklch(38% 0.029 89.6)",
+          "oklch(49% 0.029 89.6)",
+          "oklch(61% 0.029 89.6)",
+          "oklch(72% 0.029 89.6)",
+          "oklch(84% 0.029 89.6)",
+          "oklch(95% 0.029 89.6)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(22.4% 0.01 80.6)",
+        "tonalRamp": [
+          "oklch(15% 0.01 80.6)",
+          "oklch(26% 0.01 80.6)",
+          "oklch(38% 0.01 80.6)",
+          "oklch(49% 0.01 80.6)",
+          "oklch(61% 0.01 80.6)",
+          "oklch(72% 0.01 80.6)",
+          "oklch(84% 0.01 80.6)",
+          "oklch(95% 0.01 80.6)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "oklch(45.3% 0.02 79.2)",
+        "tonalRamp": [
+          "oklch(15% 0.02 79.2)",
+          "oklch(26% 0.02 79.2)",
+          "oklch(38% 0.02 79.2)",
+          "oklch(49% 0.02 79.2)",
+          "oklch(61% 0.02 79.2)",
+          "oklch(72% 0.02 79.2)",
+          "oklch(84% 0.02 79.2)",
+          "oklch(95% 0.02 79.2)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "oklch(80.7% 0.033 87.3)",
+        "tonalRamp": [
+          "oklch(15% 0.033 87.3)",
+          "oklch(26% 0.033 87.3)",
+          "oklch(38% 0.033 87.3)",
+          "oklch(49% 0.033 87.3)",
+          "oklch(61% 0.033 87.3)",
+          "oklch(72% 0.033 87.3)",
+          "oklch(84% 0.033 87.3)",
+          "oklch(95% 0.033 87.3)"
+        ]
+      },
+      "cypress": {
+        "role": "tertiary",
+        "displayName": "Cypress",
+        "canonical": "oklch(38.2% 0.061 164.2)",
+        "tonalRamp": [
+          "oklch(15% 0.061 164.2)",
+          "oklch(26% 0.061 164.2)",
+          "oklch(38% 0.061 164.2)",
+          "oklch(49% 0.061 164.2)",
+          "oklch(61% 0.061 164.2)",
+          "oklch(72% 0.061 164.2)",
+          "oklch(84% 0.061 164.2)",
+          "oklch(95% 0.061 164.2)"
+        ]
+      },
+      "terra": {
+        "role": "primary",
+        "displayName": "Terra",
+        "canonical": "oklch(52.4% 0.132 49.2)",
+        "tonalRamp": [
+          "oklch(15% 0.132 49.2)",
+          "oklch(26% 0.132 49.2)",
+          "oklch(38% 0.132 49.2)",
+          "oklch(49% 0.132 49.2)",
+          "oklch(61% 0.132 49.2)",
+          "oklch(72% 0.132 49.2)",
+          "oklch(84% 0.132 49.2)",
+          "oklch(95% 0.132 49.2)"
+        ]
+      },
+      "olive": {
+        "role": "secondary",
+        "displayName": "Olive",
+        "canonical": "oklch(43.7% 0.046 130.4)",
+        "tonalRamp": [
+          "oklch(15% 0.046 130.4)",
+          "oklch(26% 0.046 130.4)",
+          "oklch(38% 0.046 130.4)",
+          "oklch(49% 0.046 130.4)",
+          "oklch(61% 0.046 130.4)",
+          "oklch(72% 0.046 130.4)",
+          "oklch(84% 0.046 130.4)",
+          "oklch(95% 0.046 130.4)"
+        ]
+      },
+      "mustard": {
+        "role": "secondary",
+        "displayName": "Mustard",
+        "canonical": "oklch(55.4% 0.11 86.1)",
+        "tonalRamp": [
+          "oklch(15% 0.11 86.1)",
+          "oklch(26% 0.11 86.1)",
+          "oklch(38% 0.11 86.1)",
+          "oklch(49% 0.11 86.1)",
+          "oklch(61% 0.11 86.1)",
+          "oklch(72% 0.11 86.1)",
+          "oklch(84% 0.11 86.1)",
+          "oklch(95% 0.11 86.1)"
+        ]
+      },
+      "muscadine": {
+        "role": "secondary",
+        "displayName": "Muscadine",
+        "canonical": "oklch(40.1% 0.067 324.6)",
+        "tonalRamp": [
+          "oklch(15% 0.067 324.6)",
+          "oklch(26% 0.067 324.6)",
+          "oklch(38% 0.067 324.6)",
+          "oklch(49% 0.067 324.6)",
+          "oklch(61% 0.067 324.6)",
+          "oklch(72% 0.067 324.6)",
+          "oklch(84% 0.067 324.6)",
+          "oklch(95% 0.067 324.6)"
+        ]
+      },
+      "on-brand-accent": {
+        "role": "tertiary",
+        "displayName": "Cypress Glow",
+        "canonical": "oklch(67.4% 0.137 60.8)",
+        "tonalRamp": [
+          "oklch(15% 0.137 60.8)",
+          "oklch(26% 0.137 60.8)",
+          "oklch(38% 0.137 60.8)",
+          "oklch(49% 0.137 60.8)",
+          "oklch(61% 0.137 60.8)",
+          "oklch(72% 0.137 60.8)",
+          "oklch(84% 0.137 60.8)",
+          "oklch(95% 0.137 60.8)"
+        ]
+      },
+      "terra-light": {
+        "role": "secondary",
+        "displayName": "Terra Light",
+        "purpose": "Hero drawing on Cypress only; never a fill elsewhere."
+      },
+      "mustard-light": {
+        "role": "secondary",
+        "displayName": "Mustard Light",
+        "purpose": "Hero drawing on Cypress only; never a fill elsewhere."
+      },
+      "olive-light": {
+        "role": "secondary",
+        "displayName": "Olive Light",
+        "purpose": "Hero drawing on Cypress only; never a fill elsewhere."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Home hero headline only; 40/44 under 768px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page and article H1; 32/36 mobile."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "H2; 24/30 mobile."
+      },
+      "subhead": {
+        "displayName": "Subhead",
+        "purpose": "H3."
+      },
+      "deck": {
+        "displayName": "Deck",
+        "purpose": "Standfirst under H1; 18/27 mobile."
+      },
+      "body-doc": {
+        "displayName": "Body (document)",
+        "purpose": "Article prose at 70ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Hub and UI text."
+      },
+      "block-numeral": {
+        "displayName": "Block numeral",
+        "purpose": "Numerals on solid ink blocks."
+      },
+      "block-name": {
+        "displayName": "Block name",
+        "purpose": "Smallest type allowed on a solid ink block."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Tags, table heads."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Dates, read time, breadcrumbs, plate labels, counts."
+      }
+    },
+    "shadows": [
+      {
+        "name": "cc-shadow-1",
+        "value": "var(--cc-shadow-1)",
+        "purpose": "Active (pressed) state of lifted tiles."
+      },
+      {
+        "name": "cc-shadow-2",
+        "value": "var(--cc-shadow-2)",
+        "purpose": "Hover on part/desk tiles and interactive cards, with -2px lift."
+      },
+      {
+        "name": "cc-shadow-brand",
+        "value": "var(--cc-shadow-brand)",
+        "purpose": "Home hero panel on Cypress; one per page."
+      },
+      {
+        "name": "cc-doc",
+        "value": "none",
+        "purpose": "All shadow tokens are none inside article pages."
+      }
+    ],
+    "motion": [
+      {
+        "name": "cc-dur-fast",
+        "value": "120ms",
+        "purpose": "Hover, tile lift, color."
+      },
+      {
+        "name": "cc-dur-base",
+        "value": "200ms",
+        "purpose": "Carets, checks, rail marker, page exit, survey monuments."
+      },
+      {
+        "name": "cc-dur-slow",
+        "value": "320ms",
+        "purpose": "Section open/close, fills fading in, page entrance."
+      },
+      {
+        "name": "cc-dur-reveal",
+        "value": "560ms",
+        "purpose": "Per-stroke ink-in and plate reveal; ceiling outside the hero sequence."
+      },
+      {
+        "name": "cc-ease-standard",
+        "value": "cubic-bezier(0.2, 0, 0, 1)",
+        "purpose": "Most transitions."
+      },
+      {
+        "name": "cc-ease-emphasized",
+        "value": "cubic-bezier(0.3, 0, 0, 1)",
+        "purpose": "Entrances and stroke draw."
+      },
+      {
+        "name": "cc-ease-exit",
+        "value": "cubic-bezier(0.4, 0, 1, 1)",
+        "purpose": "Page exit."
+      },
+      {
+        "name": "draw-stagger",
+        "value": "120ms lead + 80ms per --s step",
+        "purpose": "Illustration ink-in order."
+      },
+      {
+        "name": "survey-traverse",
+        "value": "80ms lead, 300ms steps, 640ms strokes, 1000ms linear boundary; ~1.9s",
+        "purpose": "The one authored sequence, hero only; under cc-dur-sequence-max 2000ms."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all durations 0; no is-drawing; view transitions off",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "row-stack",
+        "value": "600px"
+      },
+      {
+        "name": "pager-stack",
+        "value": "700px"
+      },
+      {
+        "name": "masthead-collapse",
+        "value": "768px"
+      },
+      {
+        "name": "widget-stack",
+        "value": "800px"
+      },
+      {
+        "name": "hero-stack",
+        "value": "900px"
+      },
+      {
+        "name": "rail-hide",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Terra action button; hub and landing calls to action.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Browse the collections</a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:8px;font-family:var(--cc-font-sans);font-weight:700;font-size:14px;line-height:20px;padding:10px 18px;border-radius:var(--cc-radius-ui);border:1px solid var(--cc-accent);background:var(--cc-accent);color:var(--cc-accent-fg);text-decoration:none;transition:filter var(--cc-dur-fast) var(--cc-ease-standard)}.ds-btn-primary:hover{filter:brightness(1.08)}.ds-btn-primary:focus-visible{outline:2px solid var(--cc-focus);outline-offset:2px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Paper button with an Ink border.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">See the map</a>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;font-family:var(--cc-font-sans);font-weight:700;font-size:14px;line-height:20px;padding:10px 18px;border-radius:var(--cc-radius-ui);border:1px solid var(--cc-fg);background:var(--cc-bg);color:var(--cc-fg);text-decoration:none;transition:background-color var(--cc-dur-fast) var(--cc-ease-standard)}.ds-btn-secondary:hover{background:var(--cc-bg-elev)}.ds-btn-secondary:focus-visible{outline:2px solid var(--cc-focus);outline-offset:2px}"
+    },
+    {
+      "name": "State Tags",
+      "kind": "chip",
+      "refersTo": "tag-published",
+      "description": "Published (Olive) and In progress (Ink text, Mustard dot and border).",
+      "html": "<span class=\"ds-tag ds-tag-pub\">Published</span> <span class=\"ds-tag ds-tag-prog\">In progress</span>",
+      "css": ".ds-tag{display:inline-flex;align-items:center;gap:6px;font-family:var(--cc-font-sans);font-weight:700;font-size:11px;line-height:14px;letter-spacing:.06em;text-transform:uppercase;padding:4px 8px;border-radius:var(--cc-radius-ui);border:1px solid currentColor}.ds-tag::before{content:\"\";width:6px;height:6px;border-radius:50%;background:currentColor}.ds-tag-pub{color:var(--cc-success);background:var(--cc-wash-olive)}.ds-tag-prog{color:var(--cc-fg);border-color:var(--cc-warning);background:var(--cc-wash-mustard)}.ds-tag-prog::before{background:var(--cc-warning)}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "Hub and landing search with an inset glyph.",
+      "html": "<label class=\"ds-search\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"M20 20l-4-4\"/></svg><input placeholder=\"Search every collection\"></label>",
+      "css": ".ds-search{position:relative;display:block}.ds-search svg{position:absolute;left:14px;top:50%;width:16px;height:16px;transform:translateY(-50%);color:var(--cc-fg-muted)}.ds-search input{width:100%;font-family:var(--cc-font-sans);font-size:15px;line-height:20px;padding:11px 14px 11px 40px;border:1px solid var(--cc-border);border-radius:var(--cc-radius-ui);background:var(--cc-bg);color:var(--cc-fg)}.ds-search input:focus-visible{outline:2px solid var(--cc-focus);outline-offset:2px}"
+    },
+    {
+      "name": "Masthead Nav",
+      "kind": "nav",
+      "description": "Sticky masthead links; Terra and bold when current.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Collections</a><a href=\"#\">Field Notes</a><a href=\"#\">Desks</a><a href=\"#\">About</a></nav>",
+      "css": ".ds-nav{display:flex;gap:24px;padding:20px 0;border-bottom:1px solid var(--cc-border);background:var(--cc-bg)}.ds-nav a{font-family:var(--cc-font-sans);font-weight:500;font-size:14px;color:var(--cc-fg);text-decoration:none;transition:color var(--cc-dur-fast) var(--cc-ease-standard)}.ds-nav a:hover,.ds-nav a[aria-current=page]{color:var(--cc-accent)}.ds-nav a[aria-current=page]{font-weight:700}.ds-nav a:focus-visible{outline:2px solid var(--cc-focus);outline-offset:2px}"
+    },
+    {
+      "name": "Part Tile (solid ink block)",
+      "kind": "card",
+      "refersTo": "ink-block-tile",
+      "description": "Part or desk tile: large type on the part ink, count on the wash foot. Swap --part-ink/--part-wash to change category.",
+      "html": "<a class=\"ds-tile\" href=\"#\" style=\"--part-ink:var(--cc-muscadine);--part-wash:var(--cc-wash-muscadine)\"><span class=\"ds-tile-head\"><span class=\"ds-tile-roman\">IV</span><span class=\"ds-tile-name\">Leasing</span></span><span class=\"ds-tile-foot\">6 articles</span></a>",
+      "css": ".ds-tile{display:flex;flex-direction:column;width:180px;border:1px solid var(--cc-border);border-radius:var(--cc-radius-doc);overflow:hidden;color:var(--cc-fg);text-decoration:none;transition:transform var(--cc-dur-fast) var(--cc-ease-standard),box-shadow var(--cc-dur-fast) var(--cc-ease-standard),border-color var(--cc-dur-fast) var(--cc-ease-standard)}.ds-tile:hover{transform:translateY(var(--cc-lift));box-shadow:var(--cc-shadow-2);border-color:var(--part-ink)}.ds-tile:focus-visible{outline:2px solid var(--cc-focus);outline-offset:2px}.ds-tile-head{display:flex;flex-direction:column;gap:4px;padding:12px 16px 16px;min-height:104px;background:var(--part-ink);color:var(--cc-bg)}.ds-tile-roman{font-family:var(--cc-font-display);font-weight:900;font-size:30px;line-height:32px;letter-spacing:-.03em}.ds-tile-name{font-family:var(--cc-font-sans);font-weight:700;font-size:19px;line-height:23px}.ds-tile-foot{padding:8px 16px;background:var(--part-wash);font-family:var(--cc-font-mono);font-size:12px;color:var(--cc-fg-muted)}"
+    },
+    {
+      "name": "Article Row",
+      "kind": "custom",
+      "description": "Index row: part-ink numeral, Besley title, muted deck, mono meta.",
+      "html": "<a class=\"ds-row\" href=\"#\" style=\"--part-ink:var(--cc-terra)\"><span class=\"ds-row-num\">07</span><span><span class=\"ds-row-title\">Reading a rent roll</span><span class=\"ds-row-deck\">What the columns hide and what to ask.</span></span><span class=\"ds-row-meta\">8 min</span></a>",
+      "css": ".ds-row{display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:16px;padding:16px 0;border-top:1px solid var(--cc-border);color:var(--cc-fg);text-decoration:none;transition:background-color var(--cc-dur-fast) var(--cc-ease-standard)}.ds-row:hover{background:var(--cc-wash-ink)}.ds-row:hover .ds-row-title{color:var(--cc-accent)}.ds-row:focus-visible{outline:2px solid var(--cc-focus);outline-offset:2px}.ds-row-num{font-family:var(--cc-font-display);font-weight:900;font-size:22px;line-height:26px;letter-spacing:-.03em;color:var(--part-ink,var(--cc-fg))}.ds-row-title{display:block;font-family:var(--cc-font-display);font-weight:700;font-size:19px;line-height:25px}.ds-row-deck{display:block;font-size:14px;line-height:21px;color:var(--cc-fg-muted);margin-top:4px}.ds-row-meta{font-family:var(--cc-font-mono);font-size:12px;color:var(--cc-fg-muted)}"
+    },
+    {
+      "name": "Plate",
+      "kind": "custom",
+      "refersTo": "plate",
+      "description": "Numbered figure: plate-ink top rule, mono label, drawing on the part wash, Besley caption.",
+      "html": "<figure class=\"ds-plate\" style=\"--part-ink:var(--cc-olive);--part-wash:var(--cc-wash-olive)\"><span class=\"ds-plate-rule\"></span><span class=\"ds-plate-label\">PLATE 02 · ACQUIRING</span><svg viewBox=\"0 0 840 300\"><line x1=\"30\" y1=\"250\" x2=\"810\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"200\" y=\"140\" width=\"300\" height=\"110\" fill=\"none\" stroke=\"var(--part-ink)\" stroke-width=\"2.8\"/></svg><figcaption>Fig. 02 · Acquiring. Illustrative drawing.</figcaption></figure>",
+      "css": ".ds-plate{margin:0;border:1px solid var(--cc-border);border-radius:var(--cc-radius-doc);background:var(--part-wash);padding:12px;color:var(--cc-fg)}.ds-plate-rule{display:block;height:var(--cc-plate-rule);background:var(--part-ink);margin:-12px -12px 12px}.ds-plate-label{display:block;font-family:var(--cc-font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--cc-accent);margin-bottom:12px}.ds-plate svg{display:block;width:100%;height:auto}.ds-plate figcaption{margin-top:12px;font-family:var(--cc-font-display);font-weight:700;font-size:13px;color:var(--cc-fg-muted)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Inked Plate",
+    "overview": "The hub reads like an operator's bound reference: warm paper, one near-black ink, hairline rules, and numbered plates whose line drawings ink in once as the page opens. Color is a filing system, not decoration. Four category inks mark the parts of a series, Ink marks the operating layer, and Olive and Mustard double as published and in-progress states. Everything else stays on paper.\n\nTwo densities share one system. Article pages are documents (`body.cc-doc`): flat, long-measure Besley prose, a contents rail, no shadows, no lift. The hub, collection landings, desks and map are the index: they may carry the Cypress surface, solid ink blocks, the brand shadow and hover lift. The home hero holds the site's single authored motion sequence, a survey traverse of the flagship center's recorded plat.",
+    "keyCharacteristics": [
+      "Paper ground, Ink text, Terra for links, focus, primary action and the default plate ink.",
+      "Category inks rotate Terra, Olive, Mustard, Muscadine across parts; Ink is the operating layer.",
+      "Solid ink blocks carry large type only, in the page-ground color.",
+      "Hairline borders and 2px/4px corners; heavy 2px Ink rules open sections.",
+      "Fourteen hand-authored line drawings plus one traced survey plate, colored by role classes.",
+      "Motion is brief and token-timed; reduced motion removes all of it."
+    ],
+    "rules": [
+      {
+        "name": "The Four Inks Rule",
+        "body": "Parts of a series rotate Terra, Olive, Mustard, Muscadine in that order (I/V, II/VI, III/VII, IV/VIII). The ink is applied through a scope class (`.ink-terra|olive|mustard|muscadine|ink`) that sets `--part-ink` and `--part-wash`; components read those variables, never a hue directly. Collection cards rotate the same four by series `order`; desk tiles wear the ink of the part they map to.",
+        "section": "colors"
+      },
+      {
+        "name": "The Operating Layer Rule",
+        "body": "Parts that feed every stage rather than sit in the lifecycle (Field Notes, AI & Operating Systems, Tools & Checklists) take Ink, not a category hue. The map splits \"asset lifecycle\" from \"operating layer\" on exactly this test.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Meaning Rule",
+        "body": "Olive and Mustard also mean published and in-progress. Keep the state tags beside, never replacing, the part ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Oxblood Rule",
+        "body": "Oxblood (`--cc-oxblood`, critical/refusal) never appears on this site: no critical tags, no oxblood ink; `inkClass('oxblood')` falls back to Ink (tested in `src/lib/articles.test.ts`).",
+        "section": "colors"
+      },
+      {
+        "name": "The Mustard Floor Rule",
+        "body": "Mustard text only at 14px 700 or larger. The design system's own 11px warning tag breaks this, so the site overrides it: Ink text, Mustard dot and Mustard border (`.cc-tag-warning` in `site.css`).",
+        "section": "colors"
+      },
+      {
+        "name": "The Serif Remembers Rule",
+        "body": "Titles, numerals, decks and article prose are Besley; controls, labels and UI copy are Archivo; data about an item (date, time, count, plate number) is Courier Prime.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Document Rule",
+        "body": "Article pages (`cc-doc`) never lift, cast or float. Elevation and hover lift belong to the hub and landings.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** reference `var(--cc-*)` tokens for every color, font, shadow, radius and duration; add new rules to `site.css`, never to `design-system/`.",
+      "**Do** color by scope: wrap a part in `.ink-<name>` and read `--part-ink` / `--part-wash`.",
+      "**Do** keep type on solid ink blocks at 19px 700 or larger, set in `--cc-bg`.",
+      "**Do** give every new drawing role classes and `--s` step groups, and pass `animate` only where it opens a plate or the hero.",
+      "**Do** keep article pages under `cc-doc`: flat, 2px corners, Besley 17/26 at 70ch.",
+      "**Adding a series:** add `src/content/series/<slug>.json` and `src/content/articles/<slug>/`. Each manifest part carries an `ink`; lifecycle parts rotate `terra`, `olive`, `mustard`, `muscadine` in order, and operating-layer parts (notes, systems, tools) use `ink`. Any other value falls back to Ink. The collection card's ink follows the series `order` through the same rotation, and a new collection drawing is registered in `COLLECTION_KEYS`."
+    ],
+    "donts": [
+      "**Don't** use Oxblood or the critical tag anywhere on the hub.",
+      "**Don't** set Mustard text below 14px 700; use Ink text with a Mustard dot or border.",
+      "**Don't** put small labels on a solid ink block; they go on the wash foot.",
+      "**Don't** add shadows or hover lift to article pages, or any shadow outside the `--cc-shadow-*` tokens.",
+      "**Don't** add a second authored sequence, exceed 560ms for a single reveal elsewhere, or animate a drawing more than once per load.",
+      "**Don't** hard-code a hex, a font name or a hue inside an illustration."
+    ]
+  }
+}

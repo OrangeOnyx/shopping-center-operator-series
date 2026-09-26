@@ -1,4 +1,4 @@
-// Editorial line illustrations (Brand Standards 2.2: "editorial line illustration for diagrams").
+// Editorial line illustrations (Brand Standards 2.3: "editorial line illustration for diagrams").
 // Drawn in one 840 x 300 frame. No colors live here: classes map to tokens in site.css.
 //   k  ink stroke        t  soft hairline        a  plate-ink accent stroke
 //   f  paper-deep fill   w  plate-ink wash fill  af plate-ink solid fill

@@ -33,7 +33,7 @@ The writing comes from a working operator's desk: On The Blvd Shopping Center, 1
 ## Capabilities and Constraints
 
 - **Stack:** Astro, static output, Vercel project `site-v2`, domain articles.cypresscommand.com. No CMS, no server runtime, no database, no auth, no UI framework. Widgets are plain client scripts.
-- **Collections:** The Shopping Center Operator Series (40 articles in 8 parts, published, with a series map). The Field Notes lane (20 notes, published). Four coming-soon series: Operating Systems, Owner's Contracts, Small Portfolio, Governed AI.
+- **Collections:** The Shopping Center Operator Series (40 articles in 11 parts, published, with a series map). The Operating Systems Series (10 articles in 3 parts, published). The Field Notes lane (20 notes, published). Three coming-soon series: Owner's Contracts, Small Portfolio, Governed AI.
 - **Taxonomy:** six desks (own, run, lease, finance, buy, sell). `lanes` surfaces an article in a lane without moving it.
 - **Build gates:** `npm run build` runs a brand check, a content check, the build, then link and redirect checks. Every legacy URL must keep redirecting.
 - **Fonts** are self-hosted (Fontsource), with no external font network dependency.
@@ -42,7 +42,7 @@ The writing comes from a working operator's desk: On The Blvd Shopping Center, 1
 
 ## Brand Commitments
 
-- **Brand Standards 2.2** in `design-system/` is binding. It is copied verbatim and never edited, and `scripts/check-brand.mjs` enforces it.
+- **Brand Standards 2.3** in `design-system/` is binding. It is copied verbatim and never edited, and `scripts/check-brand.mjs` enforces it.
 - Tagline: *Practical intelligence for real operations.* It is the company line. The hub headline is publication-specific.
 - **Voice:** lead with the business problem, in short declarative sentences and concrete nouns. Respect the reader's experience and never call an operation broken or chaotic. State tradeoffs. AI summarizes, organizes, routes, drafts, and prepares, and never replaces accountable people.
 - **Prohibited phrases:** revolutionize, transform everything, unlock, seamless, cutting-edge, best-in-class, guaranteed ROI, future-proof, 10x, disruptive, effortless, set it and forget it, game-changer, synergy.
@@ -61,4 +61,4 @@ The writing comes from a working operator's desk: On The Blvd Shopping Center, 1
 2. **Operator truth over polish.** Every claim traces to approved facts or is labeled illustrative. Credibility is the whole asset.
 3. **Built to grow past one series.** Structure has to hold for series and lanes still to come, and for owner-led businesses beyond retail real estate.
 4. **Every page stands alone.** Readers land deep, so each article carries its own context, series position, and next step.
-5. **Brand discipline is enforced, not aspirational.** Brand Standards 2.2 and the voice rules are build gates.
+5. **Brand discipline is enforced, not aspirational.** Brand Standards 2.3 and the voice rules are build gates.
