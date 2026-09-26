@@ -245,6 +245,9 @@ h4, .h4 { font-family: var(--cc-font-sans); font-weight: 700; font-size: var(--c
 .card-deck { font-size: 14px; line-height: 21px; color: var(--cc-fg-muted); }
 .card-head { margin: calc(-1 * var(--cc-space-4)) calc(-1 * var(--cc-space-4)) var(--cc-space-3); padding: var(--cc-space-3) var(--cc-space-4); border-bottom: var(--cc-hairline) solid var(--cc-border); }
 .card-head .cc-tag { background: var(--cc-bg); }
+/* 2.3: Mustard text only at >=14px 700; the 11px warning tag keeps Mustard on the dot and border, text in Ink. */
+.cc-tag-warning { color: var(--cc-fg); border-color: var(--cc-warning); }
+.cc-tag-warning::before { background: var(--cc-warning); }
 .wash-olive { background: var(--cc-wash-olive); }
 .wash-mustard { background: var(--cc-wash-mustard); }
 .wash-terra { background: var(--cc-wash-terra); }

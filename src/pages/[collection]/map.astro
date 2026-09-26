@@ -12,8 +12,9 @@ export async function getStaticPaths() {
 const { series, articles } = Astro.props;
 const s = series.data;
 const groups = s.parts.map((p) => ({ part: p, items: articles.filter((a) => partName(a.data.part) === p.name) })).filter((g) => g.items.length);
-const lifecycle = groups.filter((g) => g.part.num <= 8);
-const layer = groups.filter((g) => g.part.num > 8);
+// Brand Standards 2.3: Ink is the operating layer; the category inks mark lifecycle parts.
+const lifecycle = groups.filter((g) => g.part.ink !== 'ink');
+const layer = groups.filter((g) => g.part.ink === 'ink');
 ---
 <Base title={`The map — ${s.title}`} description={`Every article in ${s.title}, in its place: the asset lifecycle and the operating layer.`}>
   <header class="page-head"><div class="wrap">

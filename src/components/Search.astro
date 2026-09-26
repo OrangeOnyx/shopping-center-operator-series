@@ -10,6 +10,7 @@ const { scope = '', placeholder = 'Search the articles' } = Astro.props;
 <script>
   type Item = { url: string; title: string; deck: string; collection: string; collectionTitle: string; desk: string; headings: string[] };
   let index: Item[] | null = null;
+  const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
   async function load() { if (!index) index = await (await fetch('/search-index.json')).json(); return index!; }
   document.querySelectorAll<HTMLElement>('.search').forEach((box) => {
     const input = box.querySelector('input')!;
@@ -27,7 +28,7 @@ const { scope = '', placeholder = 'Search the articles' } = Astro.props;
         return words.every((w) => hay.includes(w));
       }).slice(0, 12);
       out.innerHTML = hits.length
-        ? hits.map((i) => `<a href="${i.url}"><span class="sr-title">${i.title}</span><div class="sr-meta">${i.collectionTitle}${i.desk ? ' · ' + i.desk : ''}</div></a>`).join('')
+        ? hits.map((i) => `<a href="${esc(i.url)}"><span class="sr-title">${esc(i.title)}</span><div class="sr-meta">${esc(i.collectionTitle)}${i.desk ? ' · ' + esc(i.desk) : ''}</div></a>`).join('')
         : '<div class="search-empty">No articles match that search. Try a broader term.</div>';
       out.classList.add('open');
     });
